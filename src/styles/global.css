@@ -240,7 +240,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin: 20px 0;
   padding: 18px;
   text-decoration: none;
@@ -573,5 +574,14 @@ p {
     -o-object-fit: contain !important;
     object-fit: contain !important;
     margin: 10px 0 0 !important;
+  }
+  aside,
+  main {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 14px;
   }
 }
