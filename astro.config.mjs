@@ -2,9 +2,17 @@
 import { defineConfig } from "astro/config";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import tailwindcss from "@tailwindcss/vite";
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
+  integrations: [
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },
