@@ -1,22 +1,37 @@
+---
+import "../styles/global.css";
+import Footer from '@components/Footer.astro';
+import Sidebar from '@components/Sidebar.astro';
+import Sp from '@components/Sp.astro';
+const { pageTitle } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
+const ogpImageURL = new URL('/nao2.jpg', canonicalURL);
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "naomina121",
+  "url": "https://naomina121.com",
+  "description": "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。",
+};
+---
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:image" content={ogpImageURL} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="container flex justify-between items-start align-top mx-auto max-w-[1200px]">
+    <Sp />
+    <Sidebar />
+    <slot />
+    </div>
+    <Footer />
+  </body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

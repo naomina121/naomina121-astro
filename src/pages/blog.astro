@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainToc from "../components/MainToc.astro";
+const pageTitle = "ナオのブログ | NAOMINA121";
+---
+
+<Layout pageTitle={pageTitle}>
+<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
+<h1>ナオのブログ</h1>
+<img class="profile-picture max-w-full h-auto" src="/images/blog2.webp" alt="ナオのブログ" />
+<h2>目次</h2>
+<MainToc />
+<h2>概要</h2>
+<p>こちらは、ナオの考えをまとめた専用ブログです。<br>
+一記事しかないのですが、そのうち増えるでしょう。</p>
+<h2>記事</h2>
+<h3>その他</h3>
+<ul class="menu-list">
+<li><a href="/blog/etc-ep1">なんと、この度、当サイトの名刺を作ってくださった方がいました。</a></li>
+</ul>
+
+</main>
+</Layout>

@@ -1,11 +1,59 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "NAOMINA121";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout pageTitle={pageTitle}>
+<main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
+<img class="profile-picture max-w-full h-auto" src="/images/nao2.jpg" alt="Nobody Is Perfect" />
+<h2>はじめに</h2>
+<p>このページは、ナオが運営するナオの公式サイトです。</p>
+<div class="box">
+ℹ️ <strong class="sub-title">Infomation</strong>
+<br>
+<p><u class="orange">当サイトでは、アクセス状況を把握するために Google Analytics を利用しています。  </u>
+収集するのはサイト利用に関するデータのみであり、個人を特定する情報は含まれません。
+取得した情報は今後の発信活動の改善に役立てるためだけに利用します。</p>
+</div>
+<h2>発信コンテンツ</h2>
+
+<p>サイト内にあるコンテンツについて紹介していきます。</p>
+
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>プロフィール</td>
+<td>ナオの基本情報です</td>
+</tr>
+<tr>
+<td>ナオのブログ</td>
+<td>ナオのブログです。</td>
+</tr>
+<tr>
+<td>ナオの音声ブログ</td>
+<td>私の音声配信用のブログです。</td>
+</tr>
+<tr>
+<td>ナオの活動拠点</td>
+<td>外部サイトのナオコンテンツです。</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h2>応援したいなと思った時に</h2>
+
+<p>ナオの応援はナオが喜びます！</p>
+
+<div class="coffe">
+<a href="https://buymeacoffee.com/naomina121" class="button">☕ コーヒーで応援する</a>
+</div>
+</main>
 </Layout>

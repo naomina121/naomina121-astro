@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const allPosts = Object.values(import.meta.glob('../*/*.md', { eager: true }));
+const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+const pageTitle = "タグインデックス";
+---
+<Layout pageTitle={pageTitle}>
+      <main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
+    <h1>タグ一覧</h1>
+  <div class="tags">
+    {tags.map((tag) => (
+      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+    ))}
+  </div>
+  <style>
+  a {
+    color: #edf5a9;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    margin: 4px;
+    padding: 6px 12px;
+  }
+</style>
+    </main>
+</Layout>

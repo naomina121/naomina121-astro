@@ -1,0 +1,26 @@
+---
+const isIndex = Astro.url.pathname === "/";
+const isProfile = Astro.url.pathname.startsWith("/profile/");
+import Toc from '@components/Toc.astro';
+---
+<aside class="w-[250px] mt-0 pr-8">
+<a href="/"><img class="site-logo" src="/images/naomina.jpg" alt="naomina121のアイコン" />
+{isIndex && (<h1 class="site-name">NAOMINA121</h1>)}{!isIndex && (<p class="site-name">NAOMINA121</p>)}</a>
+<nav>
+    <ul class="nav-links">
+        <li><a href="/profile/about">プロフィール</a>
+{isProfile && (<ul class="profile-submenu ml-4 mt-2">
+    <li><a href="/profile/about">私について</a></li>
+    <li><a href="/profile/nobody-perfect">完璧な人間なんていない</a></li>
+    <li><a href="/profile/nao-analysis">ナオの分析結果</a></li>
+    </ul>)}
+        </li>
+        <li><a href="/blog/">ナオのブログ</a></li>
+        <li><a href="/podcast/">ナオの音声ブログ</a></li>
+        <li><a href="/links/">ナオの活動拠点</a></li>
+    </ul>
+</nav>
+{!isIndex && (
+  <Toc />
+)}
+</aside>

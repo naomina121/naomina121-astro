@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "ナオの音声ブログ | NAOMINA121";
+import MainToc from "../components/MainToc.astro";
+---
+
+<Layout pageTitle={pageTitle}>
+<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
+<img class="profile-picture max-w-full h-auto" src="/images/obsiedian_onsei.jpg" alt="ナオの音声ブログ" />
+<h1>ナオの音声ブログ</h1>
+<h2>目次</h2>
+<MainToc />
+<h2>概要</h2>
+<p>ナオの音声を聴いて<u class="orange">ブログの素晴らしきナオのイメージが壊れても、私（わたくし）は一切責任は取りません。</u>
+と、書いておけばクレームは付いてこないでしょうｗ</p>
+<br>
+<p>以上、解散！</p>
+<h2>記事</h2>
+<ol class="menu-list">
+<li><a href="/podcast/ep1">ナオのポッドキャストのルール</a></li>
+<li><a href="/podcast/ep2">ナオという生物をナオが語ってみる</a></li>
+<li><a href="/podcast/ep3">【※これは妄想です】ブログ×音声配信で最強の集客導線を作ってみた話（※まだ何も始まってません）</a></li>
+<li><a href="/podcast/ep4">どうせ、君は魅力的だからうまくいく</a></li>
+<li><a href="/podcast/ep5">全部覚えようとしてない？ 情報過多の時代に“忘れる技術”を</a></li>
+</ol>
+</main>
+</Layout>
