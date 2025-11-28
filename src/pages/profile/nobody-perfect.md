@@ -16,7 +16,7 @@ tags: ["プロフィール", "ナオ", "信条"]
 ## 動画バージョン
 
 
-<div class="youtube-ratio"><iframe width="412" height="732" src="https://www.youtube.com/embed/JjdGZbvDeC0" title="完璧な人間なんていない" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<div class="youtube-ratio pt-[45.54%]"><iframe width="412" height="732" src="https://www.youtube.com/embed/JjdGZbvDeC0" title="完璧な人間なんていない" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ## 文章バージョン
 
