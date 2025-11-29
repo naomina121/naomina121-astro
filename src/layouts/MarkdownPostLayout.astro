@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
+import { undefined } from "astro:schema";
 const { frontmatter } = Astro.props;
 const{ minutesRead } = Astro.props.frontmatter;
 const isPodcast = Astro.url.pathname.startsWith("/podcast/");
@@ -36,7 +37,7 @@ if (Astro.props.pubDate) {
       "name": "naomina121",
       "logo": {
         "@type": "ImageObject",
-        "url": siteUrl ? new URL('/logo-for-schema.png', siteUrl).toString() : '/blog2.webp'
+        "url": siteUrl ? new URL('/blog2.webp', siteUrl).toString() : undefined,
       }
     }
   };
