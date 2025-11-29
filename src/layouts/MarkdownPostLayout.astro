@@ -28,6 +28,9 @@ if (Astro.props.pubDate) {
     "image": ogpImageURL.toString(),
     "url": canonicalURL.toString(),
     "datePublished": new Date(Astro.props.pubDate).toISOString(),
+    "dateModified": frontmatter.lastmod
+    ? new Date(frontmatter.lastmod).toISOString()
+    : new Date(Astro.props.pubDate).toISOString(),
     "author": {
       "@type": "Person",
       "name": frontmatter.author,
