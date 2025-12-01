@@ -8,8 +8,8 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://naomina121.com",
-  integrations: [sitemap()],
   integrations: [
+    sitemap(),
     partytown({
       config: {
         forward: ["dataLayer.push"],
