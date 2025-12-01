@@ -3,9 +3,12 @@ import { defineConfig } from "astro/config";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
 import tailwindcss from "@tailwindcss/vite";
 import partytown from "@astrojs/partytown";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://naomina121.com",
+  integrations: [sitemap()],
   integrations: [
     partytown({
       config: {
