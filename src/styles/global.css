@@ -151,6 +151,17 @@ p {
   color: #d9d9d9;
   line-height: 2;
 }
+
+#article-body a.link {
+  color: #67abd3;
+  text-decoration: underline;
+}
+
+#article-body a.link:hover {
+  text-decoration: none;
+  color: #67abd3;
+}
+
 #article-body a:hover {
   color: #d9d9d9;
   text-decoration: underline;
@@ -159,6 +170,10 @@ p {
 #article-body .tags li {
   list-style: none;
   margin-left: 5px;
+}
+
+#article-body ol li {
+  line-height: 2.3;
 }
 
 ::selection {

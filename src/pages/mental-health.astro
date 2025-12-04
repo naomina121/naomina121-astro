@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainToc from "../components/MainToc.astro";
+const pageTitle = "ナオのブログ | NAOMINA121";
+---
+
+<Layout pageTitle={pageTitle}>
+<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
+<h1>メンタルヘルス</h1>
+<img class="profile-picture max-w-full h-auto" src="/images/mental-health.jpg" alt="メンタルヘルス" />
+<h2>目次</h2>
+<MainToc />
+<h2>概要</h2>
+<p>メンタルヘルスを高めることで健康意識を強くするというのが目的です。
+<br>
+幸福度を追求するには<a href="/info-literacy/" class="link">情報リテラシー</a>とメンタルヘルス向上は欠かせません。
+</p>
+<h2>記事</h2>
+<h3>体験談</h3>
+タグ：<a href="/tags/体験談" class="link">体験談</a>
+<ul class="menu-list">
+<li><a href="/mental-health/schizophrenia">統合失調症当事者が見た妄想の世界（ログ付き）</a></li>
+</ul>
+
+</main>
+</Layout>

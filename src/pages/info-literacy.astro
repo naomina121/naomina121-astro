@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainToc from "../components/MainToc.astro";
+const pageTitle = "ナオのブログ | NAOMINA121";
+---
+
+<Layout pageTitle={pageTitle}>
+<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
+<h1>情報リテラシー</h1>
+<img class="profile-picture max-w-full h-auto" src="/images/information-literacy.jpg" alt="情報リテラシー" />
+<h2>目次</h2>
+<MainToc />
+<h2>概要</h2>
+<p>情報リテラシーを高めることは、<a href="/mental-health/" class="link">メンタルヘルス</a>にも21世紀型思考にも直結する重要な考え方です。</p>
+<h2>記事</h2>
+<h3>考えから情報リテラシーを身に着ける</h3>
+タグ：<a href="/tags/考え方" class="link">考え方</a>
+<ul class="menu-list">
+<li><a href="/info-literacy/survival-theory">社会的弱者生存論-なぜ生存権が必要なのか-</a></li>
+</ul>
+
+</main>
+</Layout>
