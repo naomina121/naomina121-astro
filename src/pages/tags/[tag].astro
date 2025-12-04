@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 const { tag } = Astro.params;
+const pageTitle = "タグ: " + tag;
 const { posts } = Astro.props;
 const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tag));
 export async function getStaticPaths() {
