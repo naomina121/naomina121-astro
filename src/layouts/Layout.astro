@@ -4,6 +4,7 @@ import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 const { pageTitle } = Astro.props;
+const isIndex = Astro.url.pathname === "/";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = new URL('/nao2.jpg', canonicalURL);
 const websiteSchema = {
@@ -55,7 +56,7 @@ const isContact = Astro.url.pathname.startsWith("/contact/");
     <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+    <title>{isIndex ? pageTitle : `${pageTitle} | NAOMINA121`}</title>
   </head>
   <body>
     <div class="container flex justify-between items-start align-top mx-auto max-w-[1200px]">
