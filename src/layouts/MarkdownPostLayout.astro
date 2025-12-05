@@ -64,12 +64,19 @@ const websiteSchema = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalURL.toString()}>
     <meta property="og:title" content={frontmatter.title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:image" content={ogpImageURL.toString()} />
     <meta property="og:description" content={frontmatter.description} />
     <meta property="og:site_name" content="naomina121" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@naomina121">
+    <meta name="twitter:title" content={frontmatter.title}>
+    <meta name="twitter:description" content={frontmatter.description}>
+    <meta name="twitter:image" content={ogpImageURL.toString()}>
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     {pageSchema && (
       <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />

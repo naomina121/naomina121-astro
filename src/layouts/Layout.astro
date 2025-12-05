@@ -55,6 +55,7 @@ const isContact = Astro.url.pathname.startsWith("/contact/");
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalURL.toString()} />
     <meta name="generator" content={Astro.generator} />
     <title>{isIndex ? pageTitle : `${pageTitle} | NAOMINA121`}</title>
   </head>
