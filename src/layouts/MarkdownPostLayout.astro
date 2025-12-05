@@ -5,10 +5,14 @@ import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 import Sns from '@components/Sns.astro';
 import { undefined } from "astro:schema";
+import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 const { frontmatter } = Astro.props;
 const{ minutesRead } = Astro.props.frontmatter;
 const isPodcast = Astro.url.pathname.startsWith("/podcast/");
 const isProfile = Astro.url.pathname.startsWith("/profile/");
+const isBlog = Astro.url.pathname.startsWith("/blog/");
+const isMentalHealth = Astro.url.pathname.startsWith("/mental-health/");
+const isInfoLiteracy = Astro.url.pathname.startsWith("/info-literacy/");
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = isPodcast ? new URL('/obsidean_onsei.jpg', canonicalURL) : new URL(frontmatter.image.url, canonicalURL);
 const websiteSchema = {
@@ -44,6 +48,29 @@ const websiteSchema = {
       }
     }
   };
+const breadcrumbItems = isBlog ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'ブログ', item: Astro.site.origin + '/blog/' },
+      { name: frontmatter.title, item: canonicalURL.toString() }
+    ] : isProfile ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'プロフィール', item: canonicalURL.toString() }
+    ] : isMentalHealth ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'メンタルヘルス', item: Astro.site.origin + '/mental-health/' },
+      { name: frontmatter.title, item: canonicalURL.toString() }
+    ] : isInfoLiteracy ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: '情報リテラシー', item: Astro.site.origin + '/info-literacy/' },
+      { name: frontmatter.title, item: canonicalURL.toString() }
+    ] : isPodcast ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: '音声ブログ', item: Astro.site.origin + '/podcast/' },
+      { name: frontmatter.title, item: canonicalURL.toString() }
+    ] : [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: frontmatter.title, item: canonicalURL.toString() }
+    ];
 ---
 <!doctype html>
 <html lang="ja">
@@ -113,6 +140,7 @@ const websiteSchema = {
     }
     </main>
     </div>
+    <StructuredBreadcrumbs items={breadcrumbItems} />
         <Footer />
     </div>
 

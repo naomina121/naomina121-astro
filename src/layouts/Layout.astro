@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
+import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 const { pageTitle } = Astro.props;
 const isIndex = Astro.url.pathname === "/";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
@@ -23,6 +24,13 @@ let pageSchema = {
     "url": canonicalURL.toString(),
     "inLanguage": "ja"
   };
+
+const breadcrumbItems = isIndex
+  ? [{ name: 'ホーム', item: Astro.site.origin + '/' }]
+  : [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: pageTitle, item: canonicalURL.toString() }
+    ];
 
 const isContact = Astro.url.pathname.startsWith("/contact/");
 ---
@@ -65,6 +73,7 @@ const isContact = Astro.url.pathname.startsWith("/contact/");
     <Sidebar />
     <slot />
     </div>
+    <StructuredBreadcrumbs items={breadcrumbItems} />
     <Footer />
   </body>
 </html>
