@@ -16,8 +16,8 @@ const websiteSchema = {
   "url": "https://naomina121.com",
   "description": "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。",
 };
-const siteUrl = "https://naomina121.com";
-  const title = frontmatter.title;
+  const siteUrl = "https://naomina121.com";
+  let title = frontmatter.title;
   let pageSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -25,10 +25,10 @@ const siteUrl = "https://naomina121.com";
     "description": frontmatter.description,
     "image": ogpImageURL.toString(),
     "url": canonicalURL.toString(),
-    "datePublished": new Date(Astro.props.pubDate).toISOString(),
+    "datePublished": new Date(frontmatter.pubDate).toISOString(),
     "dateModified": frontmatter.modDate
     ? new Date(frontmatter.modDate).toISOString()
-    : new Date(Astro.props.pubDate).toISOString(),
+    : new Date(frontmatter.pubDate).toISOString(),
     "author": {
       "@type": "Person",
       "name": frontmatter.author,
