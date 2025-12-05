@@ -10,7 +10,7 @@ const{ minutesRead } = Astro.props.frontmatter;
 const isPodcast = Astro.url.pathname.startsWith("/podcast/");
 const isProfile = Astro.url.pathname.startsWith("/profile/");
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
-const ogpImageURL = frontmatter.image && frontmatter.image.url ? new URL(frontmatter.image.url, canonicalURL) : new URL('/obsidean_onsei.jpg', canonicalURL);
+const ogpImageURL = isPodcast ? new URL('/obsidean_onsei.jpg', canonicalURL) : new URL(frontmatter.image.url, canonicalURL);
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -64,7 +64,12 @@ const websiteSchema = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:image" content={ogpImageURL.toString()} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:site_name" content="naomina121" />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     {pageSchema && (
       <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
@@ -96,7 +101,7 @@ const websiteSchema = {
     </div>
   }
     <slot />
-    {isPodcast || isProfile ? null :
+    {isProfile ? null :
     <Sns frontmatter={frontmatter} />
     }
     </main>
