@@ -8,6 +8,7 @@ import { undefined } from "astro:schema";
 const { frontmatter } = Astro.props;
 const{ minutesRead } = Astro.props.frontmatter;
 const isPodcast = Astro.url.pathname.startsWith("/podcast/");
+const isProfile = Astro.url.pathname.startsWith("/profile/");
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = frontmatter.image && frontmatter.image.url ? new URL(frontmatter.image.url, canonicalURL) : new URL('/obsidean_onsei.jpg', canonicalURL);
 const websiteSchema = {
@@ -95,7 +96,9 @@ const websiteSchema = {
     </div>
   }
     <slot />
+    {isPodcast || isProfile ? null :
     <Sns frontmatter={frontmatter} />
+    }
     </main>
     </div>
         <Footer />
