@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
+import Sns from '@components/Sns.astro';
 import { undefined } from "astro:schema";
 const { frontmatter } = Astro.props;
 const{ minutesRead } = Astro.props.frontmatter;
@@ -55,6 +56,8 @@ const websiteSchema = {
 
   gtag('config', 'G-VGYCVR3R5F');
 </script>
+<script src="https://kit.fontawesome.com/3ba6930b7b.js" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -92,10 +95,12 @@ const websiteSchema = {
     </div>
   }
     <slot />
+    <Sns frontmatter={frontmatter} />
     </main>
     </div>
         <Footer />
     </div>
+
 {isPodcast && <script is:inline>
 // ============================================
 // グローバル変数
