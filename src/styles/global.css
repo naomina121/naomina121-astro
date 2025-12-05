@@ -382,6 +382,16 @@ p {
   font-weight: 600;
 }
 
+.gold {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.yellow {
+  color: #e3d96f;
+  font-weight: 600;
+}
+
 .green2 {
   font-weight: 600;
   color: #28968a;
