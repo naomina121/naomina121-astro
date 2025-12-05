@@ -14,6 +14,15 @@ const websiteSchema = {
   "description": "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。",
 };
 
+let pageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "description": pageTitle + "のページです。",
+    "url": canonicalURL.toString(),
+    "inLanguage": "ja"
+  };
+
 const isContact = Astro.url.pathname.startsWith("/contact/");
 ---
 <!doctype html>
@@ -43,6 +52,7 @@ const isContact = Astro.url.pathname.startsWith("/contact/");
     <meta property="og:image" content={ogpImageURL} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
