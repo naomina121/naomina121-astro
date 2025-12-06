@@ -7,9 +7,13 @@ import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 const { pageTitle } = Astro.props;
 const isIndex = Astro.url.pathname === "/";
 const isThanks = Astro.url.pathname === "/thanks/";
+const isMentalHealth = Astro.url.pathname === ("/mental-health/");
+const isInfoLiteracy = Astro.url.pathname === ("/info-literacy/");
+const isBlog = Astro.url.pathname === ("/blog/");
+const isPodcast = Astro.url.pathname === ("/podcast/");
 const title = isIndex ? "NAOMINA121" : pageTitle + " | NAOMINA121";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
-const ogpImageURL = new URL('/nao2.jpg', canonicalURL);
+const ogpImageURL = isMentalHealth ? new URL('/images/mental-health.jpg', canonicalURL) : isInfoLiteracy ? new URL('/images/information-literacy.jpg', canonicalURL) : isBlog ? new URL('/images/blog2.webp', canonicalURL) : isPodcast ? new URL('/images/podcast.jpg', canonicalURL) : isPodcast ? new URL('/images/obsiedian_onsei.jpg', canonicalURL) : new URL('/images/nao2.jpg', canonicalURL);
 const description = isIndex
   ? "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。"
   : pageTitle + "のページです。";
