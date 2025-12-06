@@ -7,14 +7,18 @@ import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 const { pageTitle } = Astro.props;
 const isIndex = Astro.url.pathname === "/";
 const isThanks = Astro.url.pathname === "/thanks/";
+const title = isIndex ? "NAOMINA121" : pageTitle + " | NAOMINA121";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = new URL('/nao2.jpg', canonicalURL);
+const description = isIndex
+  ? "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。"
+  : pageTitle + "のページです。";
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "naomina121",
   "url": "https://naomina121.com",
-  "description": "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。",
+  "description": description,
 };
 
 let pageSchema = {
@@ -61,7 +65,18 @@ const ga4TrackingCode = `
     <Fragment set:html={ga4TrackingCode} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta property="og:image" content={ogpImageURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.toString()} />
+    <meta property="og:image" content={ogpImageURL.toString()} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="naomina121" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@naomina121">
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:image" content={ogpImageURL.toString()}>
     {isThanks && <meta name="robots" content="noindex,nofollow" />}
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />

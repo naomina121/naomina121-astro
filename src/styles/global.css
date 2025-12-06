@@ -587,7 +587,7 @@ p {
     height: 12px;
     left: 12px;
     position: absolute;
-    top: 9px;
+    top: 10px;
     width: 12px;
   }
 
@@ -631,10 +631,9 @@ p {
     border-top: 8px solid #93882c;
   }
 
-.sp-menu h2 {
+  .sp-menu h2 {
     font-size: 18px;
-}
-
+  }
 }
 
 @media screen and (max-width: 768px) {
