@@ -54,7 +54,8 @@ const breadcrumbItems = isBlog ? [
       { name: frontmatter.title, item: canonicalURL.toString() }
     ] : isProfile ? [
       { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'プロフィール', item: canonicalURL.toString() }
+      { name: 'プロフィール', item: canonicalURL.toString() },
+      { name: frontmatter.title, item: canonicalURL.toString() }
     ] : isMentalHealth ? [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: 'メンタルヘルス', item: Astro.site.origin + '/mental-health/' },
