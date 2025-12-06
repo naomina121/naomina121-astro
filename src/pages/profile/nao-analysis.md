@@ -5,7 +5,7 @@ pubDate: 2025-12-01
 description: 'ナオの分析結果ページです。'
 author: 'ナオ'
 image:
-    url: '/images/nao_header.jpg'
+    url: '/images/nao_analysis.jpg'
     alt: 'ナオのプロフィール画像'
 tags: ["プロフィール", "ナオ", "分析結果"]
 ---

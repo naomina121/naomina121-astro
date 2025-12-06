@@ -39,7 +39,7 @@ tags: ["プロフィール", "ナオ", "信条"]
 
 ### 完璧な人間なんていない とよく言っている私のこと
 
-<img src="/images/nobody_1.png" alt="ナオのプロフィール画像" style="max-width:820px;" />
+<img src="/images/nobody_1.png" alt="ナオのプロフィール画像" class="w-full" />
 
 これは2023年のツイートである。
 

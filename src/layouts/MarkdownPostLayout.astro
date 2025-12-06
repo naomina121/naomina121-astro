@@ -135,9 +135,7 @@ const breadcrumbItems = isBlog ? [
     </div>
   }
     <slot />
-    {isProfile ? null :
     <Sns frontmatter={frontmatter} />
-    }
     </main>
     </div>
     <StructuredBreadcrumbs items={breadcrumbItems} />
