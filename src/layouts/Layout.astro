@@ -4,6 +4,7 @@ import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
+import { siteUpdates } from "../data/update";
 const { pageTitle } = Astro.props;
 const isIndex = Astro.url.pathname === "/";
 const isThanks = Astro.url.pathname === "/thanks/";
@@ -32,6 +33,20 @@ let pageSchema = {
     "description": pageTitle + "のページです。",
     "url": canonicalURL.toString(),
     "inLanguage": "ja"
+  };
+
+let infoSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": siteUpdates.map((update, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "CreativeWork",
+      "datePublished": update.date,
+      "name": update.content
+    }
+  }))
   };
 
 const breadcrumbItems = isIndex
@@ -85,6 +100,7 @@ const ga4TrackingCode = `
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(infoSchema)} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href={canonicalURL.toString()} />
     <meta name="generator" content={Astro.generator} />

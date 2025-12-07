@@ -1,46 +1,17 @@
-# Astro Starter Kit: Basics
-
-```sh
-pnpm create astro@latest -- --template basics
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# 当サイトについて
+NAOMINA121へようこそ！私はナオ、情報発信者兼クリエイターです。このサイトでは、私のブログ記事、音声ブログ、プロフィール、活動拠点などの情報を発信しています。
+## サイトの目的
+このサイトの主な目的は、以下の通りです：
+- **情報共有**：ブログ記事や音声ブログを通じて、私の考えや経験を共有します。
+- **コミュニケーション**：訪問者との交流を促進し、フィードバックや意見を受け取ります。
+- **活動拠点の提供**：私のプロフィールや活動内容を紹介し、興味を持った方々にアクセスしやすくします。
+## コンテンツの種類
+このサイトでは、以下の主要なコンテンツを提供しています：
+- **メンタルヘルス**：メンタルヘルスに関する情報やリソースを提供しています。
+- **情報リテラシー**：情報の正確な評価と利用に関するガイドラインを共有しています。
+- **ブログ**：様々なトピックに関する記事を定期的に投稿しています。
+- **音声ブログ**：音声形式での情報発信も行っています。
+- **プロフィール**：私の経歴やスキル、興味について紹介しています。
+- **活動拠点**：私の現在の活動内容やプロジェクトについての情報を提供しています。
+## 連絡先
+ご質問やフィードバックがありましたら、[お問い合わせページ](./contact)からお気軽にご連絡ください。

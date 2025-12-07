@@ -159,17 +159,17 @@ p {
   line-height: 2;
 }
 
-#article-body a.link {
+a.link {
   color: #67abd3;
   text-decoration: underline;
 }
 
-#article-body a.link:hover {
+.link:hover {
   text-decoration: none;
   color: #67abd3;
 }
 
-#article-body a:hover {
+a:hover {
   color: #d9d9d9;
   text-decoration: underline;
 }
@@ -667,6 +667,18 @@ p {
   aside,
   main {
     padding: 30px;
+  }
+  table.m thead {
+    display: none;
+  }
+  table.m tr {
+    display: flex;
+    flex-direction: column;
+  }
+  table.m tr td:first-child {
+    background: #1a1a1a;
+    font-weight: 400;
+    color: #aa953e;
   }
 }
 @media screen and (max-width: 400px) {

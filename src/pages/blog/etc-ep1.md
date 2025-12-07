@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'なんと、この度、当サイトの名刺を作ってくださった方がいました。'
 pubDate: 2025-12-01
+modDate: 2025-12-07
 description: 'ナオのブログを作る前に、名刺が存在している話。'
 author: 'ナオ'
 image:
@@ -20,7 +21,7 @@ tags: ["ブログ", "名刺","その他"]
 ちなみに気になる裏面はぁああああああああ？（うるさいｗ
 
 
-<img src="/images/meisi_ura.jpg" alt="ナオの名刺裏面画像" style="max-width:820px;" />
+<img src="/images/meisi_ura.jpg" alt="ナオの名刺裏面画像" class="max-w-[820px] w-full" />
 
 自動的に私のサイトを辿ってくださいね、QRコードなしでという、親切設計！！！！！！
 
