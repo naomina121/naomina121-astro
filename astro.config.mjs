@@ -25,5 +25,9 @@ export default defineConfig({
   experimental: {
     preserveScriptOrder: true,
   },
-  site: "https://naomina121.com",
+  redirects: {
+    "/%E8%B3%87%E6%96%99%E5%AE%A4/%E8%B3%87%E6%96%99%E5%AE%A4%E3%81%AE%E5%85%A5%E3%82%8A%E5%8F%A3": {
+      status: 308,
+      destination: "/materials/materials-entrance"
+    },
 });

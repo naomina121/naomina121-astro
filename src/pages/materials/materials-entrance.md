@@ -1,0 +1,38 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: '資料室の入り口'
+pubDate: 2025-12-07
+description: '私のセンシティブな体験談や記録を保管している資料室への入り口ページです。'
+author: 'ナオ'
+image:
+    url: '/images/materials.jpg'
+    alt: '資料室のイメージ画像'
+tags: ["資料室", "センシティブ"]
+---
+
+
+ここから先は、パスワード制のサイトになります。
+（アクセス解析は利用していません）
+理由としては内容が一部センシティブ（虐待、いじめ、パワハラや、統合失調感情障害、CPTSD）などの話題を取り扱っているためです。
+
+内容は一次資料や記録などの保管の位置づけになります。
+
+<div class="sensitive-wrapper bg-gray0600 p-4 mb-6">
+  <div class="sensitive-notice">
+    <h3 class="text-lg font-semibold text-yellow-800 mb-2">⚠️ センシティブコンテンツ</h3>
+    <p class="text-[#0097a6] mb-4">このサイトには心的に影響を及ぼす可能性のある内容が含まれています。<br>
+ご自身の状態を確認の上、無理のない範囲でお読みください。<br>
+読了後に心身の不調を感じた場合は、医師や専門家にご相談ください。</p>
+    <label class="flex items-center mb-4">
+      <input type="checkbox" id="consent-check" class="mr-2">
+      <span class="text-sm">理解した上で閲覧する</span>
+    </label>
+    <button id="show-content" disabled class="bg-[#5c1417] text-white px-4 py-2 rounded disabled:bg-gray-600 disabled:cursor-not-allowed">
+      注意喚起の上で閲覧を開始
+    </button>
+  </div>
+  <div id="sensitive-text" class="hidden mt-4 pt-4 border-t border-yellow-300">
+パスワードは`wM85GRQm`になります。
+<a href="https://secret.naomina121.com/" class="link" target="new">入室</a>はこちらになります。
+</div>
+</div>

@@ -14,6 +14,7 @@ const isProfile = Astro.url.pathname.startsWith("/profile/");
 const isBlog = Astro.url.pathname.startsWith("/blog/");
 const isMentalHealth = Astro.url.pathname.startsWith("/mental-health/");
 const isInfoLiteracy = Astro.url.pathname.startsWith("/info-literacy/");
+const isMaterials = Astro.url.pathname.startsWith("/materials/");
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = isPodcast ? new URL('/obsidean_onsei.jpg', canonicalURL) : new URL(frontmatter.image.url, canonicalURL);
 const websiteSchema = {
@@ -82,6 +83,10 @@ const breadcrumbItems = isBlog ? [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: '音声ブログ', item: Astro.site.origin + '/podcast/' },
       { name: frontmatter.title, item: canonicalURL.toString() }
+    ] : isMaterials ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: '資料室', item: canonicalURL.toString() },
+      { name: frontmatter.title, item: canonicalURL.toString() }
     ] : [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: frontmatter.title, item: canonicalURL.toString() }
@@ -143,8 +148,7 @@ const ga4TrackingCode = `
     </ul>
     <p class="mt-0 mb-6 text-right text-sm">📖著者: {frontmatter.author}</p>
     {isPodcast ? null : <img src={frontmatter.image.url} class="w-full max-w-[820px] max-h-[500px] object-cover" alt={frontmatter.image.alt} />}
-{!isPodcast && (minutesRead) &&
-    <div class="timeCount my-6">
+{(isBlog || isMentalHealth || isInfoLiteracy) && <div class="timeCount my-6">
     <span class="timeCountTitle">
     📖 読了時間目安：
     </span>
@@ -154,13 +158,24 @@ const ga4TrackingCode = `
     </div>
   }
     <slot />
+    {!isMaterials && (
     <Sns frontmatter={frontmatter} />
+    )}
     </main>
     </div>
     <StructuredBreadcrumbs items={breadcrumbItems} />
         <Footer />
     </div>
+{isMaterials && (<script is:inline>
+document.getElementById('consent-check').addEventListener('change', function() {
+  document.getElementById('show-content').disabled = !this.checked;
+});
 
+document.getElementById('show-content').addEventListener('click', function() {
+  document.querySelector('.sensitive-notice').style.display = 'none';
+  document.getElementById('sensitive-text').classList.remove('hidden');
+});
+</script>)}
 {isPodcast && <script is:inline>
 // ============================================
 // グローバル変数
