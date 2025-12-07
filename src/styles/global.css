@@ -118,6 +118,12 @@ h2 {
   @apply text-3xl font-bold border-b-[1px] border-[#3c3c3c] p-6 pl-0 mb-6;
 }
 
+#article-body h2 a {
+  color: #f6f891;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+}
+
 h3 {
   color: #bca54f;
   font-weight: 600;
@@ -134,6 +140,65 @@ h4 {
 
 p {
   line-height: 1.8;
+}
+
+blockquote {
+  background: #1c4245;
+  box-sizing: border-box;
+  font-style: italic;
+  padding: 5px 32px 5px 32px;
+  position: relative;
+  border: 3px solid #a8a8a8;
+  box-shadow: 0 0 4px 5px inset #143335;
+  margin: 20px 0;
+}
+
+blockquote:before {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  content: "\f10d";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  background: #695b19;
+  box-shadow: 0 2px 2px rgba(26, 26, 26, 0.14);
+  font-weight: 900;
+}
+blockquote:after {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: -15px;
+  border: none;
+  border-bottom: solid 8px transparent;
+  border-right: solid 15px #433a0b;
+}
+
+#article-body blockquote a {
+  color: #bea436;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+blockquote p {
+  position: relative;
+  padding: 0;
+  margin: 10px 0;
+  z-index: 3;
+  line-height: 1.7;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
 }
 
 .box {
@@ -157,6 +222,10 @@ p {
 #article-body a {
   color: #d9d9d9;
   line-height: 2;
+}
+
+#article-body a:hover {
+  text-decoration: underline;
 }
 
 a.link {
