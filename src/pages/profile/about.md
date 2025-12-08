@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: '私について'
 pubDate: 2025-12-01
-modDate: 2025-12-04
+modDate: 2025-12-09
 description: 'ナオのプロフィールページです。'
 author: 'ナオ'
 image:

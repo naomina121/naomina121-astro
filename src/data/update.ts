@@ -1,5 +1,11 @@
 export const siteUpdates = [
     {
+    date: '2025-12-09',
+    slug: 'about-page-updated',
+    title: 'プロフィールページを更新しました',
+    content: 'プロフィールページにMastodonのサブアカウント情報を追加しました。 各アカウントの用途も記載していますので、ぜひご覧ください。',
+    },
+    {
     date: '2025-12-07',
     slug: 'privacy-policy-note-ga-removed',
     title: 'プライバシーポリシーの注意書きを整理しました',
