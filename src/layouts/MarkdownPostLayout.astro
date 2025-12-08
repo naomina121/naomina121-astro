@@ -26,7 +26,7 @@ const websiteSchema = {
 };
   const siteUrl = "https://naomina121.com";
   let title = frontmatter.title;
-  let pageSchema = {
+  const pageSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": title,
@@ -50,19 +50,24 @@ const websiteSchema = {
       }
     }
   };
-  let infoSchema = {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "itemListElement": siteUpdates.map((update, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "item": {
-        "@type": "CreativeWork",
-        "datePublished": update.date,
-        "name": update.content
-      }
-    }))
-    };
+
+const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
+
+const infoSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": siteUpdates.map((update, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "item": {
+      "@type": "BlogPosting",
+      "headline": update.title,
+      "datePublished": update.date,
+      "description": update.content,
+      "url": `${baseUrl}/updates/${update.slug}`,
+    },
+  })),
+};
 const breadcrumbItems = isBlog ? [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: 'ブログ', item: Astro.site.origin + '/blog/' },

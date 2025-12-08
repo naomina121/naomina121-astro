@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { siteUpdates } from "../../data/update";
+
+export const getStaticPaths = () => {
+  return siteUpdates.map((update) => ({
+    params: { slug: update.slug },
+    props: { update },
+  }));
+};
+
+const { update } = Astro.props;
+const pageTitle = update.title;
+---
+
+<Layout pageTitle={pageTitle}>
+<main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
+  <article>
+    <header>
+      <p>
+        <time datetime={update.date}>{update.date}</time>
+      </p>
+      <h1>{update.title}</h1>
+    </header>
+
+    <div set:html={update.content} />
+
+    <p style="margin-top: 2rem;">
+      <a href="/updates/" class="link">お知らせ一覧に戻る</a>
+    </p>
+  </article>
+</main>
+</Layout>

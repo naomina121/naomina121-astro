@@ -21,15 +21,22 @@ tags: ["プロフィール", "ナオ", "自己紹介"]
 
 ## 基本情報
 
-- 名前: ナオ
-- 別垢：one_2025_（男性口調のジェンダー差別緩和のためのアカウント）
-- 別垢：naomina1201（日常垢アカウント）
-- 別垢：minamiemi2006（英語学習アカウント）
+<ul>
+<li>名前：ナオ</li>
+<li>性別：人間</li>
+<li>メイン垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@naomina121">Mastodon（情報発信アカウント）</a></li>
+<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@naomina1201">Mastodon（日常垢アカウント）</a></li>
+<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@one_2025_">Mastodon（考察・男性口調・ジェンダー配慮）</a></li>
+<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@minamiemi2006">Mastodon（英語学習アカウント）</a></li>
+</ul>
 
 ## 信条・分析データ
 
-- [ナオの信条](/profile/nobody-perfect/)
-- [ナオの分析結果](/profile/nao-analysis/)
+<ul>
+<li><a class="link" href="/profile/nobody-perfect/">ナオの信条</a></li>
+<li><a class="link" href="/profile/nao-analysis/">ナオの分析結果</a></li>
+</ul>
+
 
 
 ## 病歴
@@ -56,15 +63,26 @@ tags: ["プロフィール", "ナオ", "自己紹介"]
 
 ### 個人開発経験
 QiitaやGitHubで公開している個人開発のプロジェクトです。
-- [Qiita](https://qiita.com/naomina121)
-- [GitHub](https://github.com/naomina121)
+
+<ul>
+<li><a  class="link" href="https://qiita.com/naomina121">Qiita</a></li>
+<li><a class="link" href="https://github.com/naomina121">GitHub</a></li>
+</ul>
+
 
 ### NotiionAPI＋Nextjs＋ＴＳブログ
 NotionAPIを活用し、検索機能を実装し、NextJSのISRを活用したブログを作成、公開しています。
-- [プログラミングサイト](https://dev.naomina121.com/)
+
+<ul>
+<li><a class="link" href="https://dev.naomina121.com/">プログラミングサイト</a></li>
+</ul>
+
 
 
 ### Notionプラグイン設計者
-- [Notionプラグイン](https://marketplace.visualstudio.com/items?itemName=naomina121.vscodetonotion)
+
+<ul>
+<li><a class="link" href="https://marketplace.visualstudio.com/items?itemName=naomina121.vscodetonotion">Notionプラグイン</a></li>
+</ul>
 
 

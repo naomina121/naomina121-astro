@@ -2,6 +2,9 @@
 const pageTitle = "NAOMINA121";
 import Layout from "../layouts/Layout.astro";
 import { siteUpdates } from "../data/update";
+const latestUpdates = [...siteUpdates]
+  .sort((a, b) => b.date.localeCompare(a.date)) // 新しい順
+  .slice(0, 3);
 ---
 
 <Layout pageTitle={pageTitle}>
@@ -53,16 +56,28 @@ import { siteUpdates } from "../data/update";
 </table>
 
 <h2>お知らせ</h2>
-<p></p>
 <div class="box">
-<h3 style="font-size:18px; border-bottom:1px solid #727272; margin:0 0 10px 0px; padding: 0px 0px 10px;">📰更新履歴</h3>
-<p>無理のない更新頻度を目指しているため、記事の更新ペースは、<u class="orange">週に一回の頻度</u>を目指しています。</p>
-<p>記事の内容に関して、ご質問やご意見がございましたら、<a href="/contact/" class="link">お問い合わせページ</a>からご連絡ください。</p>
-<ul style="margin-top:10px; font-weight:600; border-top:1px solid #727272; padding-top:10px;">
-{siteUpdates.map((update) => (
-    <li key={update.date}><time class="text-sm orange" dateTime={update.date}>{update.date}</time> : <span>{update.content}</span></li>
-))}
-</ul>
+  <h3 style="font-size:18px; border-bottom:1px solid #727272; margin:0 0 10px 0px; padding: 0px 0px 10px;">
+    📰更新履歴
+  </h3>
+  <p>無理のない更新頻度を目指しているため、記事の更新ペースは、<u class="orange">週に一回の頻度</u>を目指しています。</p>
+  <p>記事の内容に関して、ご質問やご意見がございましたら、<a href="/contact/" class="link">お問い合わせページ</a>からご連絡ください。</p>
+
+  <ul style="margin-top:10px; font-weight:600; border-top:1px solid #727272; padding-top:10px;">
+    {latestUpdates.map((update) => (
+      <li class="my-1">
+        <time class="text-sm orange" datetime={update.date}>{update.date}</time>
+        {' : '}
+        <a href={`/updates/${update.slug}`} class="text-[#c9c9c9] hover:underline hover:underline-offset-4">
+          {update.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <p style="margin-top:10px; text-align:right;">
+    <a href="/updates/" class="gold underline">→ お知らせ一覧を見る</a>
+  </p>
 </div>
 
 <h2>応援したいなと思った時に</h2>

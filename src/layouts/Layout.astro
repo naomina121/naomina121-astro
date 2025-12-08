@@ -26,7 +26,7 @@ const websiteSchema = {
   "description": description,
 };
 
-let pageSchema = {
+const pageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": pageTitle,
@@ -35,19 +35,23 @@ let pageSchema = {
     "inLanguage": "ja"
   };
 
-let infoSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": siteUpdates.map((update, index) => ({
+const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
+
+const infoSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": siteUpdates.map((update, index) => ({
     "@type": "ListItem",
     "position": index + 1,
     "item": {
-      "@type": "CreativeWork",
+      "@type": "BlogPosting",
+      "headline": update.title,
       "datePublished": update.date,
-      "name": update.content
-    }
-  }))
-  };
+      "description": update.content,
+      "url": `${baseUrl}/updates/${update.slug}`,
+    },
+  })),
+};
 
 const breadcrumbItems = isIndex
   ? [{ name: 'ホーム', item: Astro.site.origin + '/' }]
