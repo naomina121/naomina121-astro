@@ -13,8 +13,12 @@
   import * as tocbot from 'tocbot'
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    const h2s = document.querySelectorAll('h2');
-    const h3s = document.querySelectorAll('h3');
+    const h2s = document.querySelectorAll('#article-body h2');
+if(h2s.length === 0) {
+    document.querySelector('.toc-nav-main').style.display = 'none';
+    return;
+}
+    const h3s = document.querySelectorAll('#article-body h3');
     let h2Count = 1;
     let h3Count = 1;
 

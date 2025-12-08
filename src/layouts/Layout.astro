@@ -12,6 +12,8 @@ const isMentalHealth = Astro.url.pathname === ("/mental-health/");
 const isInfoLiteracy = Astro.url.pathname === ("/info-literacy/");
 const isBlog = Astro.url.pathname === ("/blog/");
 const isPodcast = Astro.url.pathname === ("/podcast/");
+const isUpdates = Astro.url.pathname === ("/updates/");
+const isUpdatesDetail = Astro.url.pathname.startsWith("/updates/");
 const title = isIndex ? "NAOMINA121" : pageTitle + " | NAOMINA121";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
 const ogpImageURL = isMentalHealth ? new URL('/images/mental-health.jpg', canonicalURL) : isInfoLiteracy ? new URL('/images/information-literacy.jpg', canonicalURL) : isBlog ? new URL('/images/blog2.webp', canonicalURL) : isPodcast ? new URL('/images/podcast.jpg', canonicalURL) : isPodcast ? new URL('/images/obsiedian_onsei.jpg', canonicalURL) : new URL('/images/nao2.jpg', canonicalURL);
@@ -55,6 +57,17 @@ const infoSchema = {
 
 const breadcrumbItems = isIndex
   ? [{ name: 'ホーム', item: Astro.site.origin + '/' }]
+  : isUpdates
+  ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'お知らせ一覧', item: Astro.site.origin + '/updates/' },
+  ]
+  : isUpdatesDetail
+  ? [
+      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'お知らせ一覧', item: Astro.site.origin + '/updates/' },
+      { name: pageTitle, item: canonicalURL.toString() }
+    ]
   : [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: pageTitle, item: canonicalURL.toString() }
