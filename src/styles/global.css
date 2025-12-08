@@ -180,10 +180,17 @@ blockquote:after {
   border-right: solid 15px #433a0b;
 }
 
+#article-body blockquote p a,
 #article-body blockquote a {
   color: #bea436;
   text-decoration: underline;
   font-weight: 600;
+}
+
+#article-body blockquote p a:hover,
+#article-body blockquote a:hover {
+  color: #bca436;
+  text-decoration: none;
 }
 
 blockquote p {
