@@ -227,14 +227,14 @@ blockquote cite {
 #article-body a:hover {
   text-decoration: underline;
 }
-
 a.link,
+#article-body a.link,
 #article-body p a {
   color: #67abd3;
   text-decoration: underline;
 }
-
-.link:hover,
+a.link:hover,
+#article-body a.link:hover,
 #article-body p a:hover {
   text-decoration: none;
   color: #67abd3;
