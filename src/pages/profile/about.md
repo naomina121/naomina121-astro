@@ -24,10 +24,10 @@ tags: ["プロフィール", "ナオ", "自己紹介"]
 <ul>
 <li>名前：ナオ</li>
 <li>性別：人間</li>
-<li>メイン垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@naomina121">Mastodon（情報発信アカウント）</a></li>
-<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@naomina1201">Mastodon（日常垢アカウント）</a></li>
-<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@one_2025_">Mastodon（考察・男性口調・ジェンダー配慮）</a></li>
-<li>サブ垢 : <a class="link" rel="me" href="https://mastodon.naomina121.com/@minamiemi2006">Mastodon（英語学習アカウント）</a></li>
+<li>メイン垢 : <a class="link" target="_blank" rel="me" href="https://mastodon.naomina121.com/@naomina121">Mastodon（情報発信アカウント）</a></li>
+<li>サブ垢 : <a class="link" target="_blank" rel="me" href="https://mastodon.naomina121.com/@naomina1201">Mastodon（日常垢アカウント）</a></li>
+<li>サブ垢 : <a class="link" target="_blank" rel="me" href="https://mastodon.naomina121.com/@one_2025_">Mastodon（考察・男性口調・ジェンダー配慮）</a></li>
+<li>サブ垢 : <a class="link" target="_blank" rel="me" href="https://mastodon.naomina121.com/@minamiemi2006">Mastodon（英語学習アカウント）</a></li>
 </ul>
 
 ## 信条・分析データ
