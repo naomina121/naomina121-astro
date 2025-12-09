@@ -56,9 +56,18 @@ const infoSchema = {
     "item": {
       "@type": "BlogPosting",
       "headline": update.title,
-      "datePublished": update.date,
+      "datePublished":new Date(update.date).toISOString(),
       "description": update.content,
       "url": `${baseUrl}/updates/${update.slug}`,
+      "author": {
+        "@type": "Person",
+        "name": "ナオ",
+        "url": "https://naomina121.com/profile/about"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/images/nao2.jpg`
+      },
     },
   })),
 };
