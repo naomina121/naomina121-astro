@@ -2,11 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import MainToc from "../components/MainToc.astro";
 const pageTitle = "メンタルヘルス";
+const PubDate = "2025-12-01";
+const ModDate = "2025-12-10";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
 <main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
 <h1>メンタルヘルス</h1>
+    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
+        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
+        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
+    </ul>
 <img class="profile-picture max-w-full h-auto" src="/images/mental-health.jpg" alt="メンタルヘルス" />
 <h2>目次</h2>
 <MainToc />
@@ -17,20 +23,20 @@ const pageTitle = "メンタルヘルス";
 </p>
 <h2>記事</h2>
 <h3>考えからメンタルヘルスを鍛える</h3>
-タグ：<a href="/tags/考え" class="link">考え</a>
+<span>タグ：<a href="/tags/考え" class="link">考え</a></span>
 <ul class="menu-list">
 <li><a href="/mental-health/sns-sos">SNSに現れる見えないSOS</a></li>
 <li><a href="/mental-health/sns-sos2">ありきたりの文章に見えて実は裏がある文章 -SOSに現れる見えないSOS-</a></li>
 </ul>
 <h3>体験談</h3>
-タグ：<a href="/tags/体験談" class="link">体験談</a>
+<span>タグ：<a href="/tags/体験談" class="link">体験談</a></span>
 <ul class="menu-list">
 <li><a href="/mental-health/schizophrenia">統合失調症当事者が見た妄想の世界（ログ付き）</a></li>
 <li><a href="/mental-health/journaling">瞑想が面倒？書く瞑想を私の体験談として紹介します！</a></li>
 <li><a href="/mental-health/vps-ghost">保護入院中の状況の中、VPS立ててGhostと戦った患者の記録</a></li>
 </ul>
 <h3>ミニコラム</h3>
-タグ：<a href="/tags/ミニコラム" class="link">ミニコラム</a>
+<span>タグ：<a href="/tags/ミニコラム" class="link">ミニコラム</a></span>
 <ul class="menu-list">
 <li><a href="/mental-health/serotonin">【悲報】セロトニン「ちょっと冬だから、休むわ」</a></li>
 </ul>

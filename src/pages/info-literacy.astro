@@ -2,11 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import MainToc from "../components/MainToc.astro";
 const pageTitle = "情報リテラシー";
+const PubDate = "2025-12-01";
+const ModDate = "2025-12-10";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
 <main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
 <h1>情報リテラシー</h1>
+    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
+        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
+        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
+    </ul>
 <img class="profile-picture max-w-full h-auto" src="/images/information-literacy.jpg" alt="情報リテラシー" />
 <h2>目次</h2>
 <MainToc />
@@ -15,14 +21,14 @@ const pageTitle = "情報リテラシー";
 <h2>記事</h2>
 
 <h3>メタ認知から考える情報リテラシー</h3>
-タグ：<a href="/tags/メタ認知" class="link">メタ認知</a>
+<span>タグ：<a href="/tags/メタ認知" class="link">メタ認知</a></span>
 <ul class="menu-list">
 <li><a href="/info-literacy/metacognition-mental-health">「ちょっと待って、それ本当？」情報に流されない自分を育てる「メタ認知」の話</a></li>
 </ul>
 
 
 <h3>考えから情報リテラシーを身に着ける</h3>
-タグ：<a href="/tags/考え方" class="link">考え方</a>
+<span>タグ：<a href="/tags/考え方" class="link">考え方</a></span>
 <ul class="menu-list">
 <li><a href="/info-literacy/survival-theory">社会的弱者生存論-なぜ生存権が必要なのか-</a></li>
 <li><a href="/info-literacy/thought">考えをやめた、人間に未来はない</a></li>

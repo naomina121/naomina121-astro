@@ -148,7 +148,7 @@ const ga4TrackingCode = `
     <h1> {frontmatter.title}</h1>
     <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
         {frontmatter.tags.map((item:string) => <li><a class="tag" href={`/tags/${item}`}>#{item}</a></li>)}
-        <li class="mb-2 text-sm">📰投稿日: {frontmatter.pubDate.toString().slice(0,10)}</li>
+        <li class="mb-2 text-sm">📰作成日: {frontmatter.pubDate.toString().slice(0,10)}</li>
         {frontmatter.modDate && <li class="mb-2 text-sm">✏️最終更新日: {frontmatter.modDate.toString().slice(0,10)}</li>}
     </ul>
     <p class="mt-0 mb-6 text-right text-sm">📖著者: {frontmatter.author}</p>

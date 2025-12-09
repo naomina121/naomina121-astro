@@ -5,7 +5,7 @@ import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 import { siteUpdates } from "../data/update";
-const { pageTitle } = Astro.props;
+const { pageTitle, PubDate, ModDate } = Astro.props;
 const isIndex = Astro.url.pathname === "/";
 const isThanks = Astro.url.pathname === "/thanks/";
 const isMentalHealth = Astro.url.pathname === ("/mental-health/");
@@ -36,9 +36,15 @@ const pageSchema = {
     "name": pageTitle,
     "description": pageTitle + "のページです。",
     "url": canonicalURL.toString(),
-    "inLanguage": "ja"
+    "inLanguage": "ja",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "naomina121",
+      "url": "https://naomina121.com"
+    },
+    ...(PubDate && { "datePublished": PubDate }),
+    ...(ModDate && { "dateModified": ModDate }),
   };
-
 const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
 
 const infoSchema = {

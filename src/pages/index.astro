@@ -5,9 +5,11 @@ import { siteUpdates } from "../data/update";
 const latestUpdates = [...siteUpdates]
   .sort((a, b) => b.date.localeCompare(a.date)) // 新しい順
   .slice(0, 3);
+const PubDate = "2025-12-01";
+const ModDate = "2025-12-10";
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
 <main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
 <img class="profile-picture max-w-full h-auto" src="/images/nao2.jpg" alt="Nobody Is Perfect" />
 <h2>はじめに</h2>

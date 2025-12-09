@@ -394,6 +394,43 @@ table {
   border: 1px solid #3c3c3c;
 }
 
+#article-body .atention-box {
+  padding: 40px;
+  position: relative;
+  margin: 30px 0;
+  z-index: 1;
+}
+
+#article-body .atention-box::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: calc(100% - 20px);
+  max-height: calc(100% - 20px);
+  width: 100%;
+  height: 100%;
+  background-color: #292929;
+  z-index: -1;
+}
+
+#article-body .atention-box::before {
+  background: repeating-linear-gradient(
+    -45deg,
+    #997a36,
+    #734f03 10px,
+    #181818 0,
+    #181818 20px
+  );
+  z-index: -1;
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 ul,
 ol {
   text-decoration: none;
