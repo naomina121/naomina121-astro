@@ -252,10 +252,7 @@ color: #ba9b36;
 .account__avatar, .account__avatar img{
 border-radius:0px;}
 
-.edit-indicator__content p, .reply-indicator__content p, .status__content p{
-font-size:14px;
-color:#dddddd;
-}
+.edit-indicator__content p, .reply-indicator__content p, .status__content p{font-size:14px;color:#dddddd;line-height: 1.8;}
 .icon-button{
 color:#a9a9a9;}
 
@@ -356,7 +353,6 @@ content: 'NAOMINA121';
 .logo {
     visibility: hidden;
 }
-
 .tabs-bar__wrapper{
 padding-top:0px;
 }

@@ -180,6 +180,29 @@ blockquote:after {
   border-right: solid 15px #433a0b;
 }
 
+#article-body h1 {
+  line-height: 1.7;
+}
+
+#article-body .note {
+  background: #292929;
+  padding: 20px;
+  border: 3px solid #187a81;
+  margin: 20px 0;
+  box-shadow: 0 0 4px 5px inset #212121;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+#article-body ul.list {
+  font-size: 17px;
+  padding: 20px;
+  background: #292929;
+  border: 3px solid #817718;
+  margin: 20px 0;
+  box-shadow: 0 0 4px 5px inset #212121;
+}
+
 #article-body blockquote p a,
 #article-body blockquote a {
   color: #bea436;
@@ -303,7 +326,7 @@ a:hover {
 }
 
 #article-body p {
-  margin: 16px 0;
+  margin: 10px 0;
   font-size: 18px;
   line-height: 2.3;
 }
@@ -439,7 +462,7 @@ p {
 
 .green2 {
   font-weight: 600;
-  color: #28968a;
+  color: #2e9489;
 }
 
 .pink {
@@ -779,4 +802,12 @@ p {
   #article-body p {
     font-size: 16px;
   }
+}
+
+#article-body p img {
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 25px 0;
 }

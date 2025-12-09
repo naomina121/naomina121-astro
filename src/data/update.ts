@@ -1,4 +1,16 @@
 export const siteUpdates = [
+  {
+    date: '2025-12-09',
+    slug: 'vps-ghost-article-published',
+    title: '新記事「保護入院中の状況の中、VPS立ててGhostと戦った患者の記録」を公開しました',
+    content: '精神科の保護入院中にVPSを立ててGhostを運用した体験記を公開しました。メタ認知の観点から技術力を体験談として語っています。',
+  },
+    {
+    date: '2025-12-09',
+    slug: 'metacognition-article-published',
+    title: '新記事「「ちょっと待って、それ本当？」情報に流されない自分を育てる「メタ認知」の話」を公開しました',
+    content: '情報リテラシー向上のための新記事を公開しました。デマに流されないための考え方や、メタ認知の重要性について解説しています。',
+    },
     {
     date: '2025-12-09',
     slug: 'about-page-updated',
