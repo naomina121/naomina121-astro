@@ -1,5 +1,11 @@
 export const siteUpdates = [
   {
+    date: '2025-12-10',
+    slug: 'tags-page-improvements',
+    title: 'タグ一覧ページとタグページのリストを改善しました',
+    content: 'タグ一覧ページと各タグページのリスト表示を改善しました。タグ一覧ページでは利用可能なタグをリスト形式で表示し、各タグページではタイトルに「タグ: 」を追加しました。',
+  },
+  {
     date: '2025-12-09',
     slug: 'vps-ghost-article-published',
     title: '新記事「保護入院中の状況の中、VPS立ててGhostと戦った患者の記録」を公開しました',

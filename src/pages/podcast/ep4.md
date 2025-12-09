@@ -2,9 +2,10 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'どうせ、君は魅力的だからうまくいく'
 pubDate: 2025-12-01
+modDate: 2025-12-09
 description: 'こんにちは、ナオです。今回は、所詮人間はという人の裏側の心理に迫っていきたいと思います。'
 author: 'ナオ'
-tags: ["音声ブログ"]
+tags: ["音声ブログ","雑記"]
 ---
 
 <h2>音声配信</h2>
