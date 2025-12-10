@@ -1,6 +1,12 @@
 export const siteUpdates = [
   {
       date: '2025-12-10',
+      slug: 'contact-form-improvements',
+      title: 'お問い合わせフォームの改善を行いました',
+      content: 'CSSのみ改善変更を行い、デザインを調整しました。また、プライバシーポリシー同意のチェックボックスのスタイルを改善しました。',
+  },
+  {
+      date: '2025-12-10',
       slug: 'structured-data-improvements',
       title: 'プロフィールページにアマゾン著者情報を追加、構造化データを改善しました',
       content: 'プロフィールページにアマゾン著者情報を追加しました。また、構造化データに著者情報を追加しました。',

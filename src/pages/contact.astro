@@ -11,39 +11,37 @@ const ModDate = "2025-12-10";
     <h1 class='text-3xl md:text-4xl font-bold mb-6'>お問い合わせ</h1>
     <div class='card border p-8 bg-[#292929] max-w-4xl mx-auto'>
       <form
-        class='space-y-6'
+        class='contact-form'
         action='https://ssgform.com/s/q0qbVKE3AxfG'
         method='POST'
         id='contact-form'
       >
         <!-- お名前 -->
         <div>
-          <label for='name' class='block text-sm font-medium mb-2'>
+          <label for='name'>
             お名前
-            <span class='text-red-500'>*</span>
+            <span class='required'>*</span>
           </label>
           <input
             type='text'
             id='name'
             name='name'
             required
-            class='bg-white text-gray-900 form-input w-full px-4 py-3 my-4 rounded-lg transition-colors'
             placeholder='山田 太郎'
           />
         </div>
 
         <!-- メールアドレス -->
         <div>
-          <label for='email' class='block text-sm font-medium mb-2'>
+          <label for='email'>
             メールアドレス
-            <span class='text-red-500'>*</span>
+            <span class='required'>*</span>
           </label>
           <input
             type='email'
             id='email'
             name='email'
             required
-            class='bg-white text-gray-900 form-input w-full px-4 py-3 my-4 rounded-lg transition-colors'
             placeholder='example@email.com'
           />
         </div>
@@ -52,17 +50,14 @@ const ModDate = "2025-12-10";
         <div class='text-gray-900'>
           <label
             for='category'
-            style='color:#fff;'
-            class='block text-sm font-medium mb-2'
           >
             お問い合わせ種別
-            <span class='text-red-500'>*</span>
+            <span class='required'>*</span>
           </label>
           <select
             id='category'
             name='category'
             required
-            class='bg-white text-gray-900 form-input w-full px-4 py-3 my-4 rounded-lg transition-colors'
           >
             <option value=''>選択してください</option>
             <option value='general'>一般的なお問い合わせ</option>
@@ -77,62 +72,58 @@ const ModDate = "2025-12-10";
 
         <!-- 件名 -->
         <div>
-          <label for='subject' class='block text-sm font-medium mb-2'>
+          <label for='subject'>
             件名
-            <span class='text-red-500'>*</span>
+            <span class='required'>*</span>
           </label>
           <input
             type='text'
             id='subject'
             name='subject'
             required
-            class='bg-white text-gray-900 form-input w-full px-4 py-3 my-4 rounded-lg transition-colors'
+
             placeholder='お問い合わせの件名を入力してください'
           />
         </div>
 
         <!-- お問い合わせ内容 -->
         <div>
-          <label for='message' class='block text-sm font-medium mb-2'>
+          <label for='message'>
             お問い合わせ内容
-            <span class='text-red-500'>*</span>
+            <span class='required'>*</span>
           </label>
           <textarea
             id='message'
             name='message'
             rows='6'
             required
-            class='bg-white text-gray-900 form-input w-full px-4 py-3 my-4 rounded-lg transition-colors resize-none'
+            class=' resize-none'
             placeholder='お問い合わせ内容を詳しくご記入ください'
           ></textarea>
         </div>
 
         <!-- プライバシーポリシー同意 -->
-        <div class='flex items-center text-xl justify-center'>
+        <div class='checkbox-group'>
           <input
             type='checkbox'
             id='privacy'
             name='privacy'
             required
-            class='mt-1 mr-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cheked:bg-blue-600'
           />
           <label
             for='privacy'
-            class='text-lg'
-            style='color: var(--text-secondary)'
           >
             <a
               href='http://naomina121.com/privacy/'
-              class='underline'
               target='_blank'
-              style='color:#edf5a9;'
+              rel='noopener noreferrer'
             >プライバシーポリシー</a>に同意します
           </label>
         </div>
 
         <!-- 送信ボタン -->
-        <div class='pt-4'>
-            <button class="g-recaptcha bg-gray-700 hover:bg-gray-600 text-white w-full py-4 rounded-lg font-medium text-lg"
+        <div>
+          <button
           data-sitekey="6LcE6SAsAAAAAHgYf10hU50lPB4sRPZekAkD2XZo"
           data-callback="onSubmit"
           data-action="submit">送信する</button>

@@ -143,6 +143,112 @@ p {
   line-height: 1.8;
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form label {
+  color: #b8b8b8;
+  font-size: 15px;
+  color: #dfdfdf;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form label .required {
+  color: #eb795d;
+  margin-left: 4px;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3b3a3a;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #8a7d26;
+  font-size: 16px;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.contact-form select option {
+  background-color: #1a1a1a;
+  color: #8a7d26;
+}
+
+.contact-form select:focus option {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3b3a3a;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #8a7d26;
+  font-size: 16px;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.2) inset;
+}
+.contact-form .checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contact-form .checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.contact-form .checkbox-group label {
+  font-weight: 400;
+  color: #d8d8d8;
+}
+
+.contact-form .checkbox-group a {
+  color: #67abd3;
+  text-decoration: underline;
+}
+
+.contact-form .checkbox-group a:hover {
+  text-decoration: none;
+}
+
+.contact-form button {
+  background-color: #6d6026;
+  border: 3px solid #222;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4) inset;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+.contact-form ::placeholder {
+  font-size: 16px;
+  color: #746500;
+  text-shadow: 0px 0px 0px #8b731b4a;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3b3a3a;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #c4c4c4;
+  font-size: 16px;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
 blockquote {
   background: #1c4245;
   box-sizing: border-box;
