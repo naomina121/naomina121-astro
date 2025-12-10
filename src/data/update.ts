@@ -1,5 +1,11 @@
 export const siteUpdates = [
   {
+      date: '2025-12-10',
+      slug: 'structured-data-improvements',
+      title: 'プロフィールページにアマゾン著者情報を追加、構造化データを改善しました',
+      content: 'プロフィールページにアマゾン著者情報を追加しました。また、構造化データに著者情報を追加しました。',
+  }
+  ,{
     date: '2025-12-10',
     slug: 'article-tweaks',
     title: '記事の微調整をいたしました',
