@@ -11,6 +11,7 @@ const { frontmatter } = Astro.props;
 const{ minutesRead } = Astro.props.frontmatter;
 const isPodcast = Astro.url.pathname.startsWith("/podcast/");
 const isProfile = Astro.url.pathname.startsWith("/profile/");
+const isAbout = Astro.url.pathname === "/profile/about/";
 const isBlog = Astro.url.pathname.startsWith("/blog/");
 const isMentalHealth = Astro.url.pathname.startsWith("/mental-health/");
 const isInfoLiteracy = Astro.url.pathname.startsWith("/info-literacy/");
@@ -52,6 +53,18 @@ const websiteSchema = {
   };
 
 const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
+
+const bookSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Naomi Hashimoto",
+  "alternateName": "naomina121",
+  "url": "https://naomina121.com/",
+  "sameAs": [
+    "https://www.amazon.co.jp/stores/naomina121/author/B0FWB5GP5G"
+  ],
+  "jobTitle": "Author"
+};
 
 const infoSchema = {
   "@context": "https://schema.org",
@@ -133,6 +146,9 @@ const ga4TrackingCode = `
     <meta name="twitter:description" content={frontmatter.description}>
     <meta name="twitter:image" content={ogpImageURL.toString()}>
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    {isAbout && (
+      <script type="application/ld+json" set:html={JSON.stringify(bookSchema)} />
+    )}
     {pageSchema && (
       <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
     )}

@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: '私について'
 pubDate: 2025-12-01
-modDate: 2025-12-09
+modDate: 2025-12-10
 description: 'ナオのプロフィールページです。'
 author: 'ナオ'
 image:
@@ -37,8 +37,6 @@ tags: ["プロフィール", "ナオ", "自己紹介"]
 <li><a class="link" href="/profile/nao-analysis/">ナオの分析結果</a></li>
 </ul>
 
-
-
 ## 病歴
 
 - 統合失調感情障害
@@ -53,6 +51,13 @@ tags: ["プロフィール", "ナオ", "自己紹介"]
 - 文章制作
 - 考察
 - 動画制作
+
+## 著者ページ
+
+<ul>
+<li><a class="link" href="https://www.amazon.co.jp/stores/naomina121/author/B0FWB5GP5G" target="_blank" rel="noopener">Amazon著者ページ</a></li>
+</ul>
+
 
 ## 職歴やスキル
 
