@@ -1,9 +1,9 @@
 ---
 const isIndex = Astro.url.pathname === "/";
 const isProfile = Astro.url.pathname.startsWith("/profile/");
-const isAbout = Astro.url.pathname === "/profile/about";
-const isNobodyPerfect = Astro.url.pathname === "/profile/nobody-perfect";
-const isNaoAnalysis = Astro.url.pathname === "/profile/nao-analysis";
+const isAbout = Astro.url.pathname.startsWith("/profile/about");
+const isNobodyPerfect = Astro.url.pathname.startsWith("/profile/nobody-perfect");
+const isNaoAnalysis = Astro.url.pathname.startsWith("/profile/nao-analysis");
 import Toc from '@components/Toc.astro';
 ---
 <aside class="w-[250px] mt-0 pr-8">
