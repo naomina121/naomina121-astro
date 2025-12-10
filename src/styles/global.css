@@ -79,12 +79,14 @@ aside {
   position: relative;
 }
 
-.nav-links li a {
+.nav-links li a,
+.nav-links li .current {
   position: relative;
   padding-left: 15px;
 }
 
-.nav-links li a::before {
+.nav-links li a::before,
+.nav-links li .current::before {
   content: "〉";
   position: absolute;
   width: 0px;
@@ -95,6 +97,11 @@ aside {
   font-weight: 600;
   color: #bca54f;
   transition: width 0.3s;
+}
+
+.nav-links li .current {
+  color: #a6913e;
+  font-weight: 700;
 }
 
 .nav-links li a:hover {
@@ -499,6 +506,7 @@ table {
   margin: 20px 0;
   background: #292929;
   border: 1px solid #3c3c3c;
+  font-size: 14px;
 }
 
 #article-body .atention-box {

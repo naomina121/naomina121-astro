@@ -1,6 +1,9 @@
 ---
 const isIndex = Astro.url.pathname === "/";
 const isProfile = Astro.url.pathname.startsWith("/profile/");
+const isAbout = Astro.url.pathname === "/profile/about";
+const isNobodyPerfect = Astro.url.pathname === "/profile/nobody-perfect";
+const isNaoAnalysis = Astro.url.pathname === "/profile/nao-analysis";
 import Toc from '@components/Toc.astro';
 ---
 <aside class="w-[250px] mt-0 pr-8">
@@ -10,9 +13,12 @@ import Toc from '@components/Toc.astro';
     <ul class="nav-links">
         <li><a href="/profile/about">プロフィール</a>
 {isProfile && (<ul class="profile-submenu ml-4 mt-2">
-    <li><a href="/profile/about">私について</a></li>
-    <li><a href="/profile/nobody-perfect">完璧な人間なんていない</a></li>
-    <li><a href="/profile/nao-analysis">ナオの分析結果</a></li>
+    {isAbout && (<li><span class="current">私について</span></li>)}
+    {!isAbout && (<li><a href="/profile/about">私について</a></li>)}
+    {isNobodyPerfect && (<li><span class="current">完璧な人間なんていない</span></li>)}
+    {!isNobodyPerfect && (<li><a href="/profile/nobody-perfect">完璧な人間なんていない</a></li>)}
+    {isNaoAnalysis && (<li><span class="current">ナオの分析結果</span></li>)}
+    {!isNaoAnalysis && (<li><a href="/profile/nao-analysis">ナオの分析結果</a></li>)}
     </ul>)}
         </li>
         <li><a href="/mental-health/">メンタルヘルス</a></li>
