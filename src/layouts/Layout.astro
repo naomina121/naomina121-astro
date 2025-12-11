@@ -149,7 +149,10 @@ const ga4TrackingCode = `
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href={canonicalURL.toString()} />
     <link rel="alternate" hreflang="ja" href={canonicalURL.toString()} />
+    {isPodcast ? null :
+    isMaterials ? null :
     <link rel="alternate" hreflang="en" href={enURL.toString()} />
+    }
     <link rel="alternate" hreflang="x-default" href={canonicalURL.toString()} />
     <meta name="generator" content={Astro.generator} />
     <title>{isIndex ? pageTitle : `${pageTitle} | NAOMINA121`}</title>
