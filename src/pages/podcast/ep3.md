@@ -1,1026 +1,1025 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/Podcast.astro
 title: '【※これは妄想です】ブログ×音声配信で最強の集客導線を作ってみた話（※まだ何も始まってません）'
 pubDate: 2025-12-01
-modDate: 2025-12-09
+modDate: 2025-12-12
 description: 'こんにちは、ナオです。今回は、妄想だけで、自分のメディアコンテンツに集客できる構想を組み込んでみました。全くの初心者なのですが、さもベテランかのようのに振舞っています。'
 author: 'ナオ'
 tags: ["音声ブログ", "集客導線","雑記"]
+type: 'podcast-episode'
+PodcastSeriesUrl: 'https://www.youtube.com/@naomina121_blog/podcasts'
+seriesTitle: 'ナオの音声ブログ'
+episodeNumber: 3
+duration: 'PT11M41S'
+media:
+  platform: 'YouTube'
+  youtubeId: '_0T9NCq87Y0'
+chapters:
+  - time: '00:00'
+    title: '今日の配信は"ただの妄想"です'
+  - time: '00:53'
+    title: '発信って、なぜ続かないのでしょうか？'
+  - time: '02:54'
+    title: '音声とブログ、それぞれの良さとは？'
+  - time: '04:52'
+    title: 'noteと個人ブログの使い分けとは？'
+  - time: '07:37'
+    title: 'SNSで拡散と交流を活性化する方法'
+  - time: '08:08'
+    title: '更新頻度をどうするかという問題'
+  - time: '09:08'
+    title: '最強集客導線の構想設計図'
+  - time: '10:52'
+    title: 'まとめ： 妄想を語ってみただけです'
+
+transcriptText:
+- time: '00:00'
+  text: 'はい、始まりました。'
+
+- time: '00:02'
+  text: '妄想戦略ラジオのお時間です。'
+
+- time: '00:04'
+  text: 'パーソナリティは、'
+
+- time: '00:05'
+  text: 'アフェリエイトで収益ゼロ歴ゼロ'
+
+- time: '00:07'
+  text: 'か月の全くやる気があるのかわから'
+
+- time: '00:10'
+  text: 'ないナオがお送りします。'
+
+- time: '00:12'
+  text: 'というわけで、'
+
+- time: '00:13'
+  text: '今日はまだ何も始まってないのに'
+
+- time: '00:15'
+  text: '全部アフェリエイトを設計してみた'
+
+- time: '00:17'
+  text: 'というお話をお届けし'
+
+- time: '00:18'
+  text: 'たいと思います。'
+
+- time: '00:20'
+  text: '果たしてこの話に説得力はある'
+
+- time: '00:22'
+  text: 'のかという疑問はさておき、'
+
+- time: '00:24'
+  text: 'まして'
+
+- time: '00:25'
+  text: '最近考えてみたんですけど、'
+
+- time: '00:27'
+  text: '特にアフェリエイトを始めた方ってどう'
+
+- time: '00:29'
+  text: 'やって集客すればいいのだろうと'
+
+- time: '00:31'
+  text: 'いう壁に使っていらっしゃる方も'
+
+- time: '00:33'
+  text: '多いのではないのでしょうか。'
+
+- time: '00:34'
+  text: 'これをなんかいい感じに勝手に妄想'
+
+- time: '00:38'
+  text: 'してこうすればいいのかなーって'
+
+- time: '00:40'
+  text: 'いう感じのあの全く妄想だけで実践'
+
+- time: '00:43'
+  text: 'してないというただそれだけの話'
+
+- time: '00:45'
+  text: 'でございます。よろしければ、'
+
+- time: '00:47'
+  text: '最後までお聞きください。'
+
+- time: '00:48'
+  text: 'とは言っても'
+
+- time: '00:51'
+  text: 'あくまで妄想ですまず、'
+
+- time: '00:53'
+  text: '最初に考えたのが発信が続かないと'
+
+- time: '00:56'
+  text: 'いう方が非常に多いという'
+
+- time: '00:57'
+  text: 'ことなんですね。'
+
+- time: '00:58'
+  text: 'アフェリエイトをされる方っていうの'
+
+- time: '01:00'
+  text: 'は始めた時はよしやるぞ'
+
+- time: '01:03'
+  text: 'ってなるんですけど、'
+
+- time: '01:05'
+  text: '1年ぐらいになると3割ぐらいしか'
+
+- time: '01:07'
+  text: '継続している人がいなく'
+
+- time: '01:09'
+  text: 'て7割方がですね、'
+
+- time: '01:11'
+  text: '挫折して辞めてしまうということ'
+
+- time: '01:13'
+  text: 'が多いらしいです。ちなみに、'
+
+- time: '01:15'
+  text: '辞めた理由は収益がなかなか済ま'
+
+- time: '01:19'
+  text: 'ないっていうことがあげられる'
+
+- time: '01:20'
+  text: 'っていうことなんですけど、'
+
+- time: '01:22'
+  text: '実はアフィリエイトの収益化が身を'
+
+- time: '01:25'
+  text: '結ぶのが半年から1年とされていて'
+
+- time: '01:29'
+  text: '場合によってはそれ以上かかる'
+
+- time: '01:30'
+  text: '場合もあるんですけど、'
+
+- time: '01:33'
+  text: 'なかなか結果が身を結ばないって'
+
+- time: '01:36'
+  text: 'いうことで挫折してやめるっていう'
+
+- time: '01:38'
+  text: 'ことが大半だそうです。しかし、'
+
+- time: '01:41'
+  text: 'しかしですよ。'
+
+- time: '01:42'
+  text: 'ここは妄想戦略ラジオです。'
+
+- time: '01:45'
+  text: '私は考えました。'
+
+- time: '01:47'
+  text: 'これは集客の問題だな。'
+
+- time: '01:50'
+  text: 'そう集客をすればものずと収益が'
+
+- time: '01:55'
+  text: '見込めるのではないか。つまり、'
+
+- time: '01:58'
+  text: 'ファンを獲得してファンから商品を'
+
+- time: '02:01'
+  text: '購入してもらえれば収益化は達成'
+
+- time: '02:04'
+  text: 'するのではないかということです'
+
+- time: '02:06'
+  text: 'ね。なので、最初のうちはですね、'
+
+- time: '02:09'
+  text: 'ブログを書いても誰にも見てもらえ'
+
+- time: '02:11'
+  text: 'ないSNで発信しても反応がない'
+
+- time: '02:14'
+  text: '本当に心が折れそうになり'
+
+- time: '02:16'
+  text: 'ますよね。ですが、'
+
+- time: '02:17'
+  text: 'いろいろと考えてみました。'
+
+- time: '02:18'
+  text: 'どうすればね、'
+
+- time: '02:19'
+  text: '自分のコンテンツを見つけて'
+
+- time: '02:20'
+  text: 'いただけてファンになってしかも、'
+
+- time: '02:23'
+  text: '購入していただけるのだ。'
+
+- time: '02:25'
+  text: 'やはりね、'
+
+- time: '02:25'
+  text: '購入していただくことによって'
+
+- time: '02:27'
+  text: 'モチベーションは維持できつつ、'
+
+- time: '02:29'
+  text: '私たちは1年以上を私たちって'
+
+- time: '02:32'
+  text: 'いうと私も含まれますね。'
+
+- time: '02:33'
+  text: '私はアフェリエーターではないの'
+
+- time: '02:35'
+  text: 'で、やめておきます。まあ、'
+
+- time: '02:36'
+  text: '1年以上ね、'
+
+- time: '02:39'
+  text: 'アフェリエートを続けられる'
+
+- time: '02:40'
+  text: 'のかというとですね、'
+
+- time: '02:41'
+  text: 'やはり収益が大事なん'
+
+- time: '02:43'
+  text: 'だなということで、'
+
+- time: '02:44'
+  text: '集客を狙って次からは音声とブログ'
+
+- time: '02:48'
+  text: 'の良さについてを話して'
+
+- time: '02:50'
+  text: 'いきたいと思います。'
+
+- time: '02:51'
+  text: '関連性あるのかっていう話なんです'
+
+- time: '02:53'
+  text: 'けど、関連性あると思います。'
+
+- time: '02:56'
+  text: 'では、'
+
+- time: '02:56'
+  text: '音声とブログそれぞれの良'
+
+- time: '02:57'
+  text: 'さについてを語ります。'
+
+- time: '03:00'
+  text: '音声と表情っていうのは実は視覚'
+
+- time: '03:03'
+  text: '情報である表情が優先されて'
+
+- time: '03:05'
+  text: '読み取られてるんですね。だから、'
+
+- time: '03:07'
+  text: '嘘を読み取ろうとして表情を見ると'
+
+- time: '03:09'
+  text: '嘘が読み取れるかっていうと'
+
+- time: '03:11'
+  text: '実は難しかったりします。'
+
+- time: '03:12'
+  text: '表情っていうのはごまかしが'
+
+- time: '03:14'
+  text: '効くんですね。一方で、'
+
+- time: '03:17'
+  text: '声っていうのはごまかしが効か'
+
+- time: '03:18'
+  text: 'ないんですよ。だから、'
+
+- time: '03:19'
+  text: '音声配信の方が逆に言うとごまかし'
+
+- time: '03:22'
+  text: 'がいかない感情が伝わり'
+
+- time: '03:24'
+  text: 'やすいということで、'
+
+- time: '03:25'
+  text: '正確な感情を知るには音声配信の方'
+
+- time: '03:29'
+  text: 'が伝わりやすいというところ'
+
+- time: '03:31'
+  text: 'になります。逆に言えば、'
+
+- time: '03:33'
+  text: 'YouTberとかの顔出し動画で'
+
+- time: '03:35'
+  text: 'すら顔は見ないで音声だけ聞くと、'
+
+- time: '03:40'
+  text: 'なるほど、'
+
+- time: '03:40'
+  text: 'この人はこういうことを言っていた'
+
+- time: '03:42'
+  text: 'のかっていう風になると思います。'
+
+- time: '03:44'
+  text: 'という感じで、'
+
+- time: '03:45'
+  text: '音声だけだと本音が分かり'
+
+- time: '03:48'
+  text: 'やすいということで、'
+
+- time: '03:49'
+  text: '親近感が湧きやすい人となり'
+
+- time: '03:51'
+  text: 'が伝わりやすいんですね。'
+
+- time: '03:53'
+  text: '移動中でも聞けるので、'
+
+- time: '03:54'
+  text: 'ながら聞きができます。ちなみに、'
+
+- time: '03:56'
+  text: '私は乗り物用意なので、'
+
+- time: '03:58'
+  text: 'スマホなどを読んでるとですね、'
+
+- time: '04:03'
+  text: 'とても具合悪くなってしまうので、'
+
+- time: '04:05'
+  text: '音声コンテンツがあると非常に高速'
+
+- time: '04:08'
+  text: 'バスなので、助かっております。'
+
+- time: '04:10'
+  text: 'いつもありがとうと思いながら生き'
+
+- time: '04:11'
+  text: 'ています。ブログはですね、'
+
+- time: '04:14'
+  text: '検索で見つかるっていうこと'
+
+- time: '04:17'
+  text: 'もあるんですけど、'
+
+- time: '04:18'
+  text: '何より良いところ後'
+
+- time: '04:20'
+  text: 'から読み返せる。'
+
+- time: '04:21'
+  text: 'ストップになるってとこなんです'
+
+- time: '04:22'
+  text: 'よ。これ非常に便利ですよね。'
+
+- time: '04:25'
+  text: '音声配信ってなんかこうねいい感じ'
+
+- time: '04:29'
+  text: 'のところに止めてもいやここ聞き'
+
+- time: '04:31'
+  text: 'たいところじゃないんだよねーって'
+
+- time: '04:33'
+  text: '目次があってもいや目次以外の'
+
+- time: '04:35'
+  text: 'ところが聞きたいんだよねっていう'
+
+- time: '04:36'
+  text: '風に探すのすごく大変じゃないです'
+
+- time: '04:38'
+  text: 'か。ブログって文章だから、'
+
+- time: '04:41'
+  text: '検索入れればスーッ'
+
+- time: '04:42'
+  text: 'と出てくるから、'
+
+- time: '04:44'
+  text: 'いい感じだと思うんですけど、'
+
+- time: '04:45'
+  text: 'どちらにも一長一短があってどちら'
+
+- time: '04:48'
+  text: 'も活用していくことによっていい'
+
+- time: '04:50'
+  text: '感じになるのではない'
+
+- time: '04:51'
+  text: 'かと思います。'
+
+- time: '04:52'
+  text: 'noteと個人ブログの使い分けって'
+
+- time: '04:55'
+  text: 'いうのも非常に大事なので、'
+
+- time: '04:57'
+  text: '話してみようかなと思います。'
+
+- time: '04:59'
+  text: 'noteっていうのは普通に文房具屋'
+
+- time: '05:03'
+  text: 'さんで入るノートではなくて、'
+
+- time: '05:04'
+  text: 'SNのnoteってことを指します。'
+
+- time: '05:06'
+  text: 'どういうものなのかっていうと、'
+
+- time: '05:09'
+  text: 'プログみたいな感じで、'
+
+- time: '05:11'
+  text: 'SN機能がついてるいいねとかつい'
+
+- time: '05:13'
+  text: 'てるっていうふうに思い浮かべ'
+
+- time: '05:15'
+  text: 'てみるといいと思います。'
+
+- time: '05:16'
+  text: 'このnoteを活用することの'
+
+- time: '05:18'
+  text: 'メリットは何かっていうと、'
+
+- time: '05:19'
+  text: 'バズを狙うことができるってこと'
+
+- time: '05:21'
+  text: 'で、拡散しやすいんですね。'
+
+- time: '05:23'
+  text: '共感も得られやすい'
+
+- time: '05:26'
+  text: '無料ユーザーでなんと有料記事を'
+
+- time: '05:29'
+  text: '書くことができるという特徴が'
+
+- time: '05:31'
+  text: 'あります。これはすごい。'
+
+- time: '05:32'
+  text: '非常にありがたいですよね。'
+
+- time: '05:34'
+  text: 'ということで、そういった形で、'
+
+- time: '05:36'
+  text: 'noteっていうのは個人'
+
+- time: '05:38'
+  text: 'ブログと違って、'
+
+- time: '05:41'
+  text: 'noteでしか扱えないコンテンツ'
+
+- time: '05:44'
+  text: '専門的なコンテンツを置いておいて'
+
+- time: '05:47'
+  text: '個人ブログに関してはもし'
+
+- time: '05:49'
+  text: 'あるので、あれば、'
+
+- time: '05:50'
+  text: 'まず自分のプランニング'
+
+- time: '05:52'
+  text: 'として活用しつつ、'
+
+- time: '05:55'
+  text: '基本的な情報は個人分さらにもっと'
+
+- time: '05:59'
+  text: '深い知識を置いたいさらに、'
+
+- time: '06:03'
+  text: 'この続きが知りたいとかっていう'
+
+- time: '06:05'
+  text: '情報をnoteに置いておいて有料'
+
+- time: '06:08'
+  text: '記事にしておいて買っていただく'
+
+- time: '06:11'
+  text: 'ファンなら買っていただけるよね。'
+
+- time: '06:13'
+  text: 'みたいな感じで、'
+
+- time: '06:14'
+  text: 'そういう風にすることも可能です。'
+
+- time: '06:17'
+  text: 'ちなみに、'
+
+- time: '06:18'
+  text: 'noteのプレミアムに加入'
+
+- time: '06:20'
+  text: 'すると有料でマガジンを'
+
+- time: '06:26'
+  text: '販売することもできたはずです。'
+
+- time: '06:29'
+  text: 'そこまで行くのは大変かもしれない'
+
+- time: '06:31'
+  text: 'ですけど、noteは色々な形で、'
+
+- time: '06:35'
+  text: '収益化が望めるんですよね。'
+
+- time: '06:37'
+  text: 'Amazonアソシエイト'
+
+- time: '06:38'
+  text: 'も使えるし、逆に言うと、'
+
+- time: '06:39'
+  text: 'Amazonアソシエイト'
+
+- time: '06:40'
+  text: 'しか使えないですよね。'
+
+- time: '06:41'
+  text: '収益に関してはアソシエイトに'
+
+- time: '06:45'
+  text: '関してはアフェリエイト'
+
+- time: '06:46'
+  text: 'に関してはですね。'
+
+- time: '06:48'
+  text: '一方で個人ブログはhatenaブログ'
+
+- time: '06:53'
+  text: 'とかだったら、例えばですよ。'
+
+- time: '06:56'
+  text: 'そのhatenaブログの収益化の規約'
+
+- time: '06:59'
+  text: 'っていうのがあるんですけど、'
+
+- time: '07:00'
+  text: '個人ブログだったら、'
+
+- time: '07:02'
+  text: '自分でレンタルサーバーを借りて'
+
+- time: '07:05'
+  text: '独自ドメインに取っ'
+
+- time: '07:06'
+  text: 'てっていう風に。'
+
+- time: '07:07'
+  text: 'やってすごい手間がかかるけど、'
+
+- time: '07:09'
+  text: 'でも収益化するのは自由だって'
+
+- time: '07:12'
+  text: 'いう風になるということで、'
+
+- time: '07:14'
+  text: 'そういう違いはあるんですけど、'
+
+- time: '07:16'
+  text: 'どちらにも広告が置けるっていうの'
+
+- time: '07:19'
+  text: 'はすごくいいことだと思います。'
+
+- time: '07:21'
+  text: '本当にありがたいですね。'
+
+- time: '07:24'
+  text: 'ということで、'
+
+- time: '07:25'
+  text: 'ここまでまとめますと、'
+
+- time: '07:27'
+  text: 'ブログより少し専門的な内容を'
+
+- time: '07:30'
+  text: 'noteに詰めてブログからさらに'
+
+- time: '07:32'
+  text: 'noteに誘導をかけて収益化を望む'
+
+- time: '07:34'
+  text: 'という流れがいいかもしれません。'
+
+- time: '07:37'
+  text: '最後に、SNです。'
+
+- time: '07:40'
+  text: 'Xやインスタグラムなど、'
+
+- time: '07:42'
+  text: 'こうしたSNというのは情報の拡散'
+
+- time: '07:45'
+  text: 'と交流の最前線となります。'
+
+- time: '07:47'
+  text: 'ブログ更新のお知らせ、'
+
+- time: '07:50'
+  text: '音声配信の告知、'
+
+- time: '07:51'
+  text: 'noteの新着情報、日々'
+
+- time: '07:53'
+  text: 'の気付きなど、'
+
+- time: '07:54'
+  text: 'さまざまな情報を活用して発信して'
+
+- time: '07:58'
+  text: 'いきます。ここでフォロワーの方々'
+
+- time: '08:01'
+  text: 'と積極的に交流し各メディアの'
+
+- time: '08:03'
+  text: '入り口をたくさん作っておくこと'
+
+- time: '08:05'
+  text: 'が大切だと言えるでしょう。'
+
+- time: '08:08'
+  text: 'また、'
+
+- time: '08:09'
+  text: 'どのぐらいの頻度で更新す'
+
+- time: '08:11'
+  text: 'べきかを考えた結果、'
+
+- time: '08:13'
+  text: '非常に悩むと思うんですけれども、'
+
+- time: '08:16'
+  text: '無理なくコンテンツの質が高め'
+
+- time: '08:19'
+  text: 'られるっていうことが最初はで'
+
+- time: '08:21'
+  text: 'も重要になってくるので、'
+
+- time: '08:23'
+  text: 'ストック期でも少ない状態で'
+
+- time: '08:25'
+  text: 'いきなり更新頻度を増やそうとし'
+
+- time: '08:27'
+  text: 'てもネタ切れになってしまって'
+
+- time: '08:29'
+  text: 'コンテンツの質が落ちかねない'
+
+- time: '08:31'
+  text: 'ということもあって、'
+
+- time: '08:33'
+  text: 'SEOの集客としてもすぐには効果'
+
+- time: '08:36'
+  text: 'が見られないという'
+
+- time: '08:36'
+  text: 'こともあるので、'
+
+- time: '08:38'
+  text: '最初のうちは自分の無理ないペース'
+
+- time: '08:41'
+  text: 'で更新頻度を決めるっていうのが'
+
+- time: '08:43'
+  text: 'ありかと思います。ちなみに、'
+
+- time: '08:45'
+  text: 'どうしても忙しいっていう場合は月'
+
+- time: '08:47'
+  text: '1本ぐらいでもいいと思います。'
+
+- time: '08:49'
+  text: '音声ブログ1本ずつそれ以上できる'
+
+- time: '08:55'
+  text: 'よっていう場合はそれ以上増やして'
+
+- time: '08:57'
+  text: 'いってストック記事がある程度'
+
+- time: '09:00'
+  text: 'まとまった時にはさらに更新頻度を'
+
+- time: '09:03'
+  text: '増やしていくというやり方がいいの'
+
+- time: '09:05'
+  text: 'かなというふうに個人'
+
+- time: '09:06'
+  text: '的には思います。'
+
+- time: '09:08'
+  text: '重要なことはこれらのメディアを'
+
+- time: '09:10'
+  text: '個別に運営するのではなく有機的に'
+
+- time: '09:13'
+  text: '連携させることだと'
+
+- time: '09:15'
+  text: '考えております。'
+
+- time: '09:16'
+  text: 'ブログ記事から関連する音声配信へ'
+
+- time: '09:19'
+  text: '誘導する音声配信の説明'
+
+- time: '09:22'
+  text: '欄にブログやnote、'
+
+- time: '09:24'
+  text: 'SNのリンクを掲載するノートの'
+
+- time: '09:26'
+  text: '記事から参考文献としてブログ記事'
+
+- time: '09:28'
+  text: 'へリンクを貼るSNで全ての'
+
+- time: '09:31'
+  text: 'コンテンツを告知・拡散する。'
+
+- time: '09:34'
+  text: 'このようにしてユーザーの方が自然'
+
+- time: '09:36'
+  text: 'と自分のコンテンツを回遊して'
+
+- time: '09:38'
+  text: 'くださるというような流れを'
+
+- time: '09:40'
+  text: '作るのが主になります。'
+
+- time: '09:42'
+  text: 'ここまでをまとめますと、'
+
+- time: '09:44'
+  text: '音声でラジオ的に配信をしたらそれ'
+
+- time: '09:48'
+  text: 'に興味を持った方がブログへ行ける'
+
+- time: '09:51'
+  text: 'ように誘導しつつノートで'
+
+- time: '09:53'
+  text: '専門性を高めて収益化'
+
+- time: '09:55'
+  text: 'さらにSNで拡散と交流を活性化し'
+
+- time: '09:59'
+  text: 'つつブログにアフェリエートや商品'
+
+- time: '10:02'
+  text: '紹介などの動線を用意というような'
+
+- time: '10:05'
+  text: '流れでファンを獲得し収益も得る'
+
+- time: '10:08'
+  text: 'ようになればと考えております。'
+
+- time: '10:12'
+  text: 'いかがでしょうか。'
+
+- time: '10:13'
+  text: 'この設計図なかなか理想的'
+
+- time: '10:15'
+  text: 'ではないでしょうか。'
+
+- time: '10:16'
+  text: 'ということで、'
+
+- time: '10:18'
+  text: '理想的だとは思うんですけど、'
+
+- time: '10:19'
+  text: '実現できるかはさておき、'
+
+- time: '10:21'
+  text: 'としてですね。'
+
+- time: '10:22'
+  text: 'ここまで自信たっぷりにお話しして'
+
+- time: '10:24'
+  text: 'まいりましたが、実はこれですね。'
+
+- time: '10:26'
+  text: '私が必死になって情報収集'
+
+- time: '10:29'
+  text: 'しまくってですね。'
+
+- time: '10:30'
+  text: 'それなりっぽく語るにはどうすれば'
+
+- time: '10:32'
+  text: 'いいんだろうっていうことをです'
+
+- time: '10:33'
+  text: 'ね。真面目に考えた結果、ですね。'
+
+- time: '10:36'
+  text: 'このような形になりました。'
+
+- time: '10:37'
+  text: 'なんか本当はふざける形'
+
+- time: '10:39'
+  text: 'だったんですけど、'
+
+- time: '10:40'
+  text: '本当に本当に真面目に考えた上'
+
+- time: '10:42'
+  text: 'でこのようになりました。'
+
+- time: '10:43'
+  text: '妄想とはいえ一生懸命考えたので、'
+
+- time: '10:46'
+  text: 'もし活用してくださる。'
+
+- time: '10:47'
+  text: '方はですね。'
+
+- time: '10:48'
+  text: '一生懸命活用していただけると幸い'
+
+- time: '10:51'
+  text: 'でございますというわけで、'
+
+- time: '10:53'
+  text: '本日は安全なる妄想の構成でした。'
+
+- time: '10:56'
+  text: 'ですが、'
+
+- time: '10:57'
+  text: 'このような妄想というのもですね。'
+
+- time: '11:00'
+  text: '行動するときに迷わなくなると'
+
+- time: '11:02'
+  text: 'いう効果もありますので、'
+
+- time: '11:03'
+  text: 'もはや妄想じゃなくてですね。'
+
+- time: '11:05'
+  text: '計画じゃんっていう風になりそう'
+
+- time: '11:06'
+  text: 'な感じもするんですけど、'
+
+- time: '11:08'
+  text: '皆様も自分なりの発信ルートをね、'
+
+- time: '11:11'
+  text: 'ぜひ妄想してみてはいかが'
+
+- time: '11:12'
+  text: 'でしょうというわけで、'
+
+- time: '11:14'
+  text: 'この妄想をいつか実行に移す方'
+
+- time: '11:16'
+  text: 'もいらっしゃると思うので、'
+
+- time: '11:19'
+  text: 'ぜひ実行していろいろ試して'
+
+- time: '11:22'
+  text: 'みて成功したらですね。'
+
+- time: '11:23'
+  text: 'ぜひコメントをいただければ'
+
+- time: '11:25'
+  text: 'と思います。ちなみに、'
+
+- time: '11:26'
+  text: '失敗した場合はコメントは'
+
+- time: '11:27'
+  text: '不要ですということで、'
+
+- time: '11:30'
+  text: '私はアフェリーエーターになる'
+
+- time: '11:32'
+  text: 'のか分かりませんが、'
+
+- time: '11:33'
+  text: 'またこうした企画を作ってみ'
+
+- time: '11:35'
+  text: 'たいと思います。では、'
+
+- time: '11:36'
+  text: '本日はこの辺で失礼いたします。'
+
+- time: '11:39'
+  text: 'また次回の配信でお'
+
+- time: '11:41'
+  text: '会いしましょう。'
+
+- time: '11:41'
+  text: 'ありがとうございました。'
 ---
-
-<h2>音声配信</h2>
-
-<p>こんにちは、ナオです。今回は、妄想だけで、自分のメディアコンテンツに集客できる構想を組み込んでみました。全くの初心者なのですが、さもベテランかのようのに振舞っています。</p>
-
-<div id="player" class="youtube-ratio" data-id="_0T9NCq87Y0"></div>
-
-<h2>目次</h2>
-
-<div id="chapter-list">
-00:00 今日の配信は"ただの妄想"です
-00:53 発信って、なぜ続かないのでしょうか？
-02:54 音声とブログ、それぞれの良さとは？
-04:52 noteと個人ブログの使い分けとは？
-07:37 SNSで拡散と交流を活性化する方法
-08:08 更新頻度をどうするかという問題
-09:08 最強集客導線の構想設計図
-10:52 まとめ： 妄想を語ってみただけです
-</div>
-
-<details class="transcript-accordion">
-    <summary>📝 文字起こしを表示</summary>
-    <!-- トランスクリプトコンテナは JavaScript で動的に生成されます -->
-</details>
-
-<div id="transcript-source">
-      <div class="transcript-segment" data-timestamp="00:00">
-  はい、始まりました。
-</div>
-<div class="transcript-segment" data-timestamp="00:02">
-  妄想戦略ラジオのお時間です。
-</div>
-<div class="transcript-segment" data-timestamp="00:04">
-  パーソナリティは、
-</div>
-<div class="transcript-segment" data-timestamp="00:05">
-  アフェリエイトで収益ゼロ歴ゼロ
-</div>
-<div class="transcript-segment" data-timestamp="00:07">
-  か月の全くやる気があるのかわから
-</div>
-<div class="transcript-segment" data-timestamp="00:10">
-  ないナオがお送りします。
-</div>
-<div class="transcript-segment" data-timestamp="00:12">
-  というわけで、
-</div>
-<div class="transcript-segment" data-timestamp="00:13">
-  今日はまだ何も始まってないのに
-</div>
-<div class="transcript-segment" data-timestamp="00:15">
-  全部アフェリエイトを設計してみた
-</div>
-<div class="transcript-segment" data-timestamp="00:17">
-  というお話をお届けし
-</div>
-<div class="transcript-segment" data-timestamp="00:18">
-  たいと思います。
-</div>
-<div class="transcript-segment" data-timestamp="00:20">
-  果たしてこの話に説得力はある
-</div>
-<div class="transcript-segment" data-timestamp="00:22">
-  のかという疑問はさておき、
-</div>
-<div class="transcript-segment" data-timestamp="00:24">
-  まして
-</div>
-<div class="transcript-segment" data-timestamp="00:25">
-  最近考えてみたんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="00:27">
-  特にアフェリエイトを始めた方ってどう
-</div>
-<div class="transcript-segment" data-timestamp="00:29">
-  やって集客すればいいのだろうと
-</div>
-<div class="transcript-segment" data-timestamp="00:31">
-  いう壁に使っていらっしゃる方も
-</div>
-<div class="transcript-segment" data-timestamp="00:33">
-  多いのではないのでしょうか。
-</div>
-<div class="transcript-segment" data-timestamp="00:34">
-  これをなんかいい感じに勝手に妄想
-</div>
-<div class="transcript-segment" data-timestamp="00:38">
-  してこうすればいいのかなーって
-</div>
-<div class="transcript-segment" data-timestamp="00:40">
-  いう感じのあの全く妄想だけで実践
-</div>
-<div class="transcript-segment" data-timestamp="00:43">
-  してないというただそれだけの話
-</div>
-<div class="transcript-segment" data-timestamp="00:45">
-  でございます。よろしければ、
-</div>
-<div class="transcript-segment" data-timestamp="00:47">
-  最後までお聞きください。
-</div>
-<div class="transcript-segment" data-timestamp="00:48">
-  とは言っても
-</div>
-<div class="transcript-segment" data-timestamp="00:51">
-  あくまで妄想ですまず、
-</div>
-<div class="transcript-segment" data-timestamp="00:53">
-  最初に考えたのが発信が続かないと
-</div>
-<div class="transcript-segment" data-timestamp="00:56">
-  いう方が非常に多いという
-</div>
-<div class="transcript-segment" data-timestamp="00:57">
-  ことなんですね。
-</div>
-<div class="transcript-segment" data-timestamp="00:58">
-  アフェリエイトをされる方っていうの
-</div>
-<div class="transcript-segment" data-timestamp="01:00">
-  は始めた時はよしやるぞ
-</div>
-<div class="transcript-segment" data-timestamp="01:03">
-  ってなるんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="01:05">
-  1年ぐらいになると3割ぐらいしか
-</div>
-<div class="transcript-segment" data-timestamp="01:07">
-  継続している人がいなく
-</div>
-<div class="transcript-segment" data-timestamp="01:09">
-  て7割方がですね、
-</div>
-<div class="transcript-segment" data-timestamp="01:11">
-  挫折して辞めてしまうということ
-</div>
-<div class="transcript-segment" data-timestamp="01:13">
-  が多いらしいです。ちなみに、
-</div>
-<div class="transcript-segment" data-timestamp="01:15">
-  辞めた理由は収益がなかなか済ま
-</div>
-<div class="transcript-segment" data-timestamp="01:19">
-  ないっていうことがあげられる
-</div>
-<div class="transcript-segment" data-timestamp="01:20">
-  っていうことなんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="01:22">
-  実はアフィリエイトの収益化が身を
-</div>
-<div class="transcript-segment" data-timestamp="01:25">
-  結ぶのが半年から1年とされていて
-</div>
-<div class="transcript-segment" data-timestamp="01:29">
-  場合によってはそれ以上かかる
-</div>
-<div class="transcript-segment" data-timestamp="01:30">
-  場合もあるんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="01:33">
-  なかなか結果が身を結ばないって
-</div>
-<div class="transcript-segment" data-timestamp="01:36">
-  いうことで挫折してやめるっていう
-</div>
-<div class="transcript-segment" data-timestamp="01:38">
-  ことが大半だそうです。しかし、
-</div>
-<div class="transcript-segment" data-timestamp="01:41">
-  しかしですよ。
-</div>
-<div class="transcript-segment" data-timestamp="01:42">
-  ここは妄想戦略ラジオです。
-</div>
-<div class="transcript-segment" data-timestamp="01:45">
-  私は考えました。
-</div>
-<div class="transcript-segment" data-timestamp="01:47">
-  これは集客の問題だな。
-</div>
-<div class="transcript-segment" data-timestamp="01:50">
-  そう集客をすればものずと収益が
-</div>
-<div class="transcript-segment" data-timestamp="01:55">
-  見込めるのではないか。つまり、
-</div>
-<div class="transcript-segment" data-timestamp="01:58">
-  ファンを獲得してファンから商品を
-</div>
-<div class="transcript-segment" data-timestamp="02:01">
-  購入してもらえれば収益化は達成
-</div>
-<div class="transcript-segment" data-timestamp="02:04">
-  するのではないかということです
-</div>
-<div class="transcript-segment" data-timestamp="02:06">
-  ね。なので、最初のうちはですね、
-</div>
-<div class="transcript-segment" data-timestamp="02:09">
-  ブログを書いても誰にも見てもらえ
-</div>
-<div class="transcript-segment" data-timestamp="02:11">
-  ないSNで発信しても反応がない
-</div>
-<div class="transcript-segment" data-timestamp="02:14">
-  本当に心が折れそうになり
-</div>
-<div class="transcript-segment" data-timestamp="02:16">
-  ますよね。ですが、
-</div>
-<div class="transcript-segment" data-timestamp="02:17">
-  いろいろと考えてみました。
-</div>
-<div class="transcript-segment" data-timestamp="02:18">
-  どうすればね、
-</div>
-<div class="transcript-segment" data-timestamp="02:19">
-  自分のコンテンツを見つけて
-</div>
-<div class="transcript-segment" data-timestamp="02:20">
-  いただけてファンになってしかも、
-</div>
-<div class="transcript-segment" data-timestamp="02:23">
-  購入していただけるのだ。
-</div>
-<div class="transcript-segment" data-timestamp="02:25">
-  やはりね、
-</div>
-<div class="transcript-segment" data-timestamp="02:25">
-  購入していただくことによって
-</div>
-<div class="transcript-segment" data-timestamp="02:27">
-  モチベーションは維持できつつ、
-</div>
-<div class="transcript-segment" data-timestamp="02:29">
-  私たちは1年以上を私たちって
-</div>
-<div class="transcript-segment" data-timestamp="02:32">
-  いうと私も含まれますね。
-</div>
-<div class="transcript-segment" data-timestamp="02:33">
-  私はアフェリエーターではないの
-</div>
-<div class="transcript-segment" data-timestamp="02:35">
-  で、やめておきます。まあ、
-</div>
-<div class="transcript-segment" data-timestamp="02:36">
-  1年以上ね、
-</div>
-<div class="transcript-segment" data-timestamp="02:39">
-  アフェリエートを続けられる
-</div>
-<div class="transcript-segment" data-timestamp="02:40">
-  のかというとですね、
-</div>
-<div class="transcript-segment" data-timestamp="02:41">
-  やはり収益が大事なん
-</div>
-<div class="transcript-segment" data-timestamp="02:43">
-  だなということで、
-</div>
-<div class="transcript-segment" data-timestamp="02:44">
-  集客を狙って次からは音声とブログ
-</div>
-<div class="transcript-segment" data-timestamp="02:48">
-  の良さについてを話して
-</div>
-<div class="transcript-segment" data-timestamp="02:50">
-  いきたいと思います。
-</div>
-<div class="transcript-segment" data-timestamp="02:51">
-  関連性あるのかっていう話なんです
-</div>
-<div class="transcript-segment" data-timestamp="02:53">
-  けど、関連性あると思います。
-</div>
-<div class="transcript-segment" data-timestamp="02:56">
-  では、
-</div>
-<div class="transcript-segment" data-timestamp="02:56">
-  音声とブログそれぞれの良
-</div>
-<div class="transcript-segment" data-timestamp="02:57">
-  さについてを語ります。
-</div>
-<div class="transcript-segment" data-timestamp="03:00">
-  音声と表情っていうのは実は視覚
-</div>
-<div class="transcript-segment" data-timestamp="03:03">
-  情報である表情が優先されて
-</div>
-<div class="transcript-segment" data-timestamp="03:05">
-  読み取られてるんですね。だから、
-</div>
-<div class="transcript-segment" data-timestamp="03:07">
-  嘘を読み取ろうとして表情を見ると
-</div>
-<div class="transcript-segment" data-timestamp="03:09">
-  嘘が読み取れるかっていうと
-</div>
-<div class="transcript-segment" data-timestamp="03:11">
-  実は難しかったりします。
-</div>
-<div class="transcript-segment" data-timestamp="03:12">
-  表情っていうのはごまかしが
-</div>
-<div class="transcript-segment" data-timestamp="03:14">
-  効くんですね。一方で、
-</div>
-<div class="transcript-segment" data-timestamp="03:17">
-  声っていうのはごまかしが効か
-</div>
-<div class="transcript-segment" data-timestamp="03:18">
-  ないんですよ。だから、
-</div>
-<div class="transcript-segment" data-timestamp="03:19">
-  音声配信の方が逆に言うとごまかし
-</div>
-<div class="transcript-segment" data-timestamp="03:22">
-  がいかない感情が伝わり
-</div>
-<div class="transcript-segment" data-timestamp="03:24">
-  やすいということで、
-</div>
-<div class="transcript-segment" data-timestamp="03:25">
-  正確な感情を知るには音声配信の方
-</div>
-<div class="transcript-segment" data-timestamp="03:29">
-  が伝わりやすいというところ
-</div>
-<div class="transcript-segment" data-timestamp="03:31">
-  になります。逆に言えば、
-</div>
-<div class="transcript-segment" data-timestamp="03:33">
-  YouTberとかの顔出し動画で
-</div>
-<div class="transcript-segment" data-timestamp="03:35">
-  すら顔は見ないで音声だけ聞くと、
-</div>
-<div class="transcript-segment" data-timestamp="03:40">
-  なるほど、
-</div>
-<div class="transcript-segment" data-timestamp="03:40">
-  この人はこういうことを言っていた
-</div>
-<div class="transcript-segment" data-timestamp="03:42">
-  のかっていう風になると思います。
-</div>
-<div class="transcript-segment" data-timestamp="03:44">
-  という感じで、
-</div>
-<div class="transcript-segment" data-timestamp="03:45">
-  音声だけだと本音が分かり
-</div>
-<div class="transcript-segment" data-timestamp="03:48">
-  やすいということで、
-</div>
-<div class="transcript-segment" data-timestamp="03:49">
-  親近感が湧きやすい人となり
-</div>
-<div class="transcript-segment" data-timestamp="03:51">
-  が伝わりやすいんですね。
-</div>
-<div class="transcript-segment" data-timestamp="03:53">
-  移動中でも聞けるので、
-</div>
-<div class="transcript-segment" data-timestamp="03:54">
-  ながら聞きができます。ちなみに、
-</div>
-<div class="transcript-segment" data-timestamp="03:56">
-  私は乗り物用意なので、
-</div>
-<div class="transcript-segment" data-timestamp="03:58">
-  スマホなどを読んでるとですね、
-</div>
-<div class="transcript-segment" data-timestamp="04:03">
-  とても具合悪くなってしまうので、
-</div>
-<div class="transcript-segment" data-timestamp="04:05">
-  音声コンテンツがあると非常に高速
-</div>
-<div class="transcript-segment" data-timestamp="04:08">
-  バスなので、助かっております。
-</div>
-<div class="transcript-segment" data-timestamp="04:10">
-  いつもありがとうと思いながら生き
-</div>
-<div class="transcript-segment" data-timestamp="04:11">
-  ています。ブログはですね、
-</div>
-<div class="transcript-segment" data-timestamp="04:14">
-  検索で見つかるっていうこと
-</div>
-<div class="transcript-segment" data-timestamp="04:17">
-  もあるんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="04:18">
-  何より良いところ後
-</div>
-<div class="transcript-segment" data-timestamp="04:20">
-  から読み返せる。
-</div>
-<div class="transcript-segment" data-timestamp="04:21">
-  ストップになるってとこなんです
-</div>
-<div class="transcript-segment" data-timestamp="04:22">
-  よ。これ非常に便利ですよね。
-</div>
-<div class="transcript-segment" data-timestamp="04:25">
-  音声配信ってなんかこうねいい感じ
-</div>
-<div class="transcript-segment" data-timestamp="04:29">
-  のところに止めてもいやここ聞き
-</div>
-<div class="transcript-segment" data-timestamp="04:31">
-  たいところじゃないんだよねーって
-</div>
-<div class="transcript-segment" data-timestamp="04:33">
-  目次があってもいや目次以外の
-</div>
-<div class="transcript-segment" data-timestamp="04:35">
-  ところが聞きたいんだよねっていう
-</div>
-<div class="transcript-segment" data-timestamp="04:36">
-  風に探すのすごく大変じゃないです
-</div>
-<div class="transcript-segment" data-timestamp="04:38">
-  か。ブログって文章だから、
-</div>
-<div class="transcript-segment" data-timestamp="04:41">
-  検索入れればスーッ
-</div>
-<div class="transcript-segment" data-timestamp="04:42">
-  と出てくるから、
-</div>
-<div class="transcript-segment" data-timestamp="04:44">
-  いい感じだと思うんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="04:45">
-  どちらにも一長一短があってどちら
-</div>
-<div class="transcript-segment" data-timestamp="04:48">
-  も活用していくことによっていい
-</div>
-<div class="transcript-segment" data-timestamp="04:50">
-  感じになるのではない
-</div>
-<div class="transcript-segment" data-timestamp="04:51">
-  かと思います。
-</div>
-<div class="transcript-segment" data-timestamp="04:52">
-  noteと個人ブログの使い分けって
-</div>
-<div class="transcript-segment" data-timestamp="04:55">
-  いうのも非常に大事なので、
-</div>
-<div class="transcript-segment" data-timestamp="04:57">
-  話してみようかなと思います。
-</div>
-<div class="transcript-segment" data-timestamp="04:59">
-  noteっていうのは普通に文房具屋
-</div>
-<div class="transcript-segment" data-timestamp="05:03">
-  さんで入るノートではなくて、
-</div>
-<div class="transcript-segment" data-timestamp="05:04">
-  SNのnoteってことを指します。
-</div>
-<div class="transcript-segment" data-timestamp="05:06">
-  どういうものなのかっていうと、
-</div>
-<div class="transcript-segment" data-timestamp="05:09">
-  プログみたいな感じで、
-</div>
-<div class="transcript-segment" data-timestamp="05:11">
-  SN機能がついてるいいねとかつい
-</div>
-<div class="transcript-segment" data-timestamp="05:13">
-  てるっていうふうに思い浮かべ
-</div>
-<div class="transcript-segment" data-timestamp="05:15">
-  てみるといいと思います。
-</div>
-<div class="transcript-segment" data-timestamp="05:16">
-  このnoteを活用することの
-</div>
-<div class="transcript-segment" data-timestamp="05:18">
-  メリットは何かっていうと、
-</div>
-<div class="transcript-segment" data-timestamp="05:19">
-  バズを狙うことができるってこと
-</div>
-<div class="transcript-segment" data-timestamp="05:21">
-  で、拡散しやすいんですね。
-</div>
-<div class="transcript-segment" data-timestamp="05:23">
-  共感も得られやすい
-</div>
-<div class="transcript-segment" data-timestamp="05:26">
-  無料ユーザーでなんと有料記事を
-</div>
-<div class="transcript-segment" data-timestamp="05:29">
-  書くことができるという特徴が
-</div>
-<div class="transcript-segment" data-timestamp="05:31">
-  あります。これはすごい。
-</div>
-<div class="transcript-segment" data-timestamp="05:32">
-  非常にありがたいですよね。
-</div>
-<div class="transcript-segment" data-timestamp="05:34">
-  ということで、そういった形で、
-</div>
-<div class="transcript-segment" data-timestamp="05:36">
-  noteっていうのは個人
-</div>
-<div class="transcript-segment" data-timestamp="05:38">
-  ブログと違って、
-</div>
-<div class="transcript-segment" data-timestamp="05:41">
-  noteでしか扱えないコンテンツ
-</div>
-<div class="transcript-segment" data-timestamp="05:44">
-  専門的なコンテンツを置いておいて
-</div>
-<div class="transcript-segment" data-timestamp="05:47">
-  個人ブログに関してはもし
-</div>
-<div class="transcript-segment" data-timestamp="05:49">
-  あるので、あれば、
-</div>
-<div class="transcript-segment" data-timestamp="05:50">
-  まず自分のプランニング
-</div>
-<div class="transcript-segment" data-timestamp="05:52">
-  として活用しつつ、
-</div>
-<div class="transcript-segment" data-timestamp="05:55">
-  基本的な情報は個人分さらにもっと
-</div>
-<div class="transcript-segment" data-timestamp="05:59">
-  深い知識を置いたいさらに、
-</div>
-<div class="transcript-segment" data-timestamp="06:03">
-  この続きが知りたいとかっていう
-</div>
-<div class="transcript-segment" data-timestamp="06:05">
-  情報をnoteに置いておいて有料
-</div>
-<div class="transcript-segment" data-timestamp="06:08">
-  記事にしておいて買っていただく
-</div>
-<div class="transcript-segment" data-timestamp="06:11">
-  ファンなら買っていただけるよね。
-</div>
-<div class="transcript-segment" data-timestamp="06:13">
-  みたいな感じで、
-</div>
-<div class="transcript-segment" data-timestamp="06:14">
-  そういう風にすることも可能です。
-</div>
-<div class="transcript-segment" data-timestamp="06:17">
-  ちなみに、
-</div>
-<div class="transcript-segment" data-timestamp="06:18">
-  noteのプレミアムに加入
-</div>
-<div class="transcript-segment" data-timestamp="06:20">
-  すると有料でマガジンを
-</div>
-<div class="transcript-segment" data-timestamp="06:26">
-  販売することもできたはずです。
-</div>
-<div class="transcript-segment" data-timestamp="06:29">
-  そこまで行くのは大変かもしれない
-</div>
-<div class="transcript-segment" data-timestamp="06:31">
-  ですけど、noteは色々な形で、
-</div>
-<div class="transcript-segment" data-timestamp="06:35">
-  収益化が望めるんですよね。
-</div>
-<div class="transcript-segment" data-timestamp="06:37">
-  Amazonアソシエイト
-</div>
-<div class="transcript-segment" data-timestamp="06:38">
-  も使えるし、逆に言うと、
-</div>
-<div class="transcript-segment" data-timestamp="06:39">
-  Amazonアソシエイト
-</div>
-<div class="transcript-segment" data-timestamp="06:40">
-  しか使えないですよね。
-</div>
-<div class="transcript-segment" data-timestamp="06:41">
-  収益に関してはアソシエイトに
-</div>
-<div class="transcript-segment" data-timestamp="06:45">
-  関してはアフェリエイト
-</div>
-<div class="transcript-segment" data-timestamp="06:46">
-  に関してはですね。
-</div>
-<div class="transcript-segment" data-timestamp="06:48">
-  一方で個人ブログはhatenaブログ
-</div>
-<div class="transcript-segment" data-timestamp="06:53">
-  とかだったら、例えばですよ。
-</div>
-<div class="transcript-segment" data-timestamp="06:56">
-  そのhatenaブログの収益化の規約
-</div>
-<div class="transcript-segment" data-timestamp="06:59">
-  っていうのがあるんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="07:00">
-  個人ブログだったら、
-</div>
-<div class="transcript-segment" data-timestamp="07:02">
-  自分でレンタルサーバーを借りて
-</div>
-<div class="transcript-segment" data-timestamp="07:05">
-  独自ドメインに取っ
-</div>
-<div class="transcript-segment" data-timestamp="07:06">
-  てっていう風に。
-</div>
-<div class="transcript-segment" data-timestamp="07:07">
-  やってすごい手間がかかるけど、
-</div>
-<div class="transcript-segment" data-timestamp="07:09">
-  でも収益化するのは自由だって
-</div>
-<div class="transcript-segment" data-timestamp="07:12">
-  いう風になるということで、
-</div>
-<div class="transcript-segment" data-timestamp="07:14">
-  そういう違いはあるんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="07:16">
-  どちらにも広告が置けるっていうの
-</div>
-<div class="transcript-segment" data-timestamp="07:19">
-  はすごくいいことだと思います。
-</div>
-<div class="transcript-segment" data-timestamp="07:21">
-  本当にありがたいですね。
-</div>
-<div class="transcript-segment" data-timestamp="07:24">
-  ということで、
-</div>
-<div class="transcript-segment" data-timestamp="07:25">
-  ここまでまとめますと、
-</div>
-<div class="transcript-segment" data-timestamp="07:27">
-  ブログより少し専門的な内容を
-</div>
-<div class="transcript-segment" data-timestamp="07:30">
-  noteに詰めてブログからさらに
-</div>
-<div class="transcript-segment" data-timestamp="07:32">
-  noteに誘導をかけて収益化を望む
-</div>
-<div class="transcript-segment" data-timestamp="07:34">
-  という流れがいいかもしれません。
-</div>
-<div class="transcript-segment" data-timestamp="07:37">
-  最後に、SNです。
-</div>
-<div class="transcript-segment" data-timestamp="07:40">
-  Xやインスタグラムなど、
-</div>
-<div class="transcript-segment" data-timestamp="07:42">
-  こうしたSNというのは情報の拡散
-</div>
-<div class="transcript-segment" data-timestamp="07:45">
-  と交流の最前線となります。
-</div>
-<div class="transcript-segment" data-timestamp="07:47">
-  ブログ更新のお知らせ、
-</div>
-<div class="transcript-segment" data-timestamp="07:50">
-  音声配信の告知、
-</div>
-<div class="transcript-segment" data-timestamp="07:51">
-  noteの新着情報、日々
-</div>
-<div class="transcript-segment" data-timestamp="07:53">
-  の気付きなど、
-</div>
-<div class="transcript-segment" data-timestamp="07:54">
-  さまざまな情報を活用して発信して
-</div>
-<div class="transcript-segment" data-timestamp="07:58">
-  いきます。ここでフォロワーの方々
-</div>
-<div class="transcript-segment" data-timestamp="08:01">
-  と積極的に交流し各メディアの
-</div>
-<div class="transcript-segment" data-timestamp="08:03">
-  入り口をたくさん作っておくこと
-</div>
-<div class="transcript-segment" data-timestamp="08:05">
-  が大切だと言えるでしょう。
-</div>
-<div class="transcript-segment" data-timestamp="08:08">
-  また、
-</div>
-<div class="transcript-segment" data-timestamp="08:09">
-  どのぐらいの頻度で更新す
-</div>
-<div class="transcript-segment" data-timestamp="08:11">
-  べきかを考えた結果、
-</div>
-<div class="transcript-segment" data-timestamp="08:13">
-  非常に悩むと思うんですけれども、
-</div>
-<div class="transcript-segment" data-timestamp="08:16">
-  無理なくコンテンツの質が高め
-</div>
-<div class="transcript-segment" data-timestamp="08:19">
-  られるっていうことが最初はで
-</div>
-<div class="transcript-segment" data-timestamp="08:21">
-  も重要になってくるので、
-</div>
-<div class="transcript-segment" data-timestamp="08:23">
-  ストック期でも少ない状態で
-</div>
-<div class="transcript-segment" data-timestamp="08:25">
-  いきなり更新頻度を増やそうとし
-</div>
-<div class="transcript-segment" data-timestamp="08:27">
-  てもネタ切れになってしまって
-</div>
-<div class="transcript-segment" data-timestamp="08:29">
-  コンテンツの質が落ちかねない
-</div>
-<div class="transcript-segment" data-timestamp="08:31">
-  ということもあって、
-</div>
-<div class="transcript-segment" data-timestamp="08:33">
-  SEOの集客としてもすぐには効果
-</div>
-<div class="transcript-segment" data-timestamp="08:36">
-  が見られないという
-</div>
-<div class="transcript-segment" data-timestamp="08:36">
-  こともあるので、
-</div>
-<div class="transcript-segment" data-timestamp="08:38">
-  最初のうちは自分の無理ないペース
-</div>
-<div class="transcript-segment" data-timestamp="08:41">
-  で更新頻度を決めるっていうのが
-</div>
-<div class="transcript-segment" data-timestamp="08:43">
-  ありかと思います。ちなみに、
-</div>
-<div class="transcript-segment" data-timestamp="08:45">
-  どうしても忙しいっていう場合は月
-</div>
-<div class="transcript-segment" data-timestamp="08:47">
-  1本ぐらいでもいいと思います。
-</div>
-<div class="transcript-segment" data-timestamp="08:49">
-  音声ブログ1本ずつそれ以上できる
-</div>
-<div class="transcript-segment" data-timestamp="08:55">
-  よっていう場合はそれ以上増やして
-</div>
-<div class="transcript-segment" data-timestamp="08:57">
-  いってストック記事がある程度
-</div>
-<div class="transcript-segment" data-timestamp="09:00">
-  まとまった時にはさらに更新頻度を
-</div>
-<div class="transcript-segment" data-timestamp="09:03">
-  増やしていくというやり方がいいの
-</div>
-<div class="transcript-segment" data-timestamp="09:05">
-  かなというふうに個人
-</div>
-<div class="transcript-segment" data-timestamp="09:06">
-  的には思います。
-</div>
-<div class="transcript-segment" data-timestamp="09:08">
-  重要なことはこれらのメディアを
-</div>
-<div class="transcript-segment" data-timestamp="09:10">
-  個別に運営するのではなく有機的に
-</div>
-<div class="transcript-segment" data-timestamp="09:13">
-  連携させることだと
-</div>
-<div class="transcript-segment" data-timestamp="09:15">
-  考えております。
-</div>
-<div class="transcript-segment" data-timestamp="09:16">
-  ブログ記事から関連する音声配信へ
-</div>
-<div class="transcript-segment" data-timestamp="09:19">
-  誘導する音声配信の説明
-</div>
-<div class="transcript-segment" data-timestamp="09:22">
-  欄にブログやnote、
-</div>
-<div class="transcript-segment" data-timestamp="09:24">
-  SNのリンクを掲載するノートの
-</div>
-<div class="transcript-segment" data-timestamp="09:26">
-  記事から参考文献としてブログ記事
-</div>
-<div class="transcript-segment" data-timestamp="09:28">
-  へリンクを貼るSNで全ての
-</div>
-<div class="transcript-segment" data-timestamp="09:31">
-  コンテンツを告知・拡散する。
-</div>
-<div class="transcript-segment" data-timestamp="09:34">
-  このようにしてユーザーの方が自然
-</div>
-<div class="transcript-segment" data-timestamp="09:36">
-  と自分のコンテンツを回遊して
-</div>
-<div class="transcript-segment" data-timestamp="09:38">
-  くださるというような流れを
-</div>
-<div class="transcript-segment" data-timestamp="09:40">
-  作るのが主になります。
-</div>
-<div class="transcript-segment" data-timestamp="09:42">
-  ここまでをまとめますと、
-</div>
-<div class="transcript-segment" data-timestamp="09:44">
-  音声でラジオ的に配信をしたらそれ
-</div>
-<div class="transcript-segment" data-timestamp="09:48">
-  に興味を持った方がブログへ行ける
-</div>
-<div class="transcript-segment" data-timestamp="09:51">
-  ように誘導しつつノートで
-</div>
-<div class="transcript-segment" data-timestamp="09:53">
-  専門性を高めて収益化
-</div>
-<div class="transcript-segment" data-timestamp="09:55">
-  さらにSNで拡散と交流を活性化し
-</div>
-<div class="transcript-segment" data-timestamp="09:59">
-  つつブログにアフェリエートや商品
-</div>
-<div class="transcript-segment" data-timestamp="10:02">
-  紹介などの動線を用意というような
-</div>
-<div class="transcript-segment" data-timestamp="10:05">
-  流れでファンを獲得し収益も得る
-</div>
-<div class="transcript-segment" data-timestamp="10:08">
-  ようになればと考えております。
-</div>
-<div class="transcript-segment" data-timestamp="10:12">
-  いかがでしょうか。
-</div>
-<div class="transcript-segment" data-timestamp="10:13">
-  この設計図なかなか理想的
-</div>
-<div class="transcript-segment" data-timestamp="10:15">
-  ではないでしょうか。
-</div>
-<div class="transcript-segment" data-timestamp="10:16">
-  ということで、
-</div>
-<div class="transcript-segment" data-timestamp="10:18">
-  理想的だとは思うんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="10:19">
-  実現できるかはさておき、
-</div>
-<div class="transcript-segment" data-timestamp="10:21">
-  としてですね。
-</div>
-<div class="transcript-segment" data-timestamp="10:22">
-  ここまで自信たっぷりにお話しして
-</div>
-<div class="transcript-segment" data-timestamp="10:24">
-  まいりましたが、実はこれですね。
-</div>
-<div class="transcript-segment" data-timestamp="10:26">
-  私が必死になって情報収集
-</div>
-<div class="transcript-segment" data-timestamp="10:29">
-  しまくってですね。
-</div>
-<div class="transcript-segment" data-timestamp="10:30">
-  それなりっぽく語るにはどうすれば
-</div>
-<div class="transcript-segment" data-timestamp="10:32">
-  いいんだろうっていうことをです
-</div>
-<div class="transcript-segment" data-timestamp="10:33">
-  ね。真面目に考えた結果、ですね。
-</div>
-<div class="transcript-segment" data-timestamp="10:36">
-  このような形になりました。
-</div>
-<div class="transcript-segment" data-timestamp="10:37">
-  なんか本当はふざける形
-</div>
-<div class="transcript-segment" data-timestamp="10:39">
-  だったんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="10:40">
-  本当に本当に真面目に考えた上
-</div>
-<div class="transcript-segment" data-timestamp="10:42">
-  でこのようになりました。
-</div>
-<div class="transcript-segment" data-timestamp="10:43">
-  妄想とはいえ一生懸命考えたので、
-</div>
-<div class="transcript-segment" data-timestamp="10:46">
-  もし活用してくださる。
-</div>
-<div class="transcript-segment" data-timestamp="10:47">
-  方はですね。
-</div>
-<div class="transcript-segment" data-timestamp="10:48">
-  一生懸命活用していただけると幸い
-</div>
-<div class="transcript-segment" data-timestamp="10:51">
-  でございますというわけで、
-</div>
-<div class="transcript-segment" data-timestamp="10:53">
-  本日は安全なる妄想の構成でした。
-</div>
-<div class="transcript-segment" data-timestamp="10:56">
-  ですが、
-</div>
-<div class="transcript-segment" data-timestamp="10:57">
-  このような妄想というのもですね。
-</div>
-<div class="transcript-segment" data-timestamp="11:00">
-  行動するときに迷わなくなると
-</div>
-<div class="transcript-segment" data-timestamp="11:02">
-  いう効果もありますので、
-</div>
-<div class="transcript-segment" data-timestamp="11:03">
-  もはや妄想じゃなくてですね。
-</div>
-<div class="transcript-segment" data-timestamp="11:05">
-  計画じゃんっていう風になりそう
-</div>
-<div class="transcript-segment" data-timestamp="11:06">
-  な感じもするんですけど、
-</div>
-<div class="transcript-segment" data-timestamp="11:08">
-  皆様も自分なりの発信ルートをね、
-</div>
-<div class="transcript-segment" data-timestamp="11:11">
-  ぜひ妄想してみてはいかが
-</div>
-<div class="transcript-segment" data-timestamp="11:12">
-  でしょうというわけで、
-</div>
-<div class="transcript-segment" data-timestamp="11:14">
-  この妄想をいつか実行に移す方
-</div>
-<div class="transcript-segment" data-timestamp="11:16">
-  もいらっしゃると思うので、
-</div>
-<div class="transcript-segment" data-timestamp="11:19">
-  ぜひ実行していろいろ試して
-</div>
-<div class="transcript-segment" data-timestamp="11:22">
-  みて成功したらですね。
-</div>
-<div class="transcript-segment" data-timestamp="11:23">
-  ぜひコメントをいただければ
-</div>
-<div class="transcript-segment" data-timestamp="11:25">
-  と思います。ちなみに、
-</div>
-<div class="transcript-segment" data-timestamp="11:26">
-  失敗した場合はコメントは
-</div>
-<div class="transcript-segment" data-timestamp="11:27">
-  不要ですということで、
-</div>
-<div class="transcript-segment" data-timestamp="11:30">
-  私はアフェリーエーターになる
-</div>
-<div class="transcript-segment" data-timestamp="11:32">
-  のか分かりませんが、
-</div>
-<div class="transcript-segment" data-timestamp="11:33">
-  またこうした企画を作ってみ
-</div>
-<div class="transcript-segment" data-timestamp="11:35">
-  たいと思います。では、
-</div>
-<div class="transcript-segment" data-timestamp="11:36">
-  本日はこの辺で失礼いたします。
-</div>
-<div class="transcript-segment" data-timestamp="11:39">
-  また次回の配信でお
-</div>
-<div class="transcript-segment" data-timestamp="11:41">
-  会いしましょう。
-</div>
-<div class="transcript-segment" data-timestamp="11:41">
-  ありがとうございました。
-</div>
-</div>

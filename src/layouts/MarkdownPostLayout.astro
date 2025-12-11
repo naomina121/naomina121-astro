@@ -28,7 +28,92 @@ const websiteSchema = {
 };
   const siteUrl = "https://naomina121.com";
   let title = frontmatter.title;
-  const pageSchema = {
+const parseTimeToSeconds = (time: string) => {
+  const matched = time.match(/(\d+):(\d+)/);
+  if (!matched) return 0;
+  const minutes = parseInt(matched[1], 10);
+  const seconds = parseInt(matched[2], 10);
+  return minutes * 60 + seconds;
+};
+const parseDurationToSeconds = (duration: string): number => {
+ const match = duration.match(/PT(?:(\d+)M)?(?:(\d+)S)?/);
+ if (!match) return 0;
+ const minutes = parseInt(match[1] || '0', 10);
+ const seconds = parseInt(match[2] || '0', 10);
+ return minutes * 60 + seconds;
+};
+  const pageSchema = isPodcast ? {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    "name": title,
+    "description": frontmatter.description,
+    "inLanguage": "ja",
+    "image": ogpImageURL.toString(),
+    "url": canonicalURL.toString(),
+    "datePublished": new Date(frontmatter.pubDate).toISOString(),
+    "dateModified": frontmatter.modDate
+    ? new Date(frontmatter.modDate).toISOString()
+    : new Date(frontmatter.pubDate).toISOString(),
+    "timeRequired": frontmatter.duration,
+    "episodeNumber": frontmatter.episodeNumber,
+    "partOfSeries": {
+      "@type": "PodcastSeries",
+      "name": frontmatter.seriesTitle,
+      "url":  frontmatter.PodcastSeriesUrl,
+    },
+    "author": {
+      "@type": "Person",
+      "name": frontmatter.author,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "naomina121",
+      "url": siteUrl,
+      '@id': siteUrl + '/#organization',
+      "logo": {
+        "@type": "ImageObject",
+        "url": siteUrl ? new URL('/images/naomina.jpg', siteUrl).toString() : undefined,
+      }
+    },
+    "associatedMedia": {
+      "@type": "VideoObject",
+      "name": title,
+      "description": frontmatter.description,
+      "embedUrl": `https://www.youtube.com/embed/${frontmatter.media.youtubeId}`,
+      "url": `https://www.youtube.com/watch?v=${frontmatter.media.youtubeId}`,
+      "duration": frontmatter.duration,
+      "uploadDate": frontmatter.modDate ? new Date(frontmatter.modDate).toISOString() : new Date(frontmatter.pubDate).toISOString(),
+      "thumbnailUrl": [
+        `https://i.ytimg.com/vi/${frontmatter.media.youtubeId}/hqdefault.jpg`
+      ],
+"clip":
+   frontmatter.chapters.map((chapter, index, array) =>{ // indexとarrayを追加
+   const startSeconds = parseTimeToSeconds(chapter.time);
+
+   let endSeconds: number;
+
+   if (index < array.length - 1) {
+    // 最後のチャプターでない場合：次のチャプターの開始時間を終了時間とする
+    const nextChapter = array[index + 1];
+    endSeconds = parseTimeToSeconds(nextChapter.time);
+   } else {
+    // 最後のチャプターの場合：動画全体の再生時間を終了時間とする
+    endSeconds = parseDurationToSeconds(frontmatter.duration);
+   }
+
+   // 安全のため、スタート時間よりは確実に大きい値にする
+   endSeconds = Math.max(startSeconds + 1, endSeconds);
+
+   return {
+    "@type": "Clip",
+    "name": chapter.title,
+    "startOffset": startSeconds,
+    "endOffset": endSeconds,
+    "url": `https://www.youtube.com/watch?v=${frontmatter.media.youtubeId}&t=${startSeconds}s`
+   };
+  }),
+  },
+  } : {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": title,
@@ -48,7 +133,7 @@ const websiteSchema = {
       "name": "naomina121",
       "logo": {
         "@type": "ImageObject",
-        "url": siteUrl ? new URL('/images/blog2.webp', siteUrl).toString() : undefined,
+        "url": siteUrl ? new URL('/images/naomina.jpg', siteUrl).toString() : undefined,
       }
     }
   };
@@ -110,6 +195,9 @@ const breadcrumbItems = isBlog ? [
       { name: 'ホーム', item: Astro.site.origin + '/' },
       { name: frontmatter.title, item: canonicalURL.toString() }
     ];
+
+
+
 const ga4TrackingCode = `
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGYCVR3R5F"></script>
 <script>
@@ -180,7 +268,7 @@ const ga4TrackingCode = `
     </ul>
     <p class="mt-0 mb-6 text-right text-sm">📖著者: {frontmatter.author}</p>
     {isPodcast ? null : <img src={frontmatter.image.url} class="w-full max-w-[820px] max-h-[500px] object-cover" alt={frontmatter.image.alt} />}
-{(isBlog || isMentalHealth || isInfoLiteracy) && <div class="timeCount my-6">
+{isPodcast ? null : <div class="timeCount my-6">
     <span class="timeCountTitle">
     📖 読了時間目安：
     </span>
@@ -208,6 +296,7 @@ document.getElementById('show-content').addEventListener('click', function() {
   document.getElementById('sensitive-text').classList.remove('hidden');
 });
 </script>)}
+
 {isPodcast && <script is:inline>
 // ============================================
 // グローバル変数
@@ -535,11 +624,11 @@ function scrollToCurrentTime(seconds) {
   }
 }
 
-// ============================================
-// チャプターリスト関連（既存のコード）
-// ============================================
+// // ============================================
+// // チャプターリスト関連（既存のコード）
+// // ============================================
 
-// 時間文字列 (HH:MM:SS or MM:SS) を秒に変換する関数
+// // 時間文字列 (HH:MM:SS or MM:SS) を秒に変換する関数
 function timeToSeconds(timeString) {
   const parts = timeString.split(":").map(Number);
   let seconds = 0;
@@ -553,50 +642,20 @@ function timeToSeconds(timeString) {
   return seconds;
 }
 
-// チャプターリストのクリックイベントを設定する関数
 function setupChapterClickEvents() {
   console.log("Setting up chapter click events."); // ログ追加
   const chapterListElement = document.getElementById("chapter-list");
-  let text = chapterListElement.innerHTML;
 
   if (!chapterListElement) {
     console.warn('Element with id "chapter-list" not found.');
     return;
   }
 
-  const lines = text.split("\n").filter((line) => line.trim() !== ""); // テキストを行ごとに分割
-  const chapters = [];
+  const chapterItems = chapterListElement.querySelectorAll("li");
 
-  // 正規表現でタイムスタンプとタイトルを抽出
-  const regex = /^(\d{1,2}:\d{2}(?::\d{2})?)\s+(.+)$/;
-
-  lines.forEach((line) => {
-    const match = line.trim().match(regex);
-    if (match) {
-      const time = match[1]; // 時間文字列 (例: '1:15')
-      const title = match[2]; // タイトル (例: 'トピックA')
-      const seconds = timeToSeconds(time); // 秒に変換 (例: 75)
-      chapters.push({ time, title, seconds });
-    }
+  chapterItems.forEach((chapter) => {
+    chapter.addEventListener("click", handleChapterClick);
   });
-
-  if (chapters.length === 0) {
-    chapterListElement.innerHTML =
-      "<p>チャプター情報が見つかりませんでした。</p>";
-    return;
-  }
-
-  // 目次リストのHTMLを生成
-  const ul = document.createElement("ul");
-  chapters.forEach((chapter) => {
-    const li = document.createElement("li");
-    li.textContent = `${chapter.time} ${chapter.title}`;
-    li.setAttribute("data-seconds", chapter.seconds); // 秒数をdata属性として保持
-    li.addEventListener("click", handleChapterClick);
-    ul.appendChild(li);
-  });
-  chapterListElement.innerHTML = ""; // 古い内容をクリア
-  chapterListElement.appendChild(ul); // 生成したリストを追加
 }
 
 // クリックイベントのハンドラ関数
@@ -692,6 +751,6 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
-
-</script>}
+</script>
+}
 </body>

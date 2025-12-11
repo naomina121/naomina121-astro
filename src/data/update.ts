@@ -1,5 +1,11 @@
 export const siteUpdates = [
   {
+      date: '2025-12-12',
+      slug: 'podcast-structured-data-improved',
+      title: 'ポッドキャストの各エピソードの文字起こしの構造化データを改善しました',
+      content: 'ポッドキャストの各エピソードに文字起こしの構造化データを追加しました。',
+  },
+  {
       date: '2025-12-11',
       slug: 'english-site-launched',
       title: '英語版サイトを公開しました',

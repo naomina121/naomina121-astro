@@ -1,471 +1,467 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/Podcast.astro
 title: 'どうせ、君は魅力的だからうまくいく'
 pubDate: 2025-12-01
-modDate: 2025-12-09
+modDate: 2025-12-12
 description: 'こんにちは、ナオです。今回は、所詮人間はという人の裏側の心理に迫っていきたいと思います。'
 author: 'ナオ'
 tags: ["音声ブログ","雑記"]
+type: 'podcast-episode'
+PodcastSeriesUrl: 'https://www.youtube.com/@naomina121_blog/podcasts'
+seriesTitle: 'ナオの音声ブログ'
+episodeNumber: 4
+duration: 'PT7M12S'
+media:
+  platform: 'YouTube'
+  youtubeId: 'GitjO9oHb98'
+chapters:
+  - time: '00:00'
+    title: '人間の可能性を諦めない人の魅力'
+  - time: '00:40'
+    title: '「所詮人間は」の裏にある本音'
+  - time: '01:50'
+    title: '自己研鑽と他者への信頼'
+  - time: '04:00'
+    title: '理解者の希少性と可能性の循環'
+  - time: '06:40'
+    title: '深夜のアップロードに託した想い'
+transcriptText:
+  - time: '00:00'
+    text: '私はどうやら諦めたふりをし'
+
+  - time: '00:03'
+    text: 'ながらも、心のどこかで、'
+
+  - time: '00:05'
+    text: '人間の可能性を諦めきれないって'
+
+  - time: '00:07'
+    text: 'いう人に魅力を感じる'
+
+  - time: '00:09'
+    text: 'らしい。というのも、'
+
+  - time: '00:10'
+    text: '私自身が人間不信でなんか人を信じ'
+
+  - time: '00:14'
+    text: 'きれないっていう時に人'
+
+  - time: '00:16'
+    text: 'の温かみに触れると、'
+
+  - time: '00:18'
+    text: 'なんか人間捨てたもんじゃ'
+
+  - time: '00:19'
+    text: 'ないなって思うから、'
+
+  - time: '00:21'
+    text: '多分それでなんか共感したりなんか'
+
+  - time: '00:26'
+    text: '人間の可能性を諦めてない人に対し'
+
+  - time: '00:29'
+    text: 'てどこか魅力を感じさせられる'
+
+  - time: '00:33'
+    text: 'のだろうなと思う。'
+
+  - time: '00:37'
+    text: 'そういう人が語る所詮人間はとか'
+
+  - time: '00:40'
+    text: 'どうせ人間はとかって語る'
+
+  - time: '00:42'
+    text: '人の言葉の裏には、'
+
+  - time: '00:44'
+    text: '一見すると冷めた視点で人間を'
+
+  - time: '00:48'
+    text: '見つめてるかのように思える。'
+
+  - time: '00:49'
+    text: 'その言葉なんだけど、'
+
+  - time: '00:53'
+    text: '実は矛盾とも言えるような人間の'
+
+  - time: '00:55'
+    text: '深い関心とか興味あるいは期待が'
+
+  - time: '01:00'
+    text: '隠されていることが多いとどういう'
+
+  - time: '01:02'
+    text: 'ことなのかナオさんっていうと、'
+
+  - time: '01:04'
+    text: 'まず所詮っていうのは期待'
+
+  - time: '01:06'
+    text: 'の裏返しなのねだから、'
+
+  - time: '01:07'
+    text: '失望から始まってるのね。'
+
+  - time: '01:09'
+    text: '所詮っていう言葉が人間はっていう'
+
+  - time: '01:11'
+    text: 'のは関心がなければ出てこない最初'
+
+  - time: '01:15'
+    text: 'から関心、無関心の場合は所詮人間'
+
+  - time: '01:18'
+    text: 'はっていう言葉は出てこない'
+
+  - time: '01:20'
+    text: 'ということはどういう'
+
+  - time: '01:21'
+    text: 'ことかっていうと、'
+
+  - time: '01:22'
+    text: '関心を向けて失望してる'
+
+  - time: '01:24'
+    text: 'っていうことだから、'
+
+  - time: '01:25'
+    text: '願望としてはこの所詮人間はこんな'
+
+  - time: '01:30'
+    text: 'もんだろうっていうのをいい意味で'
+
+  - time: '01:32'
+    text: '裏切ってくれる人の存在'
+
+  - time: '01:34'
+    text: 'っていうのが欲しい。'
+
+  - time: '01:35'
+    text: 'そして人間の可能性はこんな感じ'
+
+  - time: '01:40'
+    text: 'じゃないはずなんだってもっとある'
+
+  - time: '01:42'
+    text: 'はずなんだっていう何かが'
+
+  - time: '01:46'
+    text: 'こう、'
+
+  - time: '01:47'
+    text: '所詮人間はっていう言葉の裏には'
+
+  - time: '01:49'
+    text: '潜んでいるような感じ'
+
+  - time: '01:51'
+    text: 'がさせられる。で、'
+
+  - time: '01:54'
+    text: 'どうして人間の可能性を信じ'
+
+  - time: '01:56'
+    text: '切れるのかっていうと、'
+
+  - time: '01:57'
+    text: 'こうした人っていうのは過去の行動'
+
+  - time: '01:58'
+    text: 'とかみてると分かるんだけど、'
+
+  - time: '02:04'
+    text: '自己研鑽への意欲が非常に高かっ'
+
+  - time: '02:06'
+    text: 'たり自分に対して厳しい'
+
+  - time: '02:08'
+    text: '目を向けてる'
+
+  - time: '02:09'
+    text: 'そして恥じない生き方をしようとか'
+
+  - time: '02:12'
+    text: 'あるいはより良い生き方をしよう'
+
+  - time: '02:14'
+    text: 'とか自分の能力を色々'
+
+  - time: '02:19'
+    text: 'な人に役立てたいとかあるいは社会'
+
+  - time: '02:24'
+    text: 'に役立てたいとかそういう思い'
+
+  - time: '02:29'
+    text: 'が自分自身じゃなくて色々'
+
+  - time: '02:32'
+    text: 'なところに向けられているから、'
+
+  - time: '02:33'
+    text: '当然ながら他人にも目'
+
+  - time: '02:35'
+    text: 'を向けられていると'
+
+  - time: '02:38'
+    text: 'そうして自分がもっと成長できるん'
+
+  - time: '02:40'
+    text: 'だったら他の人もきっとできるはず'
+
+  - time: '02:44'
+    text: 'だという信念がそうした人の行動や'
+
+  - time: '02:51'
+    text: '思考の根底にあるのだとだからこそ'
+
+  - time: '02:55'
+    text: '人が持つ可能性を簡単には諦められ'
+
+  - time: '02:58'
+    text: 'ないしむしろなぜそこに到達しない'
+
+  - time: '03:01'
+    text: 'のかという疑問や焦りが所詮という'
+
+  - time: '03:04'
+    text: '言葉になってしまうのだろう'
+
+  - time: '03:06'
+    text: 'なぁとふと考えてきた'
+
+  - time: '03:13'
+    text: 'だから、'
+
+  - time: '03:13'
+    text: 'なんというかこういう人っていうの'
+
+  - time: '03:15'
+    text: 'は周りに同じぐらいに関心を寄せる'
+
+  - time: '03:24'
+    text: '人なんというか自己'
+
+  - time: '03:29'
+    text: '成長とかあるいは'
+
+  - time: '03:35'
+    text: 'より良い方をしようとかそういう'
+
+  - time: '03:39'
+    text: 'ことをできてる人が周りにいれば'
+
+  - time: '03:41'
+    text: 'そういう所詮人間はっていう言葉は'
+
+  - time: '03:44'
+    text: '多分出てこないと思うんだよね。'
+
+  - time: '03:45'
+    text: 'なんだけど、'
+
+  - time: '03:47'
+    text: '自分の周りにいないから出て'
+
+  - time: '03:50'
+    text: 'きやすいのではないのかなと思うん'
+
+  - time: '03:52'
+    text: 'だよね。これは勝手な想像ね。'
+
+  - time: '03:55'
+    text: '勝手な想像なんだけど、'
+
+  - time: '03:56'
+    text: 'いるかもしれないんだけど、'
+
+  - time: '03:58'
+    text: '少ない少なすぎて逆にこれ大丈夫'
+
+  - time: '04:03'
+    text: 'なのみたいなもっと人々'
+
+  - time: '04:05'
+    text: 'はそういうより良い生き方をした方'
+
+  - time: '04:13'
+    text: 'がいいのではないかとかなんで'
+
+  - time: '04:16'
+    text: 'こんなことが起きえるのか'
+
+  - time: '04:17'
+    text: 'とかどうしたらこんな'
+
+  - time: '04:22'
+    text: 'ことが起こらないようにできるのか'
+
+  - time: '04:25'
+    text: 'どうすればより良くなるのかそう'
+
+  - time: '04:27'
+    text: 'いうふうなことを考えるのではない'
+
+  - time: '04:29'
+    text: 'のかなと思ってしまう。だから、'
+
+  - time: '04:32'
+    text: '自分の周りにそういう人がいたら'
+
+  - time: '04:35'
+    text: '同じような人とかあるいはその可能'
+
+  - time: '04:37'
+    text: '性が見込める人がいるのならばそう'
+
+  - time: '04:40'
+    text: 'いう人を応援したくなる'
+
+  - time: '04:40'
+    text: 'のだと思うのだよね。'
+
+  - time: '04:44'
+    text: '思うのだよねって変な日本'
+
+  - time: '04:46'
+    text: '語だけど思うのだと思う'
+
+  - time: '04:50'
+    text: 'だからなんていうかなそういう人が'
+
+  - time: '04:52'
+    text: 'いれば多分いいのだろう'
+
+  - time: '04:55'
+    text: 'と思うのだけれども、'
+
+  - time: '04:58'
+    text: 'ただそう'
+
+  - time: '05:05'
+    text: 'いう人がその可能性を示してくれる'
+
+  - time: '05:07'
+    text: 'のはものすごい優し'
+
+  - time: '05:11'
+    text: 'さなのだと思う。'
+
+  - time: '05:15'
+    text: 'なかなかそういう人はいない'
+
+  - time: '05:16'
+    text: 'と思うのだ。だから、'
+
+  - time: '05:19'
+    text: 'その'
+
+  - time: '05:22'
+    text: 'なんというのかなぁそういう人に'
+
+  - time: '05:28'
+    text: '必要なのはやっぱり理解者なので'
+
+  - time: '05:31'
+    text: 'はないのかなと思ってるし、'
+
+  - time: '05:38'
+    text: '多分その人に合うそのレベル'
+
+  - time: '05:46'
+    text: 'の人じゃないと多分'
+
+  - time: '05:50'
+    text: '難しいんじゃないかなとも'
+
+  - time: '05:52'
+    text: '思うんだけど。だから、'
+
+  - time: '05:54'
+    text: '可能性を見込める人とかあるいは'
+
+  - time: '05:56'
+    text: '自分と同じレベルの人が近くにい'
+
+  - time: '06:00'
+    text: 'ないとっていう意味ではまず自分と'
+
+  - time: '06:04'
+    text: '同じレベルに引き上げる'
+
+  - time: '06:06'
+    text: '必要があるから、'
+
+  - time: '06:08'
+    text: '人が持つ可能性を伸ばしていくって'
+
+  - time: '06:12'
+    text: 'いう方向性しか道はないような気も'
+
+  - time: '06:16'
+    text: 'するんだけどでも全くいないわけ'
+
+  - time: '06:19'
+    text: 'ではないと思うんだけど。'
+
+  - time: '06:23'
+    text: 'そういう人が増えていくことによっ'
+
+  - time: '06:25'
+    text: 'てなんかより良くできるのかなとか'
+
+  - time: '06:28'
+    text: 'っていうふうにふと考え'
+
+  - time: '06:30'
+    text: 'てみたんだけど。'
+
+  - time: '06:31'
+    text: 'まぁでも私よりもそういう人って'
+
+  - time: '06:34'
+    text: 'いうのはすごい優れた能力を持って'
+
+  - time: '06:38'
+    text: 'いるからその人間性も高いし当然'
+
+  - time: '06:41'
+    text: 'ながらそういう人っていうのは'
+
+  - time: '06:44'
+    text: 'どうせ魅力的だからうまくいく'
+
+  - time: '06:46'
+    text: 'でしょうということで、'
+
+  - time: '06:48'
+    text: '私はこの恥ずかしい夜中に'
+
+  - time: '06:53'
+    text: '人も見られないだろうという深夜に'
+
+  - time: '06:56'
+    text: 'アップロードすることによって誰も'
+
+  - time: '06:59'
+    text: '見ないだろうということを安心して'
+
+  - time: '07:02'
+    text: 'アップロードしてみようと'
+
+  - time: '07:03'
+    text: '思います。以上です。'
 ---
 
-<h2>音声配信</h2>
-
-<p>（2024年12月27日のYOUTUBE再掲載）</p>
-
-<div id="player" class="youtube-ratio" data-id="GitjO9oHb98"></div>
-
-<h2>目次</h2>
-
-<div id="chapter-list">
-00:00 人間の可能性を諦めない人の魅力
-00:40 「所詮人間は」の裏にある本音
-01:50 自己研鑽と他者への信頼
-04:00 理解者の希少性と可能性の循環
-06:40 深夜のアップロードに託した想い
-</div>
-
-<details class="transcript-accordion">
-    <summary>📝 文字起こしを表示</summary>
-    <!-- トランスクリプトコンテナは JavaScript で動的に生成されます -->
-</details>
-
-<div id="transcript-source">
-<div class="transcript-segment" data-timestamp="00:00">
-私はどうやら諦めたふりをし
-</div>
-<div class="transcript-segment" data-timestamp="00:03">
-ながらも、心のどこかで、
-</div>
-<div class="transcript-segment" data-timestamp="00:05">
-人間の可能性を諦めきれないって
-</div>
-<div class="transcript-segment" data-timestamp="00:07">
-いう人に魅力を感じる
-</div>
-<div class="transcript-segment" data-timestamp="00:09">
-らしい。というのも、
-</div>
-<div class="transcript-segment" data-timestamp="00:10">
-私自身が人間不信でなんか人を信じ
-</div>
-<div class="transcript-segment" data-timestamp="00:14">
-きれないっていう時に人
-</div>
-<div class="transcript-segment" data-timestamp="00:16">
-の温かみに触れると、
-</div>
-<div class="transcript-segment" data-timestamp="00:18">
-なんか人間捨てたもんじゃ
-</div>
-<div class="transcript-segment" data-timestamp="00:19">
-ないなって思うから、
-</div>
-<div class="transcript-segment" data-timestamp="00:21">
-多分それでなんか共感したりなんか
-</div>
-<div class="transcript-segment" data-timestamp="00:26">
-人間の可能性を諦めてない人に対し
-</div>
-<div class="transcript-segment" data-timestamp="00:29">
-てどこか魅力を感じさせられる
-</div>
-<div class="transcript-segment" data-timestamp="00:33">
-のだろうなと思う。
-</div>
-<div class="transcript-segment" data-timestamp="00:37">
-そういう人が語る所詮人間はとか
-</div>
-<div class="transcript-segment" data-timestamp="00:40">
-どうせ人間はとかって語る
-</div>
-<div class="transcript-segment" data-timestamp="00:42">
-人の言葉の裏には、
-</div>
-<div class="transcript-segment" data-timestamp="00:44">
-一見すると冷めた視点で人間を
-</div>
-<div class="transcript-segment" data-timestamp="00:48">
-見つめてるかのように思える。
-</div>
-<div class="transcript-segment" data-timestamp="00:49">
-その言葉なんだけど、
-</div>
-<div class="transcript-segment" data-timestamp="00:53">
-実は矛盾とも言えるような人間の
-</div>
-<div class="transcript-segment" data-timestamp="00:55">
-深い関心とか興味あるいは期待が
-</div>
-<div class="transcript-segment" data-timestamp="01:00">
-隠されていることが多いとどういう
-</div>
-<div class="transcript-segment" data-timestamp="01:02">
-ことなのかナオさんっていうと、
-</div>
-<div class="transcript-segment" data-timestamp="01:04">
-まず所詮っていうのは期待
-</div>
-<div class="transcript-segment" data-timestamp="01:06">
-の裏返しなのねだから、
-</div>
-<div class="transcript-segment" data-timestamp="01:07">
-失望から始まってるのね。
-</div>
-<div class="transcript-segment" data-timestamp="01:09">
-所詮っていう言葉が人間はっていう
-</div>
-<div class="transcript-segment" data-timestamp="01:11">
-のは関心がなければ出てこない最初
-</div>
-<div class="transcript-segment" data-timestamp="01:15">
-から関心、無関心の場合は所詮人間
-</div>
-<div class="transcript-segment" data-timestamp="01:18">
-はっていう言葉は出てこない
-</div>
-<div class="transcript-segment" data-timestamp="01:20">
-ということはどういう
-</div>
-<div class="transcript-segment" data-timestamp="01:21">
-ことかっていうと、
-</div>
-<div class="transcript-segment" data-timestamp="01:22">
-関心を向けて失望してる
-</div>
-<div class="transcript-segment" data-timestamp="01:24">
-っていうことだから、
-</div>
-<div class="transcript-segment" data-timestamp="01:25">
-願望としてはこの所詮人間はこんな
-</div>
-<div class="transcript-segment" data-timestamp="01:30">
-もんだろうっていうのをいい意味で
-</div>
-<div class="transcript-segment" data-timestamp="01:32">
-裏切ってくれる人の存在
-</div>
-<div class="transcript-segment" data-timestamp="01:34">
-っていうのが欲しい。
-</div>
-<div class="transcript-segment" data-timestamp="01:35">
-そして人間の可能性はこんな感じ
-</div>
-<div class="transcript-segment" data-timestamp="01:40">
-じゃないはずなんだってもっとある
-</div>
-<div class="transcript-segment" data-timestamp="01:42">
-はずなんだっていう何かが
-</div>
-<div class="transcript-segment" data-timestamp="01:46">
-こう、
-</div>
-<div class="transcript-segment" data-timestamp="01:47">
-所詮人間はっていう言葉の裏には
-</div>
-<div class="transcript-segment" data-timestamp="01:49">
-潜んでいるような感じ
-</div>
-<div class="transcript-segment" data-timestamp="01:51">
-がさせられる。で、
-</div>
-<div class="transcript-segment" data-timestamp="01:54">
-どうして人間の可能性を信じ
-</div>
-<div class="transcript-segment" data-timestamp="01:56">
-切れるのかっていうと、
-</div>
-<div class="transcript-segment" data-timestamp="01:57">
-こうした人っていうのは過去の行動
-</div>
-<div class="transcript-segment" data-timestamp="01:58">
-とかみてると分かるんだけど、
-</div>
-<div class="transcript-segment" data-timestamp="02:04">
-自己研鑽への意欲が非常に高かっ
-</div>
-<div class="transcript-segment" data-timestamp="02:06">
-たり自分に対して厳しい
-</div>
-<div class="transcript-segment" data-timestamp="02:08">
-目を向けてる
-</div>
-<div class="transcript-segment" data-timestamp="02:09">
-そして恥じない生き方をしようとか
-</div>
-<div class="transcript-segment" data-timestamp="02:12">
-あるいはより良い生き方をしよう
-</div>
-<div class="transcript-segment" data-timestamp="02:14">
-とか自分の能力を色々
-</div>
-<div class="transcript-segment" data-timestamp="02:19">
-な人に役立てたいとかあるいは社会
-</div>
-<div class="transcript-segment" data-timestamp="02:24">
-に役立てたいとかそういう思い
-</div>
-<div class="transcript-segment" data-timestamp="02:29">
-が自分自身じゃなくて色々
-</div>
-<div class="transcript-segment" data-timestamp="02:32">
-なところに向けられているから、
-</div>
-<div class="transcript-segment" data-timestamp="02:33">
-当然ながら他人にも目
-</div>
-<div class="transcript-segment" data-timestamp="02:35">
-を向けられていると
-</div>
-<div class="transcript-segment" data-timestamp="02:38">
-そうして自分がもっと成長できるん
-</div>
-<div class="transcript-segment" data-timestamp="02:40">
-だったら他の人もきっとできるはず
-</div>
-<div class="transcript-segment" data-timestamp="02:44">
-だという信念がそうした人の行動や
-</div>
-<div class="transcript-segment" data-timestamp="02:51">
-思考の根底にあるのだとだからこそ
-</div>
-<div class="transcript-segment" data-timestamp="02:55">
-人が持つ可能性を簡単には諦められ
-</div>
-<div class="transcript-segment" data-timestamp="02:58">
-ないしむしろなぜそこに到達しない
-</div>
-<div class="transcript-segment" data-timestamp="03:01">
-のかという疑問や焦りが所詮という
-</div>
-<div class="transcript-segment" data-timestamp="03:04">
-言葉になってしまうのだろう
-</div>
-<div class="transcript-segment" data-timestamp="03:06">
-なぁとふと考えてきた
-</div>
-<div class="transcript-segment" data-timestamp="03:13">
-だから、
-</div>
-<div class="transcript-segment" data-timestamp="03:13">
-なんというかこういう人っていうの
-</div>
-<div class="transcript-segment" data-timestamp="03:15">
-は周りに同じぐらいに関心を寄せる
-</div>
-<div class="transcript-segment" data-timestamp="03:24">
-人なんというか自己
-</div>
-<div class="transcript-segment" data-timestamp="03:29">
-成長とかあるいは
-</div>
-<div class="transcript-segment" data-timestamp="03:35">
-より良い方をしようとかそういう
-</div>
-<div class="transcript-segment" data-timestamp="03:39">
-ことをできてる人が周りにいれば
-</div>
-<div class="transcript-segment" data-timestamp="03:41">
-そういう所詮人間はっていう言葉は
-</div>
-<div class="transcript-segment" data-timestamp="03:44">
-多分出てこないと思うんだよね。
-</div>
-<div class="transcript-segment" data-timestamp="03:45">
-なんだけど、
-</div>
-<div class="transcript-segment" data-timestamp="03:47">
-自分の周りにいないから出て
-</div>
-<div class="transcript-segment" data-timestamp="03:50">
-きやすいのではないのかなと思うん
-</div>
-<div class="transcript-segment" data-timestamp="03:52">
-だよね。これは勝手な想像ね。
-</div>
-<div class="transcript-segment" data-timestamp="03:55">
-勝手な想像なんだけど、
-</div>
-<div class="transcript-segment" data-timestamp="03:56">
-いるかもしれないんだけど、
-</div>
-<div class="transcript-segment" data-timestamp="03:58">
-少ない少なすぎて逆にこれ大丈夫
-</div>
-<div class="transcript-segment" data-timestamp="04:03">
-なのみたいなもっと人々
-</div>
-<div class="transcript-segment" data-timestamp="04:05">
-はそういうより良い生き方をした方
-</div>
-<div class="transcript-segment" data-timestamp="04:13">
-がいいのではないかとかなんで
-</div>
-<div class="transcript-segment" data-timestamp="04:16">
-こんなことが起きえるのか
-</div>
-<div class="transcript-segment" data-timestamp="04:17">
-とかどうしたらこんな
-</div>
-<div class="transcript-segment" data-timestamp="04:22">
-ことが起こらないようにできるのか
-</div>
-<div class="transcript-segment" data-timestamp="04:25">
-どうすればより良くなるのかそう
-</div>
-<div class="transcript-segment" data-timestamp="04:27">
-いうふうなことを考えるのではない
-</div>
-<div class="transcript-segment" data-timestamp="04:29">
-のかなと思ってしまう。だから、
-</div>
-<div class="transcript-segment" data-timestamp="04:32">
-自分の周りにそういう人がいたら
-</div>
-<div class="transcript-segment" data-timestamp="04:35">
-同じような人とかあるいはその可能
-</div>
-<div class="transcript-segment" data-timestamp="04:37">
-性が見込める人がいるのならばそう
-</div>
-<div class="transcript-segment" data-timestamp="04:40">
-いう人を応援したくなる
-</div>
-<div class="transcript-segment" data-timestamp="04:40">
-のだと思うのだよね。
-</div>
-<div class="transcript-segment" data-timestamp="04:44">
-思うのだよねって変な日本
-</div>
-<div class="transcript-segment" data-timestamp="04:46">
-語だけど思うのだと思う
-</div>
-<div class="transcript-segment" data-timestamp="04:50">
-だからなんていうかなそういう人が
-</div>
-<div class="transcript-segment" data-timestamp="04:52">
-いれば多分いいのだろう
-</div>
-<div class="transcript-segment" data-timestamp="04:55">
-と思うのだけれども、
-</div>
-<div class="transcript-segment" data-timestamp="04:58">
-ただそう
-</div>
-<div class="transcript-segment" data-timestamp="05:05">
-いう人がその可能性を示してくれる
-</div>
-<div class="transcript-segment" data-timestamp="05:07">
-のはものすごい優し
-</div>
-<div class="transcript-segment" data-timestamp="05:11">
-さなのだと思う。
-</div>
-<div class="transcript-segment" data-timestamp="05:15">
-なかなかそういう人はいない
-</div>
-<div class="transcript-segment" data-timestamp="05:16">
-と思うのだ。だから、
-</div>
-<div class="transcript-segment" data-timestamp="05:19">
-その
-</div>
-<div class="transcript-segment" data-timestamp="05:22">
-なんというのかなぁそういう人に
-</div>
-<div class="transcript-segment" data-timestamp="05:28">
-必要なのはやっぱり理解者なので
-</div>
-<div class="transcript-segment" data-timestamp="05:31">
-はないのかなと思ってるし、
-</div>
-<div class="transcript-segment" data-timestamp="05:38">
-多分その人に合うそのレベル
-</div>
-<div class="transcript-segment" data-timestamp="05:46">
-の人じゃないと多分
-</div>
-<div class="transcript-segment" data-timestamp="05:50">
-難しいんじゃないかなとも
-</div>
-<div class="transcript-segment" data-timestamp="05:52">
-思うんだけど。だから、
-</div>
-<div class="transcript-segment" data-timestamp="05:54">
-可能性を見込める人とかあるいは
-</div>
-<div class="transcript-segment" data-timestamp="05:56">
-自分と同じレベルの人が近くにい
-</div>
-<div class="transcript-segment" data-timestamp="06:00">
-ないとっていう意味ではまず自分と
-</div>
-<div class="transcript-segment" data-timestamp="06:04">
-同じレベルに引き上げる
-</div>
-<div class="transcript-segment" data-timestamp="06:06">
-必要があるから、
-</div>
-<div class="transcript-segment" data-timestamp="06:08">
-人が持つ可能性を伸ばしていくって
-</div>
-<div class="transcript-segment" data-timestamp="06:12">
-いう方向性しか道はないような気も
-</div>
-<div class="transcript-segment" data-timestamp="06:16">
-するんだけどでも全くいないわけ
-</div>
-<div class="transcript-segment" data-timestamp="06:19">
-ではないと思うんだけど。
-</div>
-<div class="transcript-segment" data-timestamp="06:23">
-そういう人が増えていくことによっ
-</div>
-<div class="transcript-segment" data-timestamp="06:25">
-てなんかより良くできるのかなとか
-</div>
-<div class="transcript-segment" data-timestamp="06:28">
-っていうふうにふと考え
-</div>
-<div class="transcript-segment" data-timestamp="06:30">
-てみたんだけど。
-</div>
-<div class="transcript-segment" data-timestamp="06:31">
-まぁでも私よりもそういう人って
-</div>
-<div class="transcript-segment" data-timestamp="06:34">
-いうのはすごい優れた能力を持って
-</div>
-<div class="transcript-segment" data-timestamp="06:38">
-いるからその人間性も高いし当然
-</div>
-<div class="transcript-segment" data-timestamp="06:41">
-ながらそういう人っていうのは
-</div>
-<div class="transcript-segment" data-timestamp="06:44">
-どうせ魅力的だからうまくいく
-</div>
-<div class="transcript-segment" data-timestamp="06:46">
-でしょうということで、
-</div>
-<div class="transcript-segment" data-timestamp="06:48">
-私はこの恥ずかしい夜中に
-</div>
-<div class="transcript-segment" data-timestamp="06:53">
-人も見られないだろうという深夜に
-</div>
-<div class="transcript-segment" data-timestamp="06:56">
-アップロードすることによって誰も
-</div>
-<div class="transcript-segment" data-timestamp="06:59">
-見ないだろうということを安心して
-</div>
-<div class="transcript-segment" data-timestamp="07:02">
-アップロードしてみようと
-</div>
-<div class="transcript-segment" data-timestamp="07:03">
-思います。以上です。
-</div>
-</div>
 <h2>動画の補足的な説明</h2>
 <p>どうせ、所詮人なんて、いう人ほど期待が隠されていることについては、心理学用語では、「理想主義的共感」、「希望の投影」と深く関係しています。
 自分の中にある希望や理想を他者に投影することで、「まだ人間に希望がある」と信じたい欲求が働く。</p>

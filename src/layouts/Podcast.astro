@@ -1,0 +1,46 @@
+---
+import MarkdownPostLayout from './MarkdownPostLayout.astro';
+const { frontmatter } = Astro.props;
+
+---
+
+<MarkdownPostLayout {frontmatter}>
+
+<div id="transcript-output"></div>
+
+<h2>音声配信</h2>
+
+<p>{frontmatter.description}</p>
+<div id="player" class="youtube-ratio" data-id={frontmatter.media.youtubeId}></div>
+
+<h2>目次</h2>
+
+<div id="chapter-list">
+    <ul>
+    {frontmatter.chapters.map((chapter) =>
+    {
+        const matched = chapter.time.match(/(\d+):(\d+)/);
+        const minutes = parseInt(matched[1], 10);
+        const seconds = parseInt(matched[2], 10) + (minutes * 60);
+        return (
+            <li
+            data-seconds={seconds}
+            >{chapter.time} {chapter.title}</li>
+        );
+    })}
+    </ul>
+</div>
+
+<details class="transcript-accordion">
+    <summary>📝 文字起こしを表示</summary>
+</details>
+
+<div id="transcript-source">
+    {frontmatter.transcriptText.map((item) => (
+        <div class="transcript-segment" data-timestamp={item.time}>
+            {item.text}
+        </div>
+    ))}
+</div>
+<slot />
+</MarkdownPostLayout>
