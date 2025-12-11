@@ -18,6 +18,7 @@ const isUpdatesDetail = Astro.url.pathname.startsWith("/updates/");
 const isTag = Astro.url.pathname.startsWith("/tags/");
 const title = isIndex ? "NAOMINA121" : pageTitle + " | NAOMINA121";
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
+const enURL = new URL(Astro.url.pathname, 'https://en.naomina121.com');
 const ogpImageURL = isMentalHealth ? new URL('/images/mental-health.jpg', canonicalURL) : isInfoLiteracy ? new URL('/images/information-literacy.jpg', canonicalURL) : isBlog ? new URL('/images/blog2.webp', canonicalURL) : isPodcast ? new URL('/images/podcast.jpg', canonicalURL) : isPodcast ? new URL('/images/obsiedian_onsei.jpg', canonicalURL) : new URL('/images/nao2.jpg', canonicalURL);
 const description = isIndex
   ? "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。"
@@ -147,6 +148,9 @@ const ga4TrackingCode = `
     <script type="application/ld+json" set:html={JSON.stringify(infoSchema)} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href={canonicalURL.toString()} />
+    <link rel="alternate" hreflang="ja" href={canonicalURL.toString()} />
+    <link rel="alternate" hreflang="en" href={enURL.toString()} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL.toString()} />
     <meta name="generator" content={Astro.generator} />
     <title>{isIndex ? pageTitle : `${pageTitle} | NAOMINA121`}</title>
   </head>

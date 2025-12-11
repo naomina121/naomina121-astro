@@ -1,5 +1,11 @@
 export const siteUpdates = [
   {
+      date: '2025-12-11',
+      slug: 'english-site-launched',
+      title: '英語版サイトを公開しました',
+      content: '英語版サイトを公開しました。英語圏のユーザーにも情報を提供できるようになりました。',
+  },
+  {
       date: '2025-12-10',
       slug: 'contact-form-improvements',
       title: 'お問い合わせフォームの改善を行いました',

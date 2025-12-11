@@ -17,6 +17,7 @@ const isMentalHealth = Astro.url.pathname.startsWith("/mental-health/");
 const isInfoLiteracy = Astro.url.pathname.startsWith("/info-literacy/");
 const isMaterials = Astro.url.pathname.startsWith("/materials/");
 const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
+const enURL = new URL(Astro.url.pathname, 'https://en.naomina121.com');
 const ogpImageURL = isPodcast ? new URL('/obsidean_onsei.jpg', canonicalURL) : new URL(frontmatter.image.url, canonicalURL);
 const websiteSchema = {
   "@context": "https://schema.org",
@@ -133,6 +134,9 @@ const ga4TrackingCode = `
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="canonical" href={canonicalURL.toString()}>
+    <link rel="alternate" hreflang="ja" href={canonicalURL.toString()} />
+    <link rel="alternate" hreflang="en" href={enURL.toString()} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL.toString()} />
     <meta property="og:title" content={frontmatter.title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL.toString()} />
@@ -166,6 +170,7 @@ const ga4TrackingCode = `
         {frontmatter.tags.map((item:string) => <li><a class="tag" href={`/tags/${item}`}>#{item}</a></li>)}
         <li class="mb-2 text-sm">📰作成日: {frontmatter.pubDate.toString().slice(0,10)}</li>
         {frontmatter.modDate && <li class="mb-2 text-sm">✏️最終更新日: {frontmatter.modDate.toString().slice(0,10)}</li>}
+        <li>ja / <a style="color:gold;" class="underline text-sm mb-2 hover:no-underline" href={enURL.toString()}>en</a></li>
     </ul>
     <p class="mt-0 mb-6 text-right text-sm">📖著者: {frontmatter.author}</p>
     {isPodcast ? null : <img src={frontmatter.image.url} class="w-full max-w-[820px] max-h-[500px] object-cover" alt={frontmatter.image.alt} />}

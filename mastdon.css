@@ -319,40 +319,40 @@ height:200px;
 }
 
 
-.column-link--logo, .column-link--logo:hover,
-.column-link--logo:focus,
-.column-link--logo:active, .ui__header__logo{
-position:relative;
+.column-link--logo,
+.ui__header__logo {
+  position: relative;
+  height:50px;
 }
-.column-link--logo::before, .column-link--logo:hover::before,
-.column-link--logo:focus::before,
-.column-link--logo:active::before, .ui__header__logo::before{
-content: 'NAOMINA121';
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(0%);
-    margin: 0;
-    font-size: 28px;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    background: linear-gradient(0deg, #ffffff 50%, #f5f0dc 70%, #ad9434 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-    border-left: 6px solid #642828;
-    padding: 0px;
-    padding-left: 10px;
-    font-family: "Castoro Titling", serif;
-    font-weight: 900;
-    width: 100%;
-    height: 100%;
-    color: transparent;
+
+.column-link--logo::before,
+.ui__header__logo::before {
+  content: "NAOMINA121";
+  position: absolute;
+  left:15px;
+  top: 70%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  line-height: 1;
+  font-size: 27px;
+  display:inline-block;
+  padding:5px 0 10px 10px;
+  font-family: "Castoro Titling", serif;
+  font-weight: 900;
+  border-left: 6px solid #642828;
+  background: linear-gradient(0deg, #ffffff 0%, #f5f0dc 35%, #ad9434 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .logo {
-    visibility: hidden;
+  visibility: hidden;
 }
+
 .tabs-bar__wrapper{
 padding-top:0px;
 }
+
+
