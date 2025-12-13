@@ -1,5 +1,17 @@
 export const siteUpdates = [
   {
+      date: '2025-12-14',
+      slug: 'info-literacy-article-published',
+      title: '新記事「なぜ検索エンジンやAIは“怪しい医療記事”を選ぶのか」公開しました',
+      content: '情報リテラシーに関する新記事を公開しました。検索エンジンやAIがどのようにして誤情報を評価し、増幅するのか、その技術的な限界について解説しています。',
+  },
+  {
+      date: '2025-12-14',
+      slug: 'mental-health-article-published',
+      title: '新記事「なぜ私たちは医師が書いた記事を信頼するのか」公開しました',
+      content: '医師や専門家が誤った医療情報を発信してしまう場合に、どのような害が生じるのかについて考察した新記事を公開しました。心理学的概念を通じて、そのメカニズムを解説しています。',
+  },
+  {
       date: '2025-12-12',
       slug: 'podcast-structured-data-improved',
       title: 'ポッドキャストの各エピソードの文字起こしの構造化データを改善しました',
