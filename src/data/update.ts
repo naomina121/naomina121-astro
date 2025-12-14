@@ -1,6 +1,12 @@
 export const siteUpdates = [
   {
       date: '2025-12-14',
+      slug: "disclaimer-updated",
+      title: "免責事項を更新しました",
+      content: "免責事項を更新しました。当ブログは特定の治療法・思想・商品を推奨するものではない旨を追加しました。",
+  },
+  {
+      date: '2025-12-14',
       slug: "structured-reference-links-added",
       title: "記事の参考リンクを構造化しました",
       content: "記事の参考リンクを構造化データとして追加しました。これにより、学術的な裏付けが明確になり、読者の皆様にとって信頼性の高い情報源となることを目指しています。",
