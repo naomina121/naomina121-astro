@@ -17,17 +17,17 @@ const isBlog = Astro.url.pathname.startsWith("/blog/");
 const isMentalHealth = Astro.url.pathname.startsWith("/mental-health/");
 const isInfoLiteracy = Astro.url.pathname.startsWith("/info-literacy/");
 const isMaterials = Astro.url.pathname.startsWith("/materials/");
-const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com');
-const enURL = new URL(Astro.url.pathname, 'https://en.naomina121.com');
+const canonicalURL = new URL(Astro.url.pathname, 'https://naomina121.com/');
+const enURL = new URL(Astro.url.pathname, 'https://en.naomina121.com/');
 const ogpImageURL = isPodcast ? new URL('/obsidean_onsei.jpg', canonicalURL) : new URL(frontmatter.image.url, canonicalURL);
 const websiteSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "WebSite",
   "name": "naomina121",
-  "url": "https://naomina121.com",
+  "url": "https://naomina121.com/",
   "description": "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。",
 };
-  const siteUrl = "https://naomina121.com";
+  const siteUrl = "https://naomina121.com/";
   let title = frontmatter.title;
 const parseTimeToSeconds = (time: string) => {
   const matched = time.match(/(\d+):(\d+)/);
@@ -44,7 +44,7 @@ const parseDurationToSeconds = (duration: string): number => {
  return minutes * 60 + seconds;
 };
   const pageSchema = isPodcast ? {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "PodcastEpisode",
     "name": title,
     "description": frontmatter.description,
@@ -80,8 +80,8 @@ const parseDurationToSeconds = (duration: string): number => {
       "@type": "VideoObject",
       "name": title,
       "description": frontmatter.description,
-      "embedUrl": `https://www.youtube.com/embed/${frontmatter.media.youtubeId}`,
-      "url": `https://www.youtube.com/watch?v=${frontmatter.media.youtubeId}`,
+      "embedUrl": `https://www.youtube.com/embed/${frontmatter.media.youtubeId}/`,
+      "url": `https://www.youtube.com/watch?v=${frontmatter.media.youtubeId}/`,
       "duration": frontmatter.duration,
       "uploadDate": frontmatter.modDate ? new Date(frontmatter.modDate).toISOString() : new Date(frontmatter.pubDate).toISOString(),
       "thumbnailUrl": [
@@ -148,7 +148,7 @@ const bookSchema = {
   "alternateName": "naomina121",
   "url": "https://naomina121.com/",
   "sameAs": [
-    "https://www.amazon.co.jp/stores/naomina121/author/B0FWB5GP5G"
+    "https://www.amazon.co.jp/stores/naomina121/author/B0FWB5GP5G/"
   ],
   "jobTitle": "Author"
 };
@@ -164,7 +164,7 @@ const infoSchema = {
       "headline": update.title,
       "datePublished": update.date,
       "description": update.content,
-      "url": `${baseUrl}/updates/${update.slug}`,
+      "url": `${baseUrl}/updates/${update.slug}/`,
     },
   })),
 };

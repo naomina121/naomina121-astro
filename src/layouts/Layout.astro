@@ -24,15 +24,15 @@ const description = isIndex
   ? "ナオの公式サイトです。ブログ、音声ブログ、プロフィール、活動拠点などの情報を発信しています。"
   : pageTitle + "のページです。";
 const websiteSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "WebSite",
   "name": "naomina121",
-  "url": "https://naomina121.com",
+  "url": "https://naomina121.com/",
   "description": description,
 };
 
 const pageSchema = {
-    "@context": "https://schema.org",
+    "@context": "https://schema.org/",
     "@type": "WebPage",
     "name": pageTitle,
     "description": pageTitle + "のページです。",
@@ -41,7 +41,7 @@ const pageSchema = {
     "isPartOf": {
       "@type": "WebSite",
       "name": "naomina121",
-      "url": "https://naomina121.com"
+      "url": "https://naomina121.com/"
     },
     ...(PubDate && { "datePublished": PubDate }),
     ...(ModDate && { "dateModified": ModDate }),
@@ -49,15 +49,15 @@ const pageSchema = {
 const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
 
 const infoSchema = {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "WebPage",
   "name": "更新情報一覧",
   "description": "当サイトの更新履歴、新着記事、および運営に関するお知らせの一覧です。",
-  "url": `${baseUrl}/updates`,
+  "url": `${baseUrl}/updates/`,
   "inLanguage": "ja",
   "mainEntity": {
     "@type": "ItemList",
-    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending/",
     "numberOfItems": siteUpdates.length,
     "itemListElement": siteUpdates.map((u, i) => ({
       "@type": "ListItem",
@@ -68,7 +68,7 @@ const infoSchema = {
         "description": u.content,
         "datePublished": `${u.date}T00:00:00+09:00`,
         "dateModified": u.updatedAt ? `${u.updatedAt}T00:00:00+09:00` : `${u.date}T00:00:00+09:00`, // 更新日があれば優先
-        "url": `${baseUrl}/updates/${u.slug}`,
+        "url": `${baseUrl}/updates/${u.slug}/`,
         "image": `${baseUrl}/images/nao2.jpg`, // サムネがない場合のフォールバック
         "author": {
           "@type": "Person",
@@ -81,11 +81,11 @@ const infoSchema = {
 };
 const { update } = Astro.props;
 const articleSchema = !isUpdates && isUpdatesDetail && {
-  "@context": "https://schema.org",
+  "@context": "https://schema.org/",
   "@type": "BlogPosting", // NewsArticleでもいいが、汎用性はBlogPosting
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": `${baseUrl}/updates/${update.slug}`
+    "@id": `${baseUrl}/updates/${update.slug}/`
   },
   "headline": update.title,
   "description": update.content,
@@ -101,7 +101,7 @@ const articleSchema = !isUpdates && isUpdatesDetail && {
   "author": {
     "@type": "Person",
     "name": "ナオ",
-    "url": "https://naomina121.com/profile/about"
+    "url": "https://naomina121.com/profile/about/"
   },
   // ▼ ここが「実務レベル」への追加ポイント
   "publisher": {
