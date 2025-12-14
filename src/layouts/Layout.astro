@@ -52,6 +52,7 @@ const infoSchema = {
         "name": u.title,
         "description": u.content,
         "articleSection": u.category,
+        "about": u.category =="Article" ? [{"@type":"Thing","name":"新着記事"}] : u.category =="Policy" ? [{"@type":"Thing","name":"ポリシー更新"}] : u.category =="Technical" ? [{"@type":"Thing","name":"サイトの更新"}] : [],
         "datePublished": `${u.date}T00:00:00+09:00`,
         "dateModified": u.updatedAt ? `${u.updatedAt}T00:00:00+09:00` : `${u.date}T00:00:00+09:00`, // 更新日があれば優先
         "url": `${baseUrl}/updates/${u.slug}/`,
