@@ -1,6 +1,12 @@
 export const siteUpdates = [
   {
       date: '2025-12-14',
+      slug: "structured-reference-links-added",
+      title: "記事の参考リンクを構造化しました",
+      content: "記事の参考リンクを構造化データとして追加しました。これにより、学術的な裏付けが明確になり、読者の皆様にとって信頼性の高い情報源となることを目指しています。",
+  },
+  {
+      date: '2025-12-14',
       slug: "removed-buy-me-a-coffee-link",
       title: "Buy me a Coffeeのリンクを削除しました",
       content: "Buy me a Coffeeのリンクを削除しました。収益性を求めない純粋な情報発信サイトとして運営していくためです。応援してくださるお気持ちだけで十分です。いつも読んでくださり、ありがとうございます。",

@@ -8,6 +8,9 @@ image:
     url: '/images/cognitive-bias.jpg'
     alt: '認知バイアスの画像'
 tags: ["メンタルヘルス","情報リテラシー"]
+referrals:
+  - title: 'Hundreds dead because of Covid-19 misinformation'
+    url: 'https://www.bbc.com/news/world-53755067'
 ---
 
 <div class="box">
@@ -62,9 +65,3 @@ tags: ["メンタルヘルス","情報リテラシー"]
 「[なぜ検索やAIは“怪しい医療記事”を選んでしまうのか？― アルゴリズムとSEOが抱える限界 ―](/info-literacy/how-search-and-ai-evaluate-medical-content)」
 
 次の記事では、人間心理の隙間に入り込んだ誤情報が、AIや検索アルゴリズムによってどのように増幅・評価されてしまうのか、その技術的な限界について述べていく。
-
-## 引用文献
-
-<ul class="list">
-<li><a class="link" href="https://www.bbc.com/news/world-53755067">Hundreds dead' because of Covid-19 misinformation</a></li>
-</ul>

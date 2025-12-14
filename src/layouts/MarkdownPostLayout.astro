@@ -4,6 +4,7 @@ import Footer from '@components/Footer.astro';
 import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 import Sns from '@components/Sns.astro';
+import References from '@components/References.astro';
 import { undefined } from "astro:schema";
 import { siteUpdates } from "../data/update";
 import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
@@ -278,6 +279,7 @@ const ga4TrackingCode = `
     </div>
   }
     <slot />
+    {frontmatter.referrals && <References references={frontmatter.referrals} />}
     {!isMaterials && (
     <Sns frontmatter={frontmatter} />
     )}
