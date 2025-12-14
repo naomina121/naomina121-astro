@@ -13,17 +13,17 @@ const { update } = Astro.props;
 const pageTitle = update.title;
 ---
 
-<Layout pageTitle={pageTitle}>
+<Layout pageTitle={pageTitle} update={update} PubDate={update.date} ModDate={update.updatedAt}>
 <main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
   <article>
     <header>
       <p>
-        <time datetime={update.date}>{update.date}</time>
+        <time datetime={`${update.date}T00:00:00+09:00`}>{update.date}</time>
       </p>
       <h1>{update.title}</h1>
     </header>
 
-    <div set:html={update.content} />
+    <p>{update.content}</p>
 
     <p style="margin-top: 2rem;">
       <a href="/updates/" class="link">お知らせ一覧に戻る</a>

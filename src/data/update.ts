@@ -1,6 +1,12 @@
 export const siteUpdates = [
   {
       date: '2025-12-14',
+      slug: "structured-data-improved",
+      title: "お知らせの構造化を改良しました",
+      content: "お知らせの構造化データを改善しました。これにより、検索エンジンが最新情報をより正確に把握できるようになります。",
+  },
+  {
+      date: '2025-12-14',
       slug: "disclaimer-updated",
       title: "免責事項を更新しました",
       content: "免責事項を更新しました。当ブログは特定の治療法・思想・商品を推奨するものではない旨を追加しました。",
