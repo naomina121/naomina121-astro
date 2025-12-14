@@ -65,7 +65,23 @@ const infoSchema = {
   }
 };
 
-const pageSchema = isUpdates || !isUpdatesDetail ? infoSchema : {
+const { update } = Astro.props;
+
+const pageSchema = isUpdates || !isUpdatesDetail ? infoSchema : isUpdatesDetail ? {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "description": update.content,
+    "url": canonicalURL.toString(),
+    "inLanguage": "ja",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "naomina121",
+      "url": "https://naomina121.com/"
+    },
+    ...(PubDate && { "datePublished": PubDate }),
+    ...(ModDate && { "dateModified": ModDate }),
+}:{
     "@context": "https://schema.org/",
     "@type": "WebPage",
     "name": pageTitle,
@@ -81,7 +97,6 @@ const pageSchema = isUpdates || !isUpdatesDetail ? infoSchema : {
     ...(ModDate && { "dateModified": ModDate }),
   };
 
-const { update } = Astro.props;
 const articleSchema = !isUpdates && isUpdatesDetail && {
   "@context": "https://schema.org/",
   "@type": "BlogPosting", // NewsArticleでもいいが、汎用性はBlogPosting
