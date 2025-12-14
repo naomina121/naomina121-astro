@@ -1,6 +1,13 @@
 export const siteUpdates = [
   {
       date: '2025-12-14',
+      slug: "removed-buy-me-a-coffee-link",
+      title: "Buy me a Coffeeのリンクを削除しました",
+      content: "Buy me a Coffeeのリンクを削除しました。収益性を求めない純粋な情報発信サイトとして運営していくためです。応援はお気持ちだけで十分です！",
+  },
+
+  {
+      date: '2025-12-14',
       slug: 'info-literacy-article-published',
       title: '新記事「なぜ検索エンジンやAIは“怪しい医療記事”を選ぶのか」公開しました',
       content: '情報リテラシーに関する新記事を公開しました。検索エンジンやAIがどのようにして誤情報を評価し、増幅するのか、その技術的な限界について解説しています。',
