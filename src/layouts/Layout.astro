@@ -31,21 +31,6 @@ const websiteSchema = {
   "description": description,
 };
 
-const pageSchema = {
-    "@context": "https://schema.org/",
-    "@type": "WebPage",
-    "name": pageTitle,
-    "description": pageTitle + "のページです。",
-    "url": canonicalURL.toString(),
-    "inLanguage": "ja",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "naomina121",
-      "url": "https://naomina121.com/"
-    },
-    ...(PubDate && { "datePublished": PubDate }),
-    ...(ModDate && { "dateModified": ModDate }),
-  };
 const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "";
 
 const infoSchema = {
@@ -79,6 +64,23 @@ const infoSchema = {
     }))
   }
 };
+
+const pageSchema = isUpdates || !isUpdatesDetail ? infoSchema : {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "name": pageTitle,
+    "description": pageTitle + "のページです。",
+    "url": canonicalURL.toString(),
+    "inLanguage": "ja",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "naomina121",
+      "url": "https://naomina121.com/"
+    },
+    ...(PubDate && { "datePublished": PubDate }),
+    ...(ModDate && { "dateModified": ModDate }),
+  };
+
 const { update } = Astro.props;
 const articleSchema = !isUpdates && isUpdatesDetail && {
   "@context": "https://schema.org/",
@@ -188,7 +190,6 @@ const ga4TrackingCode = `
     <link rel="sitemap" href="/sitemap-index.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />
-    {isUpdates && <script type="application/ld+json" set:html={JSON.stringify(infoSchema)} />}
     {!isUpdates && isUpdatesDetail && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="canonical" href={canonicalURL.toString()} />
