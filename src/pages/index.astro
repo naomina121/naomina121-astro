@@ -2,9 +2,7 @@
 const pageTitle = "NAOMINA121";
 import Layout from "../layouts/Layout.astro";
 import { siteUpdates } from "../data/update";
-const latestUpdates = [...siteUpdates]
-  .sort((a, b) => b.date.localeCompare(a.date)) // 新しい順
-  .slice(0, 3);
+const update = siteUpdates;
 const PubDate = "2025-12-01";
 const ModDate = "2025-12-10";
 ---
@@ -65,8 +63,10 @@ const ModDate = "2025-12-10";
   <p>無理のない更新頻度を目指しているため、記事の更新ペースは、<u class="orange">週に一回の頻度</u>を目指しています。</p>
   <p>記事の内容に関して、ご質問やご意見がございましたら、<a href="/contact/" class="link">お問い合わせページ</a>からご連絡ください。</p>
 
-  <ul style="margin-top:10px; font-weight:600; border-top:1px solid #727272; padding-top:10px;">
-    {latestUpdates.map((update) => (
+  <p class="mt-2 font-semibold" style="color:#e34848; padding-top:10px; margin-top:10px; border-top:1px solid #727272">重要事項の更新履歴</p>
+  <ul style="font-weight:600;">
+    {update.map((update) => {
+      return update.category==="Policy" && (
       <li class="my-1">
         <time class="text-sm orange" datetime={update.date}>{update.date}</time>
         {' : '}
@@ -74,12 +74,48 @@ const ModDate = "2025-12-10";
           {update.title}
         </a>
       </li>
-    ))}
+    )
+    }).filter(Boolean).slice(0, 3)}
   </ul>
+   <p class="mt-2 font-semibold" style="color:#ceb300; padding-top:10px; margin-top:10px; border-top:1px solid #727272">サイトの更新履歴</p>
+  <ul style="font-weight:600;">
+    {update.map((update) => {
+      return update.category==="Technical" && (
+      <li class="my-1">
+        <time class="text-sm orange" datetime={update.date}>{update.date}</time>
+        {' : '}
+        <a href={`/updates/${update.slug}`} class="text-[#c9c9c9] hover:underline hover:underline-offset-4">
+          {update.title}
+        </a>
+      </li>
+    )
+    }).filter(Boolean).slice(0, 3)}
+  </ul>
+  <p class="mt-2 font-semibold" style="color:#cdcdcd; padding-top:10px; margin-top:10px; border-top:1px solid #727272">記事の更新履歴</p>
 
+  <ul style="font-weight:600;">
+    {update.map((update) => {
+      return update.category==="Article" && (
+      <li class="my-1">
+        <time class="text-sm orange" datetime={update.date}>{update.date}</time>
+        {' : '}
+        <a href={`/updates/${update.slug}`} class="text-[#c9c9c9] hover:underline hover:underline-offset-4">
+          {update.title}
+        </a>
+      </li>
+    )
+    }).filter(Boolean).slice(0, 3)}
+  </ul>
   <p style="margin-top:10px; text-align:right;">
     <a href="/updates/" class="gold underline">→ お知らせ一覧を見る</a>
   </p>
 </div>
 </main>
 </Layout>
+<li class="my-1">
+        <time class="text-sm orange" datetime={update.date}>{update.date}</time>
+        {' : '}
+        <a href={`/updates/${update.slug}`} class="text-[#c9c9c9] hover:underline hover:underline-offset-4">
+          {update.title}
+        </a>
+      </li>

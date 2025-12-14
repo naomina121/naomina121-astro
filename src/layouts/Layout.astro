@@ -48,9 +48,10 @@ const infoSchema = {
       "@type": "ListItem",
       "position": i + 1,
       "item": {
-        "@type":"CreativeWork",
+        "@type":"BlogPosting",
         "name": u.title,
         "description": u.content,
+        "articleSection": u.category,
         "datePublished": `${u.date}T00:00:00+09:00`,
         "dateModified": u.updatedAt ? `${u.updatedAt}T00:00:00+09:00` : `${u.date}T00:00:00+09:00`, // 更新日があれば優先
         "url": `${baseUrl}/updates/${u.slug}/`,
