@@ -3,7 +3,7 @@ export const siteUpdates = [
       date: '2025-12-14',
       slug: "removed-buy-me-a-coffee-link",
       title: "Buy me a Coffeeのリンクを削除しました",
-      content: "Buy me a Coffeeのリンクを削除しました。収益性を求めない純粋な情報発信サイトとして運営していくためです。応援はお気持ちだけで十分です！",
+      content: "Buy me a Coffeeのリンクを削除しました。収益性を求めない純粋な情報発信サイトとして運営していくためです。応援してくださるお気持ちだけで十分です、いつも、読んで下さってありがとうございます。",
   },
 
   {
