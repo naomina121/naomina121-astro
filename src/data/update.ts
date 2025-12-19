@@ -2,7 +2,7 @@ export const siteUpdates = [
 {
       date: '2025-12-20',
       slug: "article-github-history-structured-data",
-      title: "各記事にGitHubの更新履歴を追懐し、構造化に対応しました。",
+      title: "各記事にGitHubの更新履歴を追加し、構造化に対応しました。",
       content: "各記事にGitHubの更新履歴を追加し、構造化に対応しました。各記事の微調整も行っています。",
       category:"Policy"
 },
