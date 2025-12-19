@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import PageLayout from '../../layouts/PageLayout.astro';
 import { siteUpdates } from "../../data/update";
 
 export const getStaticPaths = () => {
@@ -11,18 +11,18 @@ export const getStaticPaths = () => {
 
 const { update } = Astro.props;
 const pageTitle = update.title;
+const description = update.content;
 ---
 
-<Layout pageTitle={pageTitle} update={update} PubDate={update.date} ModDate={update.updatedAt}>
-<main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
+<PageLayout pageTitle={pageTitle} update={update} pubDate={update.date} modDate={update.updatedAt} description={description}>
   <article>
-    <header>
+    {update.link ? (
       <p>
-        <time datetime={`${update.date}T00:00:00+09:00`}>{update.date}</time>
+        <small>{update.date}</small><span class="text-sm block ml-2">🔗 関連リンク: <a href={update.link} class="link" target="_blank" rel="noopener noreferrer">{update.link}</a></span>
       </p>
-      <h1>{update.title}</h1>
-    </header>
+    ) : null
 
+    }
     <p>{update.content}</p>
 
     <p style="margin-top: 2rem;">
@@ -31,5 +31,4 @@ const pageTitle = update.title;
             <a href="/" class="inline-block mt-6 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white transition-colors">ホームに戻る</a>
 
   </article>
-</main>
-</Layout>
+</PageLayout>

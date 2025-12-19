@@ -1,21 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import MainToc from "../components/MainToc.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "情報リテラシー";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-14";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-14";
+const image = {
+    url: '/images/information-literacy.jpg',
+    alt: '情報リテラシーのイメージ画像',
+};
+const description = "情報リテラシーを高めることは、メンタルヘルスにも21世紀型思考にも直結する重要な考え方です。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>情報リテラシー</h1>
-    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
-        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
-        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
-    </ul>
-<img class="profile-picture max-w-full h-auto" src="/images/information-literacy.jpg" alt="情報リテラシー" />
-<h2>目次</h2>
-<MainToc />
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
 <h2>概要</h2>
 <p>情報リテラシーを高めることは、<a href="/mental-health/" class="link">メンタルヘルス</a>にも21世紀型思考にも直結する重要な考え方です。</p>
 <h2>記事</h2>
@@ -39,6 +34,4 @@ const ModDate = "2025-12-14";
 <li><a href="/info-literacy/survival-theory">社会的弱者生存論-なぜ生存権が必要なのか-</a></li>
 <li><a href="/info-literacy/thought">考えをやめた、人間に未来はない</a></li>
 </ul>
-
-</main>
-</Layout>
+</PageLayout>

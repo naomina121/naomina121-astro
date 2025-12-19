@@ -23,13 +23,17 @@ if(h2s.length === 0) {
     let h3Count = 1;
 
     h2s.forEach(h2 => {
+        if(h2.id == null){
         h2.id = 'section-' + h2Count;
         h2Count++;
+        }
     });
 
     h3s.forEach(h3 => {
+        if(h3.id == null){
         h3.id = 'subsection-' + h3Count;
         h3Count++;
+        }
     });
 
     tocbot.init({
@@ -39,6 +43,7 @@ if(h2s.length === 0) {
     listClass: 'toc-list',
     linkClass: 'toc-link',
     headingSelector: 'h2, h3',
+    ignoreSelector: '.js-toc-ignore',
   });
 });
 </script>

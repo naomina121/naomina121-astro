@@ -1,7 +1,7 @@
 ---
-const { frontmatter } = Astro.props;
-const Url = "https://naomina121.com" +frontmatter.url;
-const Title = frontmatter.title;
+const { frontmatter, url } = Astro.props;
+const Url = url.toString();
+const Title = frontmatter.pageTitle;
 ---
 
 <section class="sns-share-section">
@@ -20,7 +20,10 @@ const Title = frontmatter.title;
 </section>
 
 <style>
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/7.0.0/css/font-awesome.min.css);
+/*@import url(//maxcdn.bootstrapcdn.com/font-awesome/7.0.0/css/font-awesome.min.css);*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css);
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 
 .sns-share-section {
@@ -192,8 +195,6 @@ const Title = frontmatter.title;
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
 }
-
-
 </style>
 
 <script is:inline>

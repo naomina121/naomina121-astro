@@ -2,15 +2,44 @@
 const isIndex = Astro.url.pathname === "/";
 const isProfile = Astro.url.pathname.startsWith("/profile/");
 const isAbout = Astro.url.pathname.startsWith("/profile/about");
+const isAboutIndex = Astro.url.pathname === "/about/";
+const isAboutPage = Astro.url.pathname.startsWith("/about/");
+const currentPath = Astro.url.pathname;
 const isNobodyPerfect = Astro.url.pathname.startsWith("/profile/nobody-perfect");
 const isNaoAnalysis = Astro.url.pathname.startsWith("/profile/nao-analysis");
 import Toc from '@components/Toc.astro';
 ---
-<aside class="w-[250px] mt-0 pr-8">
+<aside class="sidebar w-[250px] mt-0 pr-8">
 <a href="/"><img class="site-logo" src="/images/naomina.jpg" alt="naomina121のアイコン" />
 {isIndex && (<h1 class="site-name">NAOMINA121</h1>)}{!isIndex && (<p class="site-name">NAOMINA121</p>)}</a>
+
+
 <nav>
     <ul class="nav-links">
+            {isAboutIndex && (<li><span class="current">当サイトについて</span></li>)}
+            {!isAboutIndex && (<li><a href="/about/">当サイトについて</a></li>)}
+{isAboutPage && (<ul class="profile-submenu ml-4 mt-2">
+    {currentPath === "/about/mental-health-and-information-literacy/" && (<li><span class="current">なぜメンタルヘルス × 情報リテラシーか</span></li>)}
+    {currentPath !== "/about/mental-health-and-information-literacy/" && (<li><a href="/about/mental-health-and-information-literacy/">なぜメンタルヘルス × 情報リテラシーか</a></li>)}
+    {currentPath === "/about/non-commercial-policy/" && (<li><span class="current">広告を置かない・収益を目的にしない理由</span></li>)}
+    {currentPath !== "/about/non-commercial-policy/" && (<li><a href="/about/non-commercial-policy/">広告を置かない・収益を目的にしない理由</a></li>)}
+    {currentPath === "/about/writing-guidelines/" && (<li><span class="current">記事を書くときに避けている表現</span></li>)}
+    {currentPath !== "/about/writing-guidelines/" && (<li><a href="/about/writing-guidelines/">記事を書くときに避けている表現</a></li>)}
+    {currentPath === "/about/how-i-think/" && (<li><span class="current">私がなぜ分析欲求が高いのかについて</span></li>)}
+    {currentPath !== "/about/how-i-think/" && (<li><a href="/about/how-i-think/">私がなぜ分析欲求が高いのかについて</a></li>)}
+    {currentPath === "/about/design-philosophy/" && (<li><span class="current">当サイトはなぜ、高級感あふれる金色と黒を基調としたデザインを採用したのか？</span></li>)}
+    {currentPath !== "/about/design-philosophy/" && (<li><a href="/about/design-philosophy/">当サイトはなぜ、高級感あふれる金色と黒を基調としたデザインを採用したのか？</a></li>)}
+    {currentPath === "/about/ai-content-policy/" && (<li><span class="current">AI使用に関する当サイトの品質基準</span></li>)}
+    {currentPath !== "/about/ai-content-policy/" && (<li><a href="/about/ai-content-policy/">AI使用に関する当サイトの品質基準</a></li>)}
+    {currentPath === "/about/cc-by-nc-nd/" && (<li><span class="current">当サイトや記事のライセンスについて（引用に関する事項）</span></li>)}
+    {currentPath !== "/about/cc-by-nc-nd/" && (<li><a href="/about/cc-by-nc-nd/">当サイトや記事のライセンスについて（引用に関する事項）</a></li>)}
+
+
+
+
+
+
+    </ul>)}
         <li><a href="/profile/about">プロフィール</a>
 {isProfile && (<ul class="profile-submenu ml-4 mt-2">
     {isAbout && (<li><span class="current">私について</span></li>)}

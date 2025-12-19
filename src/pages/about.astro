@@ -1,0 +1,142 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+const pageTitle = "当サイトについて";
+const pubDate = "2025-12-20";
+const modDate = null;
+const image = {
+    url: '/images/about.jpg',
+    alt: '運営情報のイメージ画像',
+};
+const description = "当サイトの運営方針やコンセプトについて説明しています。";
+---
+
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
+<h2>概要</h2>
+<p>
+  当サイトは、<a href="/mental-health/" class="link">メンタルヘルス</a>と<a href="/info-literacy/" class="link">情報リテラシー</a>を主軸に、様々な情報を発信しています。
+</p>
+<p>
+  このページでは運営方針を共有し、当サイトのコンセプトを共有します。<br>
+  私に関しては、<a href="/profile/about/" class="link">私について</a>をご確認ください。
+</p>
+
+<h2>運営方針</h2>
+<p class="note">
+  <small>※ 運営方針は、重要度が高く責任を明らかにする必要であるため本ページ、記事ページに関しては、AIによる文章作成は一切使用しておりません。読みづらい箇所は適宜直していきますが、人間の文章であることを保証するためにあえて読みづらい部分を修正していない箇所もあります。</small>
+</p>
+<p>こちらに、運営方針の記事をまとめて載せています。<br>なるべく、このページ内で簡潔できるように要点が分かるようにまとめています。内容は、適宜見直し変更が入ることがありますのでご了承ください。<u class="gold">記事タイトルをクリックしていただくと、各記事の詳細な情報を読めるようになっています。</u></p>
+<ul class="policy-list">
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/mental-health-and-information-literacy/">
+      なぜメンタルヘルス × 情報リテラシーか
+      </a>
+    </h3>
+    <div class="policy-desc">
+    <p>
+        医療デマによる極度のストレスを受けたことがきっかけで、私は、体調を崩し精神病院にて保護入院になったことがあります。<u class="policy-mark">情報リテラシーとメンタルヘルスを理解する必要性は、デマによる健康被害から守るための重要性があるため関連を紐づけ重要なテーマとして取り扱っています。</u>
+    </p>
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/non-commercial-policy/">
+      広告を置かない・収益を目的にしない理由
+    </a>
+    </h3>
+     <div class="policy-desc">
+    <p>
+      <u class="policy-mark">当サイトは、収益性を求めず、非営利目的で運営しているためです。</u>
+    </p>
+    <p>健康や生活に直結する重大な情報ほど、貧富の差によるものではなく、誰でもアクセスできる環境にあるべきと私は考えています。</p>
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/writing-guidelines/">
+      記事を書くときに避けている表現
+    </a>
+    </h3>
+     <div class="policy-desc">
+        <p><u class="policy-mark">「誰でもアクセスできる環境ということは、子供が見ても大丈夫であることが大前提の上で情報を提供するべきだ」と私は考えています。</u>なぜなら、子供目線で作られた文章は、誰が読んでもやさしい文章であることは変わらないからです。当サイトは、必要な情報に誰もがアクセスでき、安全である場を提供する上で、必ずしも組織に入らず、個人の思想から始められることを目的としています。</p>
+        <ul>
+            <li><strong>加害性のある暴力的な表現を避ける</strong></li>
+            <li><strong>情報の鮮度を保ち、記事の作成、更新日時を記載</strong></li>
+            <li><strong>参考文献を利用する際は、情報源を明記する</strong></li>
+            <li><strong>お問い合わせやGithubのレビュー<small>（各記事のGithubリンクから）</small>など誰でもアクセスできる窓口を用意し、誰もが記事の情報の誤りを報告できる仕組みを作る</strong></li>
+        </ul>
+        <p>
+            以上のルールを監守し、適宜、運営方針を見直し、閲覧者にとって良質な情報提供ができるよう記事の品質に努めます。
+        </p>
+
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/how-i-think/">
+      私がなぜ分析欲求が高いのかについて
+    </a>
+    </h3>
+     <div class="policy-desc">
+    <p>
+      <u class="policy-mark">私は、虐待、いじめ、パワハラ、セクハラを受けた被害者だからです。過酷な環境に適応するために生きるために、思考を止めることが難しいため分析が生まれました。</u>
+    </p>
+    <p></p>
+    <p>本来は、程よい思考と思考を休める時間を持つことも健康において大事であることは変わりありません。
+しかし、生き抜いた環境が過酷なために過剰適応した結果、問題解決のために思考をそぎ落とすことの制御が難しい現状も含め、活動をしています。
+思考過剰は、心身を消耗しますし、このような体験は誰にでも起こるべくことではないし、誰もが私のようになるべきではありません。</p>
+<p>しかし、そうした人がいるのもまた事実です。私は情報発信をすることでそうした当事者性を強くを訴え、暴力の正当化を防ぎ子供の人権を強く守ることを目的として設計しています。</p>
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/design-philosophy/">
+      当サイトはなぜ、高級感あふれる金色と黒を基調としたデザインを採用したのか？
+    </a>
+    </h3>
+     <div class="policy-desc">
+    <p>
+      <u class="policy-mark">健康という重要なテーマから、人間の視覚から情報の重要性を認識させるため、格式の高い黒と金の色調で表し、記事の読みやすさを考え記事の本文は読みやすいダークグレーを採用しています。</u>
+    </p>
+    <p>また、ロゴがサイドバーから見れるように設計しており、サイト名は私のハンドルネームである「naomina121」名義にしていることから、誰が書いているのかを安心できることを目的に設計をしました。</p>
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/ai-content-policy/">
+      AI使用に関する当サイトの品質基準
+    </a>
+    </h3>
+     <div class="policy-desc">
+        <p>AI使用に関する当サイトの品質基準は、主に以下の品質を目的に設計しています。</p>
+        <ul>
+        <li><strong>AI画像生成を利用しない</strong>：フリー素材は、利用規約を厳守し活用する。あるいは、自分で画像を作成するなどAIによる画像生成は一切利用しない</li>
+        <li><strong>AI生成物のコンテンツの明記</strong>：AIの監修を受けた記事や、AIの情報提供により記事を作成した場合は、読者が誤解しないよう冒頭にて記述する</li>
+        <li><strong>AIだけに文章作成を頼らない</strong>：記事の品質を保つために、AIリテラシーを含めた参考例としてAI生成文章を採用するが、基本は、オリジナルの文章を活用し作成していくことを心がける</li>
+        <li><strong>AI生成物の情報源の確認</strong>：AIによる情報提供（特に健康や生活に関わる重大な情報）は一次情報に基づいているかを必ず検証、参考文献を合わせて提示。情報が見つからない場合は誤っている可能性を提示する</li>
+        <li><strong>AI翻訳の使用</strong>：英語サイトに関しては、翻訳の目的のため使用しています</li>
+        </ul>
+    </div>
+  </li>
+
+  <li class="policy-item">
+    <h3 class="policy-title">
+    <a class="policy-hub-link"  href="/about/cc-by-nc-nd/">
+      当サイトや記事のライセンスについて（引用に関する事項）
+    </a>
+    </h3>
+     <div class="policy-desc">
+        <p><strong>AI要約、AI学習用途、AI情報整理は非営利用途に限り、当サイトの全文は、原則、パブリックドメインとして扱います。ただし、商用コンテンツへの転用目的や誤解を招く再編集、出典を偽った利用は許可していません。</strong></p>
+        <p>それ以外の使用目的は、<strong>クリエイティブ・コモンズ 表示-非営利-改変禁止 4.0 国際のライセンスを適用しています。</strong></p>
+        <p>このライセンスでは、引用する際、<a href="/profile/about" style="font-weight:600; color:#17631a;">NAOMINA121</a>の著作へのクレジット表示を義務付けています。再利用者は、当サイトの文章を改変することなく、あらゆる媒体や形式で、非営利目的に限り複製および配布できます。</p>
+        <p>但し、当サイトの画像については著作権を保持しており、無断使用を禁じています。</p>
+        <p>詳しいライセンスについてには、<a href="/about/cc-by-nc-nd/" style="font-weight:600; color:#17631a;">記事内容</a>をご確認ください。</p>
+      </div>
+  </li>
+</ul>
+</PageLayout>

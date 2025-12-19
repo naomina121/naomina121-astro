@@ -17,7 +17,7 @@ const isHome = items.length === 1;
 
 <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 {!isHome && (
-<nav aria-label="Breadcrumb" class="breadcrumbs">
+<nav aria-label="Breadcrumb" class="border-t breadcrumbs border-[#3c3c3c]">
   <ol>
     {items.map((item, index) => (
       <li>

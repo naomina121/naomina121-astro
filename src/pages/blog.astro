@@ -1,21 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import MainToc from "../components/MainToc.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "ナオのブログ";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-10";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-10";
+const image = {
+    url: '/images/blog2.webp',
+    alt: 'ブログのイメージ画像',
+};
+const description = "こちらは、ナオの考えをまとめた専用ブログです。思い浮かんだことを自由に書いていきます。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>ナオのブログ</h1>
-    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
-        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
-        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
-    </ul>
-<img class="profile-picture max-w-full h-auto" src="/images/blog2.webp" alt="ナオのブログ" />
-<h2>目次</h2>
-<MainToc />
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
 <h2>概要</h2>
 <p>こちらは、ナオの考えをまとめた専用ブログです。<br>
 思い浮かんだことを自由に書いていきます。</p>
@@ -36,6 +31,4 @@ const ModDate = "2025-12-10";
 <ul class="menu-list">
 <li><a href="/blog/etc-ep1">なんと、この度、当サイトの名刺を作ってくださった方がいました。</a></li>
 </ul>
-
-</main>
-</Layout>
+</PageLayout>

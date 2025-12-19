@@ -1,5 +1,6 @@
 ---
 ---
+<h2 class="js-toc-ignore">目次</h2>
 <nav class="toc-nav-main">
     <details class="toc-container">
   <summary class="toc-title">
@@ -22,14 +23,19 @@ if(h2s.length === 0) {
     let h2Count = 1;
     let h3Count = 1;
 
+
     h2s.forEach(h2 => {
+        if(h2.id == null){
         h2.id = 'section-' + h2Count;
         h2Count++;
+        }
     });
 
     h3s.forEach(h3 => {
+        if(h3.id == null){
         h3.id = 'subsection-' + h3Count;
         h3Count++;
+        }
     });
       tocbot.init({
     tocSelector: '.toc-main',
@@ -37,59 +43,8 @@ if(h2s.length === 0) {
     activeLinkClass: 'is-active',
     listClass: 'toc-list',
     linkClass: 'toc-link',
-    headingSelector: 'h2, h3'
+    headingSelector: 'h2, h3',
+    ignoreSelector: '.js-toc-ignore',
   });
 });
 </script>
-
-<style>
-.toc-nav-main {
-    background-color: #232323;
-    border-radius: 3px;
-    font-size:14px;
-    line-height:2;
-    margin:20px 0;
-    border: 1px solid #414141;
-}
-
-.toc-nav-main .toc-main{
-    padding: 16px;
-    font-size:15px;
-}
-
-.toc-nav-main details{
-    padding:0;
-}
-.toc-nav-main summary{
-    background:#584e14;
-        list-style: none;
-}
-
-    .toc-title span {
-        color: #f9f9f9;
-        font-size: 16px;
-        margin:0;
-        padding:12px;
-    }
-
-    .toc-list {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    .toc-link {
-        color: #999;
-        text-decoration: none;
-        display: block;
-        padding: 4px 0;
-        transition: color 0.3s;
-    }
-    :global(.toc-link:hover) {
-        color: #f9f9f9;
-    }
-
-    :global(.toc-link.is-active) {
-        font-weight: bold;
-        color: #aca034;
-    }
-</style>

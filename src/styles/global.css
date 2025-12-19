@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Zen+Old+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -21,6 +21,7 @@ body {
   justify-content: center;
   font-family: "Zen Old Mincho", serif;
   position: relative;
+  font-size: 16px;
 }
 
 main {
@@ -32,6 +33,41 @@ aside {
   height: 100%;
   min-height: 100vh;
   padding-top: 60px;
+}
+
+#search {
+  transition-duration: 300ms;
+  background: #1e1e1e;
+  border-radius: 8px;
+  color: #d8d8d8;
+  border: 1px solid #3c3c3c;
+}
+
+#search input.pagefind-ui__search-input {
+  background: #1e1e1e;
+  border: none;
+  color: #d8d8d8;
+  border-radius: 4px;
+}
+
+#search .pagefind-ui__message {
+  color: #d8d8d8;
+}
+
+#search input.pagefind-ui__search-input:focus-visible {
+  outline: none;
+  border: 1px solid #3c3c3c;
+  box-shadow: none;
+}
+
+#search .pagefind-ui__search-clear {
+  background: #1e1e1e;
+  color: #fafafa;
+}
+
+#search:not(:has(.pagefind-ui__hidden)) {
+  padding: 16px;
+  border-radius: 4px;
 }
 
 .site-logo {
@@ -47,8 +83,7 @@ aside {
 .site-name {
   display: inline-block;
   font-size: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 900;
   margin: 10px 0;
   background: linear-gradient(0deg, #ffffff 30%, #f5f0dc 31%, #ad9434 65%);
   -webkit-background-clip: text;
@@ -57,7 +92,6 @@ aside {
   border-left: 6px solid #642828;
   padding: 0px;
   padding-left: 10px;
-  font-family: "Castoro Titling", serif;
   font-weight: 900;
   font-style: normal;
   line-height: 1.5;
@@ -124,6 +158,10 @@ h1 {
 
 h2 {
   @apply text-3xl font-bold border-b-[1px] border-[#3c3c3c] p-6 pl-0 mb-6;
+}
+
+#article-body h2 {
+  line-height: 1.4;
 }
 
 #article-body h2 a {
@@ -295,7 +333,10 @@ blockquote:after {
 }
 
 #article-body h1 {
-  line-height: 1.7;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  line-height: 1.5;
 }
 
 #article-body .note {
@@ -315,6 +356,44 @@ blockquote:after {
   border: 3px solid #817718;
   margin: 20px 0;
   box-shadow: 0 0 4px 5px inset #212121;
+}
+
+#article-body ul.list ul {
+  margin-left: 20px;
+}
+
+#article-body details {
+  margin: 20px 0;
+  padding: 0px;
+  background: #292929;
+  border: 3px solid #817f18;
+  box-shadow: 0 0 4px 5px inset #212121;
+}
+
+#article-body details summary {
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  background: #181818;
+  color: #c2c2c2;
+  padding: 10px;
+  margin: 0;
+}
+
+#article-body details dt {
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(180, 129, 20);
+  border-top: 1px solid #3c3c3c;
+  border-bottom: 1px dashed #3c3c3c;
+}
+
+#article-body details dd p {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0;
 }
 
 #article-body blockquote p a,
@@ -350,7 +429,7 @@ blockquote cite {
 }
 
 #article-body ol li {
-  margin-left: 20px;
+  margin-left: 30px;
   line-height: 2;
 }
 .box {
@@ -689,26 +768,29 @@ p {
   color: #fefbdd;
 }
 
-.transcript-accordion {
+#article-body details.transcript-accordion {
   margin-top: 30px;
+  border: none;
 }
 
-.transcript-accordion summary {
+#article-body .transcript-accordion summary {
   cursor: pointer;
   padding: 15px 20px;
   background-color: #114c4c;
   border-radius: 4px;
+  border: none;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.1em;
   user-select: none;
   transition: background-color 0.2s ease;
 }
 
-.transcript-accordion summary:hover {
+#article-body .transcript-accordion summary:hover {
   background-color: #114c4c;
 }
 
-.transcript-accordion[open] summary {
+#article-body .transcript-accordion[open] summary {
   background-color: #114c4c;
   border-radius: 4px 4px 0 0;
 }
@@ -823,6 +905,83 @@ p {
   display: none;
 }
 
+#article-body ul.policy-list {
+  padding: 0;
+  margin: 20px 0;
+}
+
+#article-body ul.policy-list li {
+  color: #212121;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#article-body ul.policy-list > li {
+  margin-left: 0;
+}
+
+#article-body ul.policy-list li h3.policy-title {
+  display: block;
+  background: #1d2c48;
+  padding: 10px 10px 10px 30px;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  font-size: 14px;
+  color: #e7e7e7;
+  border-bottom: 4px solid #909052;
+}
+
+#article-body .policy-mark {
+  color: #870000;
+}
+
+#article-body ul.policy-list li .policy-desc {
+  background: #e7e7e7;
+  padding: 10px 15px;
+}
+
+#article-body ul.policy-list li .policy-desc p {
+  margin: 3px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+#article-body ul.policy-list li .policy-desc strong {
+  font-size: 14px;
+  color: #78671e;
+}
+
+#article-body ul.policy-list li .policy-hub {
+  background: #636363;
+  border-top: 1px solid #6d6d6d;
+  padding: 0;
+  text-align: right;
+}
+
+#article-body ul.policy-list li h3.policy-title .policy-hub-link::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  border-radius: 50%;
+  background: #bbab1b;
+  border: 3px double #474747;
+  width: 15px;
+  height: 15px;
+}
+
+#article-body ul.policy-list li .policy-hub-link:hover {
+  text-decoration: underline;
+  color: #f3db71;
+}
+
+#article-body ul.policy-list li h3.policy-title .policy-hub-link:hover:before {
+  background: #ffffff;
+}
+
 @media screen and (max-width: 1250px) {
   aside {
     display: none;
@@ -900,6 +1059,9 @@ p {
   }
   .sp-menu > li:nth-child(7) > a {
     border-top: 8px solid #93882c;
+  }
+  .sp-menu > li:nth-child(8) > a {
+    border-top: 8px solid #3f2c93;
   }
 
   .sp-menu h2 {
@@ -980,4 +1142,63 @@ p {
   width: 100%;
   display: block;
   margin: 25px 0;
+}
+
+.toc-nav-main {
+  font-size: 14px;
+  line-height: 2;
+  margin: 20px 0;
+}
+
+.toc-nav-main .toc-main {
+  padding: 16px;
+  font-size: 15px;
+}
+
+.toc-nav-main details {
+  padding: 0;
+  border: 0;
+  border: 1px solid #575757;
+}
+#article-body .toc-nav-main details {
+  border: 0;
+  border: 1px solid #575757;
+}
+
+.toc-nav-main details summary {
+  background: #193c4d;
+  list-style: none;
+}
+
+#article-body .toc-nav-main details summary {
+  background: #193c4d;
+  list-style: none;
+}
+
+.toc-title span {
+  color: #f9f9f9;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+}
+
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc-link {
+  color: #999;
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+.toc-link:hover {
+  color: #f9f9f9;
+}
+
+.toc-link.is-active {
+  font-weight: bold;
+  color: #aca034;
 }

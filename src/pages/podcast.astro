@@ -1,21 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "ナオの音声ブログ";
-import MainToc from "../components/MainToc.astro";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-12";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-12";
+const image = {
+    url: '/images/obsiedian_onsei.jpg',
+    alt: 'ポッドキャストのイメージ画像',
+};
+const description = "ナオの音声ブログ（ポッドキャスト）ページです。チャプター付きの文字起こしも提供しています。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>ナオの音声ブログ</h1>
-    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
-        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
-        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
-    </ul>
-<img class="profile-picture max-w-full h-auto" src="/images/obsiedian_onsei.jpg" alt="ナオの音声ブログ" />
-<h2>目次</h2>
-<MainToc />
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
 <h2>概要</h2>
 <p>私の趣味で作られたYoutubeのポッドキャスト動画を埋め込んだ個別のページです。</p>
 <p><u class="orange">視覚障害者向けに、音声ブログでは、チャプター付きの文字起こしを提供しています。</u></p>
@@ -32,5 +27,4 @@ const ModDate = "2025-12-12";
 <li><a href="/podcast/ep4">どうせ、君は魅力的だからうまくいく</a></li>
 <li><a href="/podcast/ep5">全部覚えようとしてない？ 情報過多の時代に“忘れる技術”を</a></li>
 </ol>
-</main>
-</Layout>
+</PageLayout>

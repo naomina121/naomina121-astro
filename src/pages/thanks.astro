@@ -1,16 +1,14 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "お問合せ頂きありがとうございます";
+const description = "お問い合わせありがとうございます。内容を確認の上、折り返しご連絡いたします。";
 ---
 
-<Layout pageTitle={pageTitle}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>お問合せ頂きありがとうございます。</h1>
+<PageLayout pageTitle={pageTitle} description={description}>
 <p>内容を確認の上、折り返しご連絡いたしますので、しばらくお待ちください。</p>
 <p>なお、内容によってはご返信できない場合もございますので、あらかじめご了承ください。</p>
 <p>今後ともnaomina121のサイトをよろしくお願いいたします。</p>
 <a href="/"
   class="inline-block mt-6 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white transition-colors"
 >ホームに戻る</a>
-</main>
-</Layout>
+</PageLayout>

@@ -1,4 +1,5 @@
 ---
+const isIndex = Astro.url.pathname === "/";
 ---
 <input type="checkbox" id="menu-toggle" class="hidden" />
 <label for="menu-toggle" class="sp-label cursor-pointer items-center gap-2">
@@ -11,10 +12,22 @@
             <span class="text-4xl">×</span>
             <span class="text-xs mb-6 block sp-close">CLOSE</span>
         </label>
-        <a href="/" class="site-name text-4xl font-bold mb-4">NAOMINA121</a>
+        {isIndex && (<h1 class="site-name text-4xl font-bold mb-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl font-bold mb-4">NAOMINA121</a>)}</a>
 <hr class="my-4 border-gray-600" />
         <ul class="sp-menu">
         <li><a href="/" class="block py-2 px-4">トップページ</a></li>
+                <li><h2 class="font-bold px-4 py-2">当サイトについて</h2><a href="/about/" class="block py-2 px-6">当サイトについて</a>
+                        <ul class="mb-4">
+    <li><a href="/about/mental-health-and-information-literacy/" class="block py-2 px-4">なぜメンタルヘルス × 情報リテラシーか</a></li>
+    <li><a href="/about/non-commercial-policy/" class="block py-2 px-4">広告を置かない・収益を目的にしない理由</a></li>
+    <li><a href="/about/writing-guidelines/" class="block py-2 px-4">記事を書くときに避けている表現</a></li>
+    <li><a href="/about/how-i-think/" class="block py-2 px-4">私がなぜ分析欲求が高いのかについて</a></li>
+    <li><a href="/about/design-philosophy/" class="block py-2 px-4">当サイトはなぜ、高級感あふれる金色と黒を基調としたデザインを採用したのか？</a></li>
+    <li><a href="/about/ai-content-policy/" class="block py-2 px-4">AI使用に関する当サイトの品質基準</a></li>
+    <li><a href="/about/cc-by-nc-nd/" class="block py-2 px-4">当サイトや記事のライセンスについて（引用に関する事項）</a></li>
+                </ul>
+                </li>
+
         <li>
 <h2 class="font-bold px-4 py-2">プロフィール</h2>
             <a href="/profile/about" class="block py-2 px-4">ナオについて</a>

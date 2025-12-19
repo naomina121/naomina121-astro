@@ -1,13 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "ナオの活動拠点";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-10";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-10";
+const description = "ナオの活動拠点を紹介するページです。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>ナオの活動拠点</h1>
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} description={description}>
 <p>ここではナオの活動拠点を紹介します。</p>
 <h2>サイトリスト</h2>
 <h3>テキストサイト</h3>
@@ -52,5 +51,4 @@ const ModDate = "2025-12-10";
 <li><a href="https://note.com/naomina121_note" target="_blank">note</a></li>
 <li><a href="https://note.com/one_2025_" target="_blank">oneのnoteアカウント</a></li>
 </ul>
-</main>
-</Layout>
+</PageLayout>

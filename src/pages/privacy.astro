@@ -1,13 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '@layouts/PageLayout.astro';
 const pageTitle = "プライバシーポリシー";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-10";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-10";
+const description = "NAOMINA121のプライバシーポリシーについて記載しています。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>プライバシーポリシー</h1>
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} description={description}>
 <p>【NAOMINA121】(以下「当ブログ」)のプライバシーポリシーを次の通り記載します。</p>
 <h2>個人情報の利用目的について</h2>
 <p>当ブログでは、お問い合わせの際に氏名・メールアドレス等の個人情報を入力いただく場合があります。</p>
@@ -36,8 +35,6 @@ const ModDate = "2025-12-10";
 <h2>プライバシーポリシーの変更</h2>
 <p>当ブログは、個人情報に関して適用される日本の法令を遵守するとともに、本プライバシーポリシーの内容を適宜見直して改善に努めます。</p>
 <p>修正された最新のプライバシーポリシーは常に本ページにて開示されます。</p>
-<p>制定日:2025年12月4日</p>
+<p>制定日:2025年12月10日</p>
 <p>【NAOMINA121】 【ナオ】</p>
-
-</main>
-</Layout>
+</PageLayout>

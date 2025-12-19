@@ -1,13 +1,12 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "免責事項";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-14";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-14";
+const descrioption = "NAOMINA121の免責事項について記載しています。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>免責事項</h1>
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} description={descrioption}>
 <p>【Naomina121】(以下「当ブログ」)の免責事項を載せます。</p>
 <hr>
 <p>当ブログは、趣味で作られたサイトです。</p>
@@ -24,6 +23,4 @@ const ModDate = "2025-12-14";
 <p>制定日:：2025年12月1日</p>
 <p>更新日：2025年12月14日</p>
 <p>運営者：ナオ（Naomina121）</p>
-
-</main>
-</Layout>
+</PageLayout>

@@ -1,4 +1,4 @@
-<footer class='bg-[#1e1e1e] text-white w-full'>
+<footer class='bg-[#1e1e1e] border-t border-[#3c3c3c] text-white w-full'>
   <div class='max-w-6xl mx-auto px-4 py-8'>
     <!-- フッターナビゲーション -->
     <div class='border-b border-[#3c3c3c] pb-8 mb-8'>
@@ -6,6 +6,14 @@
         <ul
           class='text-center grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 text-sm'
         >
+          <li>
+            <a
+              href='/about/'
+              class='text-[#999] hover:text-[#f9f9f9] transition-colors'
+            >
+              当サイトについて
+            </a>
+          </li>
           <li>
             <a
               href='/profile/about'
@@ -160,11 +168,13 @@
 
     <!-- コピーライト -->
     <div class='text-center pt-8 border-t border-[#3c3c3c]'>
-      <small class='text-gray-300 text-sm'>
-        © 2025
-        NAOMINA121.
-        All rights reserved.
-      </small>
+      <div class='text-gray-300 text-sm flex justify-center'>
+        <small>
+    非営利に限りAI要約・学習・情報整理に関しては、パブリックドメイン扱いとします。
+    &copy; 2025 <a href="https://naomina121.com/" property="cc:attributionName" rel="cc:attributionURL">naomina121</a>
+    /
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a></small>
+      </div>
     </div>
   </div>
 </footer>

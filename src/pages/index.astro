@@ -1,15 +1,18 @@
 ---
-const pageTitle = "NAOMINA121";
-import Layout from "../layouts/Layout.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 import { siteUpdates } from "../data/update";
+const pageTitle = "NAOMINA121";
 const update = siteUpdates;
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-10";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-10";
+const image = {
+    url: '/images/nao2.jpg',
+    alt: 'ナオの公式サイトのイメージ画像',
+};
+const description = "ナオの公式サイト、NAOMINA121へようこそ。メンタルヘルス、情報リテラシー、ブログ、ポッドキャストなど、多彩なコンテンツをお届けします。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
-<img class="profile-picture max-w-full h-auto" src="/images/nao2.jpg" alt="Nobody Is Perfect" />
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
 <h2>はじめに</h2>
 <p>このサイトは、<a href="/profile/about" class="link">ナオ</a>が運営するナオの公式サイトです。</p>
 <h2>発信コンテンツ</h2>
@@ -24,6 +27,10 @@ const ModDate = "2025-12-10";
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>当サイトについて</td>
+<td>運営方針やサイトの目的について説明しています。</td>
+</tr>
 <tr>
 <td>プロフィール</td>
 <td>ナオの基本情報です</td>
@@ -63,8 +70,8 @@ const ModDate = "2025-12-10";
   <p>無理のない更新頻度を目指しているため、記事の更新ペースは、<u class="orange">週に一回の頻度</u>を目指しています。</p>
   <p>記事の内容に関して、ご質問やご意見がございましたら、<a href="/contact/" class="link">お問い合わせページ</a>からご連絡ください。</p>
 
-  <p class="mt-2 font-semibold" style="color:#ef7e7e; padding-top:10px; margin-top:10px; border-top:1px solid #727272">重要事項の更新履歴</p>
-  <ul style="font-weight:600;">
+  <p class="mt-2 font-semibold" style="color:#ef7e7e; font-weight:500; padding-top:10px; margin-top:10px; border-top:1px solid #727272">重要事項の更新履歴</p>
+  <ul style="font-weight:500;">
     {update.map((update) => {
       return update.category==="Policy" && (
       <li class="my-1">
@@ -77,8 +84,8 @@ const ModDate = "2025-12-10";
     )
     }).filter(Boolean).slice(0, 3)}
   </ul>
-   <p class="mt-2 font-semibold" style="color:#ceb300; padding-top:10px; margin-top:10px; border-top:1px solid #727272">サイトの更新履歴</p>
-  <ul style="font-weight:600;">
+   <p class="mt-2 font-semibold" style="color:#ceb300; font-weight:500; padding-top:10px; margin-top:10px; border-top:1px solid #727272">サイトの更新履歴</p>
+  <ul style="font-weight:500;">
     {update.map((update) => {
       return update.category==="Technical" && (
       <li class="my-1">
@@ -91,13 +98,13 @@ const ModDate = "2025-12-10";
     )
     }).filter(Boolean).slice(0, 3)}
   </ul>
-  <p class="mt-2 font-semibold" style="color:#cdcdcd; padding-top:10px; margin-top:10px; border-top:1px solid #727272">記事の更新履歴</p>
+  <p class="mt-2 font-semibold" style="font-weight:500; color:#cdcdcd; padding-top:10px; margin-top:10px; border-top:1px solid #727272">記事の更新履歴</p>
 
-  <ul style="font-weight:600;">
+  <ul style="font-weight:500;">
     {update.map((update) => {
       return update.category==="Article" && (
       <li class="my-1">
-        <time style="color:#ff9a4b;" class="text-sm" datetime={`${update.date}T00:00:00+09:00`}>{update.date}</time>
+        <time style="color:#ff9a4b;" class="font-weight:500; text-sm" datetime={`${update.date}T00:00:00+09:00`}>{update.date}</time>
         {' : '}
         <a href={`/updates/${update.slug}`} class="text-[#c9c9c9] hover:underline hover:underline-offset-4">
           {update.title}
@@ -107,8 +114,7 @@ const ModDate = "2025-12-10";
     }).filter(Boolean).slice(0, 3)}
   </ul>
   <p style="margin-top:10px; text-align:right;">
-    <a href="/updates/" class="gold underline">→ お知らせ一覧を見る</a>
+    <a href="/updates/" style="font-weight:100;" class="gold underline hover:text-[#fff]">→ お知らせ一覧を見る</a>
   </p>
 </div>
-</main>
-</Layout>
+</PageLayout>

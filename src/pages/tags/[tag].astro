@@ -1,10 +1,10 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import PageLayout from '../../layouts/PageLayout.astro';
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 const filteredPosts = posts.filter((post) => post.frontmatter.tags?.includes(tag));
 export async function getStaticPaths() {
-  const allPosts = Object.values(import.meta.glob('../*/*.md', { eager: true }));
+  const allPosts = Object.values(import.meta.glob('../*/*.mdx', { eager: true }));
   const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
 return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
@@ -15,10 +15,9 @@ return uniqueTags.map((tag) => {
     });
 }
 const pageTitle = `タグ: ${tag}`;
+const description = `${tag}のタグが付いた記事一覧ページです。`;
 ---
-<Layout pageTitle={pageTitle}>
-  <main class="w-full max-w-6xl bg-[#1e1e1e] pb-[60px] px-16 border-l-[1px] border-[#3c3c3c]">
-  <h1>タグ: {tag}</h1>
+<PageLayout pageTitle={pageTitle} description={description}>
   <p class="mb-6">{tag}のタグが付いた記事です。</p>
   <ul>
     {filteredPosts.map((post: any) => <li class="list-disc ml-6 mb-2"><time class="orange" datetime={post.frontmatter.modDate
@@ -26,9 +25,8 @@ const pageTitle = `タグ: ${tag}`;
     : new Date(post.frontmatter.pubDate).toISOString()}>{post.frontmatter.modDate
     ? post.frontmatter.modDate.slice(0, 10)
     : post.frontmatter.pubDate.slice(0, 10)
-    }</time> <a href={post.url}>{post.frontmatter.title}</a></li>)}
+    }</time> <a href={post.url}>{post.frontmatter.pageTitle}</a></li>)}
   </ul>
               <a href="/" class="inline-block mt-6 px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white transition-colors">ホームに戻る</a>
 
-  </main>
-</Layout>
+</PageLayout>

@@ -1,4 +1,12 @@
 export const siteUpdates = [
+{
+      date: '2025-12-20',
+      slug: "about-add",
+      title: "運用方針を追加しました",
+      content: "当サイトについての運用方針を追加しました。サイトの目的や情報発信の姿勢について詳しく説明しています。",
+      link:'https://naomina121.com/about/',
+      category:"Policy"
+},
   {
       date: '2025-12-14',
       slug: "updates-structured-data-ui-improvements",
@@ -42,17 +50,19 @@ export const siteUpdates = [
 
   {
       date: '2025-12-14',
-            updatedAt:'2025-12-14',
+      updatedAt:'2025-12-14',
       slug: 'info-literacy-article-published',
-      title: '新記事「なぜ検索エンジンやAIは“怪しい医療記事”を選ぶのか」公開しました',
+      title: '新記事「なぜ検索やAIは“怪しい医療記事”を選んでしまうのか？― アルゴリズムとSEOが抱える限界 ―」公開しました',
       content: '情報リテラシーに関する新記事を公開しました。検索エンジンやAIがどのようにして誤情報を評価し、増幅するのか、その技術的な限界について解説しています。',
+      link:'https://naomina121.com/info-literacy/how-search-and-ai-evaluate-medical-content/',
       category: 'Article'
     },
   {
       date: '2025-12-14',
       slug: 'mental-health-article-published',
-      title: '新記事「なぜ私たちは医師が書いた記事を信頼するのか」公開しました',
+      title: '新記事「なぜ医師の記事なのに信じてしまうのか？― 悪意のない医療情報が、患者を傷つけるまで ―」公開しました',
       content: '医師や専門家が誤った医療情報を発信してしまう場合に、どのような害が生じるのかについて考察した新記事を公開しました。心理学的概念を通じて、そのメカニズムを解説しています。',
+      link:'https://naomina121.com/info-literacy/why-we-trust-medical-information/',
       category: 'Article'
   },
   {
@@ -109,6 +119,7 @@ export const siteUpdates = [
     slug: 'vps-ghost-article-published',
     title: '新記事「保護入院中の状況の中、VPS立ててGhostと戦った患者の記録」を公開しました',
     content: '精神科の保護入院中にVPSを立ててGhostを運用した体験記を公開しました。メタ認知の観点から技術力を体験談として語っています。',
+    link:'https://naomina121.com/info-literacy/vps-ghost/',
     category: 'Article'
   },
     {
@@ -117,6 +128,7 @@ export const siteUpdates = [
     slug: 'metacognition-article-published',
     title: '新記事「「ちょっと待って、それ本当？」情報に流されない自分を育てる「メタ認知」の話」を公開しました',
     content: '情報リテラシー向上のための新記事を公開しました。デマに流されないための考え方や、メタ認知の重要性について解説しています。',
+    link:'https://naomina121.com/info-literacy/metacognition-mental-health/',
     category: 'Article'
     },
     {

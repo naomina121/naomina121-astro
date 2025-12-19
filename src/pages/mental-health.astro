@@ -1,21 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import MainToc from "../components/MainToc.astro";
+import PageLayout from '../layouts/PageLayout.astro';
 const pageTitle = "メンタルヘルス";
-const PubDate = "2025-12-01";
-const ModDate = "2025-12-14";
+const pubDate = "2025-12-01";
+const modDate = "2025-12-14";
+const image = {
+    url: '/images/mental-health.jpg',
+    alt: 'メンタルヘルスのイメージ画像',
+};
+const description = "メンタルヘルスを高めることで健康意識を強くするための記事一覧ページです。";
 ---
 
-<Layout pageTitle={pageTitle} PubDate={PubDate} ModDate={ModDate}>
-<main id="article-body" class="w-full max-w-6xl bg-[#1e1e1e] px-16 pb-[60px] border-l-[1px] border-[#3c3c3c]">
-<h1>メンタルヘルス</h1>
-    <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">
-        <li class="mb-2 text-sm">📰作成日: {PubDate.toString().slice(0,10)}</li>
-        {ModDate && <li class="mb-2 text-sm">✏️最終更新日: {ModDate.toString().slice(0,10)}</li>}
-    </ul>
-<img class="profile-picture max-w-full h-auto" src="/images/mental-health.jpg" alt="メンタルヘルス" />
-<h2>目次</h2>
-<MainToc />
+<PageLayout pageTitle={pageTitle} pubDate={pubDate} modDate={modDate} image={image} description={description}>
 <h2>概要</h2>
 <p>メンタルヘルスを高めることで健康意識を強くするというのが目的です。
 <br>
@@ -45,6 +40,4 @@ const ModDate = "2025-12-14";
 <ul class="menu-list">
 <li><a href="/mental-health/serotonin">【悲報】セロトニン「ちょっと冬だから、休むわ」</a></li>
 </ul>
-
-</main>
-</Layout>
+</PageLayout>
