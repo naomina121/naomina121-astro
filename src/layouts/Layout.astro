@@ -207,8 +207,7 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
 !getIsUrl("/info-literacy/") && getIsUrlStartsWith("/info-literacy/") &&
 !getIsUrl("/mental-health/") && getIsUrlStartsWith("/mental-health/") &&
 !getIsUrl("/blog/") && getIsUrlStartsWith("/blog/") &&
-!getIsUrl("/about/") && getIsUrlStartsWith("/about/") ?
- {
+!getIsUrl("/about/") && getIsUrlStartsWith("/about/") && !getIsUrl("/podcast/") && !getIsUrl("/") ? {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": frontmatter.pageTitle,
@@ -242,7 +241,7 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
 }:{
     "@context": "https://schema.org/",
     "@type": "WebPage",
-    "name": frontmatter.pageTitle,
+    "name": postTitle,
     "description": descriptionContent,
     "url": canonicalURL.toString(),
     "inLanguage": lang,
@@ -251,8 +250,8 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
       "name": siteName,
       "url":  siteUrl + "/"
     },
-    ...(frontmatter.pubDate && { "datePublished": frontmatter.pubDate + "T00:00:00+09:00" }),
-    ...(frontmatter.modDate && { "dateModified": frontmatter.modDate + "T00:00:00+09:00" }),
+    ...(pubDate && { "datePublished": pubDate + "T00:00:00+09:00" }),
+    ...(modDate && { "dateModified": modDate + "T00:00:00+09:00" }),
   };
 
   const articleSchema = !getIsUrl("/updates/") && getIsUrlStartsWith("/updates/") && {
