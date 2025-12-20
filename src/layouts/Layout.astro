@@ -187,7 +187,7 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
    };
   }),
   },
-  } : !getIsUrl("/updates/") && !getIsUrlStartsWith("/updates/") ? infoSchema : getIsUrlStartsWith("/updates/") ? {
+  } : getIsUrl("/updates/") ? infoSchema : getIsUrlStartsWith("/updates/") ? {
     "@context": "https://schema.org/",
     "@type": "WebPage",
     "name": postTitle,
@@ -292,79 +292,79 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
   };
 
 const breadcrumbItems = isHome
-  ? [{ name: 'ホーム', item: Astro.site.origin + '/' }]
+  ? [{ name: 'ホーム', item: siteUrl + '/' }]
   : getIsUrl("/updates/")
   ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'お知らせ一覧', item: Astro.site.origin + '/updates/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'お知らせ一覧', item: siteUrl + '/updates/' },
   ]
   : getIsUrlStartsWith("/updates/")
   ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'お知らせ一覧', item: Astro.site.origin + '/updates/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'お知らせ一覧', item: siteUrl + '/updates/' },
       { name: postTitle, item: canonicalURL.toString() }
     ]
 :getIsUrl("/about/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '当サイトについて', item: Astro.site.origin + '/about/' }
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '当サイトについて', item: siteUrl + '/about/' }
 ]
   :getIsUrlStartsWith("/about/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '当サイトについて', item: Astro.site.origin + '/about/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '当サイトについて', item: siteUrl + '/about/' },
       { name: postTitle, item: canonicalURL.toString() }
 ]
 :getIsUrl("/info-literacy/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '情報リテラシー', item: Astro.site.origin + '/info-literacy/' }
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '情報リテラシー', item: siteUrl + '/info-literacy/' }
 ]
   :getIsUrl("/mental-health/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'メンタルヘルス', item: Astro.site.origin + '/mental-health/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'メンタルヘルス', item: siteUrl + '/mental-health/' },
 ]:getIsUrl("/blog/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'ブログ', item: Astro.site.origin + '/blog/' }
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'ブログ', item: siteUrl + '/blog/' }
 ]:getIsUrl("/podcast/")?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '音声ブログ', item: Astro.site.origin + '/podcast/' }
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '音声ブログ', item: siteUrl + '/podcast/' }
 ]
 :getIsUrl("/tags/")
 ?[
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'タグ一覧', item: Astro.site.origin + '/tags/' }
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'タグ一覧', item: siteUrl + '/tags/' }
 ]
   : getIsUrlStartsWith("/tags/")
   ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'タグ一覧', item: Astro.site.origin + '/tags/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'タグ一覧', item: siteUrl + '/tags/' },
       { name: postTitle, item: canonicalURL.toString() }
     ]
     :
 getIsUrlStartsWith("/blog/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'ブログ', item: Astro.site.origin + '/blog/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'ブログ', item: siteUrl + '/blog/' },
         { name: postTitle, item: canonicalURL.toString() }
     ] : getIsUrlStartsWith("/profile/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'ホーム', item: siteUrl + '/' },
       { name: 'プロフィール', item: canonicalURL.toString() },
       { name: postTitle, item: canonicalURL.toString() }
     ] : getIsUrlStartsWith("/mental-health/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: 'メンタルヘルス', item: Astro.site.origin + '/mental-health/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: 'メンタルヘルス', item: siteUrl + '/mental-health/' },
       { name: postTitle, item: canonicalURL.toString() }
     ] : getIsUrlStartsWith("/info-literacy/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '情報リテラシー', item: Astro.site.origin + '/info-literacy/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '情報リテラシー', item: siteUrl + '/info-literacy/' },
       { name: postTitle, item: canonicalURL.toString() }
     ] : getIsUrlStartsWith("/podcast/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '音声ブログ', item: Astro.site.origin + '/podcast/' },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '音声ブログ', item: siteUrl + '/podcast/' },
       { name: postTitle, item: canonicalURL.toString() }
     ] : getIsUrlStartsWith("/materials/") ? [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
-      { name: '資料室', item: canonicalURL.toString() },
+      { name: 'ホーム', item: siteUrl + '/' },
+      { name: '資料室', item: siteUrl + '/materials/' },
       { name: postTitle, item: canonicalURL.toString() }
     ] : [
-      { name: 'ホーム', item: Astro.site.origin + '/' },
+      { name: 'ホーム', item: siteUrl + '/' },
       { name: postTitle, item: canonicalURL.toString() }
     ];
 
