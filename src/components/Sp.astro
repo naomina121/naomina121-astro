@@ -5,13 +5,11 @@ const isIndex = Astro.url.pathname === "/";
 <label for="menu-toggle" class="sp-label cursor-pointer items-center gap-2">
 <img class="w-10 h-10 rounded-full" src="/images/naomina.jpg" alt="naomina121のアイコン" />
 <span class="text-xs sp-open">MENU</span>
+<span class="text-4xl sp-batu">×</span>
+<span class="text-xs block sp-close">CLOSE</span>
 </label>
 <div class="sp-sidebar fixed top-0 left-0 w-64 h-full bg-[#292929] shadow-md z-50">
     <div class="p-4">
-        <label for="menu-toggle" class="cursor-pointer">
-            <span class="text-4xl">×</span>
-            <span class="text-xs mb-6 block sp-close">CLOSE</span>
-        </label>
         {isIndex && (<h1 class="site-name text-4xl font-bold mb-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl font-bold mb-4">NAOMINA121</a>)}</a>
 <hr class="my-4 border-gray-600" />
         <ul class="sp-menu">
