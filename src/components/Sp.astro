@@ -3,15 +3,17 @@ const isIndex = Astro.url.pathname === "/";
 ---
 <input type="checkbox" id="menu-toggle" class="hidden" />
 <label for="menu-toggle" class="sp-label cursor-pointer items-center gap-2">
-<img class="w-10 h-10 rounded-full" src="/images/naomina.jpg" alt="naomina121のアイコン" />
+{isIndex && (<h1 class="site-name text-4xl inline-block font-bold ml-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl inline-block font-bold mb-4">NAOMINA121</a>)}
+
+    <span>
+<img class="w-10 h-10 rounded-full" src="/images/naomina.jpg" alt="naomina121's icon" />
 <span class="text-xs sp-open">MENU</span>
+</span>
 <span class="text-4xl sp-batu">×</span>
-<span class="text-xs block sp-close">CLOSE</span>
 </label>
 <div class="sp-sidebar fixed top-0 left-0 w-64 h-full bg-[#292929] shadow-md z-50">
     <div class="p-4">
         {isIndex && (<h1 class="site-name text-4xl font-bold mb-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl font-bold mb-4">NAOMINA121</a>)}</a>
-<hr class="my-4 border-gray-600" />
         <ul class="sp-menu">
         <li><a href="/" class="block py-2 px-4">トップページ</a></li>
                 <li><h2 class="font-bold px-4 py-2">当サイトについて</h2><a href="/about/" class="block py-2 px-6">当サイトについて</a>
