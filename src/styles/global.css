@@ -991,10 +991,15 @@ p {
     position: fixed;
     width: 100%;
     background: #212121;
-    z-index: 99;
+    z-index: 98;
     bottom: 0;
     display: block;
     border-top: 1px solid #353535;
+  }
+
+  #article-body {
+    position: relative;
+    z-index: 99;
   }
 
   footer {
