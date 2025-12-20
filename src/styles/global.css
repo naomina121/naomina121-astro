@@ -991,10 +991,15 @@ p {
     position: fixed;
     width: 100%;
     background: #212121;
-    z-index: 999;
+    z-index: 99;
     bottom: 0;
     display: block;
     border-top: 1px solid #353535;
+  }
+
+  footer {
+    position: relative;
+    z-index: 100;
   }
 
   .sp-label span {
@@ -1021,6 +1026,10 @@ p {
   #menu-toggle:checked + .sp-label img,
   #menu-toggle:checked + .sp-label span {
     display: none;
+  }
+
+  #menu-toggle:checked + .sp-label {
+    z-index: 101;
   }
 
   #menu-toggle:checked + .sp-label span.sp-close,
