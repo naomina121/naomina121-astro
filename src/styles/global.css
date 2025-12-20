@@ -1008,14 +1008,14 @@ p {
     text-align: center;
     font-size: 10px;
     color: #d8d8d8;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .sp-label img {
     display: block;
-    height: 40px;
+    height: 30px;
     margin: 0 auto 5px;
-    width: 40px;
+    width: 30px;
   }
 
   .sp-label span.sp-close,
@@ -1037,11 +1037,11 @@ p {
     display: block;
   }
   #menu-toggle:checked + .sp-label span.sp-close {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   #menu-toggle:checked + .sp-label span.sp-batu {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   #menu-toggle:checked ~ .sp-sidebar + .sp-close {
