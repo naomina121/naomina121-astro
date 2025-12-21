@@ -439,7 +439,7 @@ const aside =document.querySelector('.sidebar');
 aside.style.minHeight = m;
 aside.style.height= '100%';
 </script>
-
+}
 {getIsUrlStartsWith("/materials/") && (<script is:inline>
 document.getElementById('consent-check').addEventListener('change', function() {
   document.getElementById('show-content').disabled = !this.checked;
@@ -450,7 +450,6 @@ document.getElementById('show-content').addEventListener('click', function() {
   document.getElementById('sensitive-text').classList.remove('hidden');
 });
 </script>)}
-}
 {!getIsUrlStartsWith("/podcast/") && <script is:inline>
 // ============================================
 // グローバル変数
