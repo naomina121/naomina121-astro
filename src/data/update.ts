@@ -1,6 +1,13 @@
 export const siteUpdates = [
 {
       date: '2025-12-21',
+      slug: "external-links-updated-2025-12-21",
+      title: "外部リンク構成を調整しました。更新情報はMastodonアカウントから確認できます。",
+      content: "外部リンク構成を調整しました。活動主体がマストドンに切り替わったため、X（旧Twitter）リンクを削除し、Mastodonアカウントへのリンクを強調表示しました。今後の更新情報はMastodonアカウントからご確認いただけます。",
+      category:"Technical"
+},
+{
+      date: '2025-12-21',
       slug: "metadata-description-improved",
       title: "metadataのdescriptionのデータを改善しました",
       content: "全てのページのmetadataのdescriptionを追加しました。",

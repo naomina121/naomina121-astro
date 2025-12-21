@@ -46,8 +46,6 @@ const Person = {
     "https://www.amazon.co.jp/stores/naomina121/author/B0FWB5GP5G/",
     "https://github.com/naomina121",
     "https://qiita.com/naomina121",
-    "https://x.com/naomina121",
-    "https://note.com/naomina121_note",
     "https://mastodon.naomina121.com/@naomina121",
     "https://www.youtube.com/@naomina121_blog"
   ],
@@ -83,6 +81,7 @@ const infoSchema = {
       "item": {
         "@type":"BlogPosting",
         "name": u.title,
+        "headline": u.title,
         "description": u.content,
         "articleSection": u.category,
         "about": u.category =="Article" ? [{"@type":"Thing","name":"新着記事"}] : u.category =="Policy" ? [{"@type":"Thing","name":"ポリシー更新"}] : u.category =="Technical" ? [{"@type":"Thing","name":"サイトの更新"}] : [],
