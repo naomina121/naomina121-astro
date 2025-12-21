@@ -430,6 +430,7 @@ getIsUrlStartsWith("/blog/") ? [
     </div>
     <StructuredBreadcrumbs items={breadcrumbItems} />
     <Footer />
+{getIsUrl("/podcast/") || getIsUrlStartsWith("/podcast/") ? null :
 <script is:inline>
 const myElement = document.querySelector('#article-body');
 const m = getComputedStyle(myElement).height;
@@ -449,6 +450,7 @@ document.getElementById('show-content').addEventListener('click', function() {
   document.getElementById('sensitive-text').classList.remove('hidden');
 });
 </script>)}
+}
 {!getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") && <script is:inline>
 // ============================================
 // グローバル変数
