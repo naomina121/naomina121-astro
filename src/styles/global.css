@@ -1068,6 +1068,15 @@ p {
   #menu-toggle:checked ~ .sp-sidebar + .sp-close {
     display: block;
   }
+
+  .sp-sidebar .site-name {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .sp-sidebar .site-name {
+    display: block;
+  }
+
   #menu-toggle:checked ~ .sp-sidebar {
     display: block;
     position: fixed;
