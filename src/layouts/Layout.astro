@@ -223,10 +223,10 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
     ...(frontmatter ? { "datePublished": frontmatter.pubDate + "T00:00:00+09:00" } : update ? {"datePublished": `${update.date}T00:00:00+09:00`} : {"datePublished": `${pubDate}T00:00:00+09:00` }),
     ...(frontmatter ? { "dateModified": frontmatter.modDate + "T00:00:00+09:00" } : update ? {"dateModified": update.updatedAt ? `${update.updatedAt}T00:00:00+09:00` : `${update.date}T00:00:00+09:00` } : {"dateModified" : `${modDate}T00:00:00+09:00` }),
 }:
-!getIsUrl("/info-literacy/") && getIsUrlStartsWith("/info-literacy/") &&
-!getIsUrl("/mental-health/") && getIsUrlStartsWith("/mental-health/") &&
-!getIsUrl("/blog/") && getIsUrlStartsWith("/blog/") &&
-!getIsUrl("/about/") && getIsUrlStartsWith("/about/") && !getIsUrl("/podcast/") && !getIsUrl("/") ? {
+!getIsUrl("/info-literacy/") &&
+!getIsUrl("/mental-health/") &&
+!getIsUrl("/blog/") &&
+!getIsUrl("/about/") && !getIsUrl("/podcast/") && !getIsUrl("/") ? {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": frontmatter.pageTitle,
