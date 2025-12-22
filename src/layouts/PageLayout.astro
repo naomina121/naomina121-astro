@@ -12,6 +12,8 @@ const { pageTitle, image, pubDate, modDate } = Astro.props;
 
 ---
 <Layout {...Astro.props}>
+{getIsUrl("/") &&
+<h1>NAOMINA121</h1>}
       {!getIsUrl("/") && !getIsUrl("/contact/") && <h1>{pageTitle}</h1>}
       {!getIsUrl("/") &&
     <ul class="tags mb-0 flex flex-wrap gap-2 my-0 w-full justify-end">

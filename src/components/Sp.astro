@@ -3,7 +3,7 @@ const isIndex = Astro.url.pathname === "/";
 ---
 <input type="checkbox" id="menu-toggle" class="hidden" />
 <label for="menu-toggle" class="sp-label cursor-pointer items-center gap-2">
-{isIndex && (<h1 class="site-name text-4xl inline-block font-bold ml-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl inline-block font-bold mb-4">NAOMINA121</a>)}
+<a href="/" class="site-name text-4xl inline-block font-bold mb-4" aria-hidden="true">NAOMINA121</a>
 
     <span>
 <img class="w-10 h-10 rounded-full" src="/images/naomina.jpg" alt="naomina121's icon" />
@@ -13,11 +13,12 @@ const isIndex = Astro.url.pathname === "/";
 </label>
 <div class="sp-sidebar fixed top-0 left-0 w-64 h-full bg-[#292929] shadow-md z-50">
     <div class="p-4">
-        {isIndex && (<h1 class="site-name text-4xl font-bold mb-4">NAOMINA121</h1>)}{!isIndex && (<a href="/" class="site-name text-4xl font-bold mb-4">NAOMINA121</a>)}</a>
-        <ul class="sp-menu">
+<a href="/" class="site-name text-4xl inline-block font-bold mb-4" aria-hidden="true">NAOMINA121</a>
+<ul class="sp-menu">
         <li><a href="/" class="block py-2 px-4">トップページ</a></li>
-                <li><h2 class="font-bold px-4 py-2">当サイトについて</h2><a href="/about/" class="block py-2 px-6">当サイトについて</a>
+                <li><p class="font-bold px-4 py-2">当サイトについて</p>
                         <ul class="mb-4">
+    <li><a href="/about/" class="block py-2 px-6">当サイトについて</a></li>
     <li><a href="/about/mental-health-and-information-literacy/" class="block py-2 px-4">なぜメンタルヘルス × 情報リテラシーか</a></li>
     <li><a href="/about/non-commercial-policy/" class="block py-2 px-4">広告を置かない・収益を目的にしない理由</a></li>
     <li><a href="/about/writing-guidelines/" class="block py-2 px-4">記事を書くときに避けている表現</a></li>
@@ -26,17 +27,16 @@ const isIndex = Astro.url.pathname === "/";
     <li><a href="/about/ai-content-policy/" class="block py-2 px-4">AI使用に関する当サイトの品質基準</a></li>
     <li><a href="/about/cc-by-nc-nd/" class="block py-2 px-4">当サイトや記事のライセンスについて（引用に関する事項）</a></li>
                 </ul>
-                </li>
-
+</li>
         <li>
-<h2 class="font-bold px-4 py-2">プロフィール</h2>
+<p class="font-bold px-4 py-2">プロフィール</p>
             <a href="/profile/about" class="block py-2 px-4">ナオについて</a>
         <ul class="mb-4">
             <li><a href="/profile/nobody-perfect" class="block py-2 px-6">完璧な人間なんていない</a></li>
             <li><a href="/profile/nao-analysis" class="block py-2 px-6">ナオの分析結果</a></li>
         </ul></li>
         <li>
-            <h2 class="font-bold px-4 py-2">メインコンテンツ</h2>
+            <p class="font-bold px-4 py-2">メインコンテンツ</p>
             <a href="/mental-health/" class="block py-2 px-4">メンタルヘルス</a></li>
         <li><a href="/info-literacy/" class="block py-2 px-4">情報リテラシー</a></li>
         <li><a href="/blog/" class="block py-2 px-4">ナオのブログ</a></li>
