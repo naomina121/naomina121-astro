@@ -1,5 +1,13 @@
 export const siteUpdates = [
 {
+      date: '2025-12-22',
+      slug: "podcast-ep6-published",
+      title: "ポッドキャスト第6回「ナオの弱み暴露します！ 〜完璧主義のルーツとSNS疲れ〜」を公開しました",
+      content: "ポッドキャスト第6回を公開しました。今回は、私の完璧主義のルーツやSNS疲れについてお話しします。なぜ、私が伝え方に過剰にこだわるのか、その背景にある子供時代のトラウマ体験についても触れています。また、SNSの過剰な反応に疲弊し、個人サイトやお一人様マストドンでの活動にシフトした理由についても語ります。ぜひ最後までお聞きください。",
+      link:'https://naomina121.com/podcast/ep6/',
+      category:"Article"
+},
+{
       date: '2025-12-21',
       slug: "external-links-updated-2025-12-21",
       title: "外部リンク構成を調整しました。更新情報はMastodonアカウントから確認できます。",
