@@ -1,5 +1,12 @@
 export const siteUpdates = [
 {
+      date: '2025-12-23',
+      slug: "video-structured-data-improved",
+      title: "動画埋め込みページと各ポッドキャスト内の構造化データの改善をしました。",
+      content: "全てのページの動画埋め込みページの構造化データを改善しました。",
+      category:"Technical"
+},
+{
       date: '2025-12-22',
       slug: "podcast-ep6-published",
       title: "ポッドキャスト第6回「ナオの弱み暴露します！ 〜完璧主義のルーツとSNS疲れ〜」を公開しました",
