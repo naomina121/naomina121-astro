@@ -135,9 +135,10 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
       "url":  frontmatter.podcastSeriesUrl,
     },
     "author": {
-      "@type": "Person",
-      "name": Person,
-    },
+          "@type": "Person",
+          "name": nao,
+          "url": `${siteUrl}/profile/about/`
+      },
     "publisher": {
       "@type": "Organization",
       "name": "naomina121",
@@ -159,7 +160,8 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
       "thumbnailUrl": [
         `https://i.ytimg.com/vi/${frontmatter.media.youtubeId}/hqdefault.jpg`
       ],
-"clip":
+
+"hasPart":[
    frontmatter.chapters.map((chapter, index, array) =>{ // indexとarrayを追加
    const startSeconds = parseTimeToSeconds(chapter.time);
 
@@ -184,7 +186,7 @@ const pageSchema = !getIsUrl("/podcast/") && getIsUrlStartsWith("/podcast/") ?
     "endOffset": endSeconds,
     "url": `https://www.youtube.com/watch?v=${frontmatter.media.youtubeId}&t=${startSeconds}s`
    };
-  }),
+  })],
   },
   } : getIsUrl("/updates/") ? infoSchema : getIsUrlStartsWith("/updates/") ? {
     "@context": "https://schema.org/",
