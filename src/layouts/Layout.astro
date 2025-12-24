@@ -4,6 +4,7 @@ import Sidebar from '@components/Sidebar.astro';
 import Sp from '@components/Sp.astro';
 import StructuredBreadcrumbs from '@components/Breadcrumbs.astro';
 import Footer from '@components/Footer.astro';
+import Analytics from '@vercel/analytics/astro';
 import { siteUpdates } from "../data/update";
 function getIsUrl(pathname) {
   return Astro.url.pathname === pathname;
@@ -442,6 +443,7 @@ getIsUrlStartsWith("/blog/") ? [
     <link rel="alternate" hreflang="x-default" href={canonicalURL.toString()} />
     <meta name="generator" content={Astro.generator} />
     <title>{titleTag}</title>
+    <Analytics />
   </head>
   <body>
     <div class="container flex justify-between items-start align-top mx-auto max-w-[1200px]">
